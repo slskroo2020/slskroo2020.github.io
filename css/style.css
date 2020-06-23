@@ -6499,3 +6499,154 @@ hr.dashed {
   height: 90px;
   background: rgb(87, 116, 107);
 }
+
+
+/* Loading Screen */
+#cover {
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  top:0; 
+  left: 0; 
+  background: #000; 
+  z-index:9999;
+  overflow: hidden;
+}
+
+.space {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.2;
+}
+
+:root {
+  --fire-duration: 0.4s;
+}
+
+#spacebg1 {
+  background-image: url("../img/loading/space1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrap .text{
+  color: #ffffff;
+  font-family: "komorebi regular", sans-serif;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  animation: fade 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.loading .rocket-container {
+  position: relative;
+  left: 0;
+  top: 0;
+  line-height: 0;
+  animation: enter 2s;
+  animation-timing-function: ease-out;
+}
+
+.loading .loading-img {
+  transform: rotate(90deg);
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: auto;
+}
+
+.loading .bottom-rocket {
+  position: absolute;
+  left: 10px;
+}
+
+.loading #rocket-1 {
+  animation: fire1 var(--fire-duration) infinite;
+}
+
+.loading #rocket-2 {
+  animation: fire2 var(--fire-duration) infinite;
+}
+
+.loading #rocket-3 {
+  animation: fire3 var(--fire-duration) infinite;
+}
+
+/* Enter Animation */
+@keyframes enter {
+  0% {left: -50vw; opacity: 0;}
+  100% {left: 0px; opacity: 1;}
+}
+
+/* Fade Animation */
+@keyframes fade {
+  0% {opacity: 1;}
+  50% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+/* Fire Animation */
+@keyframes fire1 {
+  0% {opacity: 0;}
+  1% {opacity: 1;}
+  24% {opacity: 1;}
+  25% {opacity: 0;}
+  49% {opacity: 0;}
+  50% {opacity: 0;}
+  74% {opacity: 0;}
+  75% {opacity: 0;}
+  99% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes fire2 {
+  0% {opacity: 1;}
+  1% {opacity: 0;}
+  24% {opacity: 0;}
+  25% {opacity: 1;}
+  49% {opacity: 1;}
+  50% {opacity: 0;}
+  74% {opacity: 0;}
+  75% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes fire3 {
+  0% {opacity: 0;}
+  1% {opacity: 0;}
+  24% {opacity: 0;}
+  25% {opacity: 0;}
+  49% {opacity: 0;}
+  50% {opacity: 1;}
+  74% {opacity: 1;}
+  75% {opacity: 0;}
+  99% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@media (min-width: 992px) {
+  .loading .loading-img {
+    height: 200px;
+  }
+
+  .loading .bottom-rocket {
+    left: 0px;
+  }
+
+  .wrap .text{
+    font-size: 30px;
+  }
+}
