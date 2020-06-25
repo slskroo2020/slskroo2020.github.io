@@ -6140,86 +6140,6 @@ hr.dashed {
   margin-bottom: 50px;
 }
 
-
-/* Interest Groups Grids */
-.arts_bg {
-  background-image: linear-gradient(rgb(0, 0, 0) 0%, #1d193a 100%);
-}
-
-.ig-container {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.ig-container .ig-item {
-  margin: 0.5em;
-  padding: 0px;
-  background-color: rgb(255, 255, 255);
-}
-
-.ig-container .ig-item h4 {
-  color: rgb(0, 0, 0);
-  font-family: "komorebi regular", sans-serif;
-  font-weight: 700 !important;
-  font-size: 22px;
-  margin-bottom: 0.3em;
-}
-
-.ig-container .ig-item p {
-  color: rgb(70, 69, 69);
-  font-size: 16px;
-  line-height: 25px;
-  margin-bottom: 0.5em;
-}
-
-.ig-container .ig-item .ig-thumb {
-  margin: 0px;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  height: 200px;
-}
-
-@media (min-width:768px) {
-  .ig-container {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  .ig-container .ig-item {
-    margin: 0.7em;
-  }
-  .ig-container .ig-item .ig-thumb {
-    height: 150px;
-  }
-  
-}
-
-@media (min-width:992px) {
-  .ig-container {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .ig-container .ig-item {
-    margin: 1em;
-    height: auto;
-  }
-  .ig-container .ig-item h4 {
-    font-size: 17px;
-    margin-bottom: 0.3em;
-  }
-  .ig-container .ig-item p {
-    font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 0.5em;
-  }
-}
-
-@media (min-width:1200px) {
-  .ig-container .ig-item {
-    margin: 1.5em;
-  }
-}
-
 /* Custom Magnific Popup Caption */
 .mfp-title {
   text-align: left;
@@ -6648,5 +6568,343 @@ hr.dashed {
 
   .wrap .text{
     font-size: 30px;
+  }
+}
+
+
+/* Gallery Area */
+.gallery_area {
+  padding-top: 100px;
+  padding-bottom: 63px;
+}
+
+@media (max-width: 767px) {
+  .gallery_area {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery_area {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+}
+
+.gallery_area h3 {
+  color: white;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+@media (min-width: 767px) {
+  .gallery_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery_area h3 {
+    font-size: 70px;
+  }
+}
+
+
+/* IG Area */
+
+.ig_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+}
+
+.ig_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) {
+  .ig_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .ig_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ig_area h3 {
+    font-size: 70px;
+  }
+}
+
+
+/* IG Navbar */
+.ig-navbar {
+  text-align: center;
+  color: white;
+}
+
+.ig-navbar ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 13px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .ig-navbar ul li {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .ig-navbar ul li {
+    margin: 0 10px;
+  }
+}
+
+.ig-navbar ul li a {
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: normal;
+  display: inline-block;
+  padding: 30px 0 30px  0;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .ig-navbar ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .ig-navbar ul li a {
+    font-size: 15px;
+  }
+}
+
+.ig-navbar ul li a.active {
+  color: #FF4533;
+}
+
+.ig-navbar ul li a.active::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.ig-navbar ul li a:hover {
+  color: #FF4533;
+}
+
+/* Interest Groups Grids */
+.arts_bg {
+  background-image: linear-gradient(rgb(0, 0, 0) 0%, #1d193a 100%);
+}
+
+.ig-container {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.ig-container .ig-item {
+  margin: 0.5em;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ig-container .ig-item h4 {
+  color: rgb(0, 0, 0);
+  font-family: "komorebi regular", sans-serif;
+  font-weight: 700 !important;
+  font-size: 22px;
+  margin-bottom: 0.3em;
+}
+
+.ig-container .ig-item p {
+  color: rgb(70, 69, 69);
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0.5em;
+}
+
+.ig-container .ig-item .ig-thumb {
+  margin: 0px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 200px;
+}
+
+@media (min-width:768px) {
+  .ig-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .ig-container .ig-item {
+    margin: 0.7em;
+  }
+  .ig-container .ig-item .ig-thumb {
+    height: 150px;
+  }
+}
+
+@media (min-width:992px) {
+  .ig-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .ig-container .ig-item {
+    margin: 1em;
+    height: auto;
+  }
+  .ig-container .ig-item h4 {
+    font-size: 17px;
+    margin-bottom: 0.3em;
+  }
+  .ig-container .ig-item p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width:1200px) {
+  .ig-container .ig-item {
+    margin: 1.5em;
+  }
+}
+
+
+/* tPlace Area */
+.tplace_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+}
+
+.tplace_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) {
+  .tplace_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .tplace_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tplace_area h3 {
+    font-size: 70px;
+  }
+}
+
+/* Virtual Tour Area */
+.tour_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+}
+
+.tour_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) {
+  .tour_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .tour_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tour_area h3 {
+    font-size: 70px;
+  }
+}
+
+
+/* Livestream Area */
+.livestream_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+}
+
+.livestream_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) {
+  .livestream_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .livestream_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .livestream_area h3 {
+    font-size: 70px;
+  }
+}
+
+/* Bingo Area */
+.bingo_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+}
+
+.bingo_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) {
+  .bingo_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .bingo_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bingo_area h3 {
+    font-size: 70px;
   }
 }
