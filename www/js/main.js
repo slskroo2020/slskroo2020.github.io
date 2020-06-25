@@ -2,6 +2,7 @@
 "use strict";
 // TOP Menu Sticky
 $(window).on('scroll', function () {
+  
 	var scroll = $(window).scrollTop();
 	if (scroll < 100) {
     $("#sticky-header").removeClass("sticky");
@@ -12,16 +13,17 @@ $(window).on('scroll', function () {
 	}
 });
 
-// Loading
 $(window).on('load', function() {
-
-  // Call the intro animation only if page is freshly loaded OR not scrolled
-  if (performance.navigation.type == performance.navigation.TYPE_RELOAD || $(window).scrollTop() != 0) {
-    $('#cover').fadeOut(500);
-  } else {
-    // Intro Sequence
-    $('#cover').fadeOut(500);
-  }
+    var url = document.title;
+    console.log(url);
+    if (url=="Loading...") return;
+    // Call the intro animation only if page is freshly loaded OR not scrolled
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD || $(window).scrollTop() != 0) {
+      $('#cover').fadeOut(500);
+    } else {
+      // Intro Sequence
+      $('#cover').fadeOut(500);
+    }
 });
 
 $(document).ready(function(){
