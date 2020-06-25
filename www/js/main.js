@@ -15,7 +15,6 @@ $(window).on('scroll', function () {
 
 $(window).on('load', function() {
     var url = document.title;
-    console.log(url);
     if (url=="Loading...") return;
     // Call the intro animation only if page is freshly loaded OR not scrolled
     if (performance.navigation.type == performance.navigation.TYPE_RELOAD || $(window).scrollTop() != 0) {
