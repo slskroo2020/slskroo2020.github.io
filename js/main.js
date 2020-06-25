@@ -437,18 +437,14 @@ mailChimp();
       e.preventDefault();
   });
 
-  // Smooth Mousewheel Scrolling
-  $("html").easeScroll({
-    frameRate: 60,
-    animationTime: 1000,
-    stepSize: 55,
-    pulseAlgorithm: 1,
-    pulseScale: 8,
-    pulseNormalize: 1,
-    accelerationDelta: 20,
-    accelerationMax: 1,
-    keyboardSupport: true,
-    arrowScroll: 50,
-    touchpadSupport: true,
-    fixedBackground: true
+// NiceScroll
+$(function() {  
+  $("body").niceScroll({
+    cursorborder: "none",
+    cursorcolor:'#D66C44',
+    cursorwidth: 10,
+    cursoropacitymin: 0.3,
+    autohidemode: 'leave',
+    zindex: 10
   });
+});
