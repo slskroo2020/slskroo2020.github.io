@@ -2412,9 +2412,21 @@ h3 {
   font-size: 45px;
 }
 
+.program_details_area .genric-btn {
+  margin-top: 1rem;
+}
+
+.program_details_area .genric-btn.tertiary {
+  margin-top: 6px !important;
+}
+
 @media (min-width: 992px) {
   .program_details_area h3{
     font-size: 70px;
+  }
+
+  .program_details_area .genric-btn.tertiary {
+    margin-top: 1rem;
   }
 }
 
@@ -2432,7 +2444,7 @@ h3 {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 86%;
+  height: 84%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -2939,7 +2951,7 @@ h6 {
   display: inline-block;
   outline: none;
   line-height: 40px;
-  padding: 0 30px;
+  padding: 0 25px;
   font-size: 1.1em;
   text-align: center;
   text-decoration: none;
@@ -3028,31 +3040,75 @@ h6 {
   border: 1px solid transparent;
 }
 
-/* line 217, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .genric-btn.primary {
   color: #fff;
   background: #d18237;
   border: 1px solid transparent;
 }
 
-/* line 221, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .genric-btn.primary:hover {
   color: #d18237;
   border: 1px solid #d18237;
   background: #fff;
 }
 
-/* line 227, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .genric-btn.primary-border {
   color: #d18237;
   border: 1px solid #d18237;
   background: #fff;
 }
 
-/* line 231, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .genric-btn.primary-border:hover {
   color: #fff;
   background: #d18237;
+  border: 1px solid transparent;
+}
+
+.genric-btn.secondary {
+  color: #fff;
+  background: #324856;
+  border: 1px solid transparent;
+}
+
+.genric-btn.secondary:hover {
+  color: #324856;
+  border: 1px solid #324856;
+  background: #fff;
+}
+
+.genric-btn.secondary-border {
+  color: #324856;
+  border: 1px solid #324856;
+  background: #fff;
+}
+
+.genric-btn.secondary-border:hover {
+  color: #fff;
+  background: #324856;
+  border: 1px solid transparent;
+}
+
+.genric-btn.tertiary {
+  color: #fff;
+  background: #4a746a;
+  border: 1px solid transparent;
+}
+
+.genric-btn.tertiary:hover {
+  color: #4a746a;
+  border: 1px solid #4a746a;
+  background: #fff;
+}
+
+.genric-btn.tertiary-border {
+  color: #4a746a;
+  border: 1px solid #4a746a;
+  background: #fff;
+}
+
+.genric-btn.tertiary-border:hover {
+  color: #fff;
+  background: #4a746a;
   border: 1px solid transparent;
 }
 
@@ -5861,7 +5917,7 @@ hr.dashed {
   border-style: dashed;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
 }
 
@@ -5908,7 +5964,7 @@ hr.dashed {
   padding: 0;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .carousel .single-ig img,
   .carousel .single-ig iframe {
     height: 350px;
@@ -6597,7 +6653,7 @@ hr.dashed {
   line-height: 1.1;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery_area h3 {
     font-size: 50px;
   }
@@ -6625,7 +6681,7 @@ hr.dashed {
   margin-top: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .ig_area {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -6797,7 +6853,7 @@ hr.dashed {
   margin-top: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .tplace_area {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -6828,7 +6884,7 @@ hr.dashed {
   margin-top: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .tour_area {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -6860,7 +6916,7 @@ hr.dashed {
   margin-top: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .livestream_area {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -6891,7 +6947,7 @@ hr.dashed {
   margin-top: 10px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .bingo_area {
     padding-top: 50px;
     padding-bottom: 40px;
@@ -6906,4 +6962,9 @@ hr.dashed {
   .bingo_area h3 {
     font-size: 70px;
   }
+}
+
+/* Overflow */
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
