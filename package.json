@@ -1,0 +1,26 @@
+{
+  "name": "slskroo2020.github.io",
+  "version": "1.0.0",
+  "description": "TWW2020 Student Life Showcase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluffysaur/slskroo2020.github.io.git"
+  },
+  "author": "Tan Yi Jia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fluffysaur/slskroo2020.github.io/issues"
+  },
+  "homepage": "https://github.com/fluffysaur/slskroo2020.github.io#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^2.3.0"
+  }
+}

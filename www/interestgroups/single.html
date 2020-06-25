@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Treblemakers</title>
+    <title>Loading...</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,6 +29,24 @@
 </head>
 
 <body>
+    <!-- Loading Screen -->
+    <div id="cover">
+        <!-- <div id="spacebg1" class="space"></div> -->
+        <!-- <div id="spacebg2" class="space"></div>
+        <div id="spacebg3" class="space"></div> -->
+        <div class="wrap">
+            <div class="loading text-center">
+                <div class="rocket-container text-center">
+                    <img class="loading-img" src="../img/loading/rocket.png" alt=""><br>
+                    <img id="rocket-1" class="loading-img bottom-rocket" src="../img/loading/rocket1.png" alt=""><br>
+                    <img id="rocket-2" class="loading-img bottom-rocket" src="../img/loading/rocket2.png" alt=""><br>
+                    <img id="rocket-3" class="loading-img bottom-rocket" src="../img/loading/rocket3.png" alt=""><br>
+                </div>
+                <div class="text">loading...</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Loading Screen -->
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -112,8 +130,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section_title text-center mb-80">
-                        <div class="bg-text" data-bg-text="Treblemakers">
-                            <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >Treblemakers</h3>
+                        <div id="bgtext" class="bg-text" data-bg-text="Nothing">
+                            <h3 id="igtitle" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >Nothing</h3>
                         </div>
                         <hr class="divider dark my-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                     </div>
@@ -121,52 +139,8 @@
             </div>
             <div id="carouselIndicators" class="carousel slide wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselIndicators" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner single-ig align-items-center">
-                  <div class="carousel-item active">
-                    <a href="https://www.youtube.com/watch?v=ShCs3YmUu8k" class="popup-video" title="<span class='mfp-header'>Title | </span>Short Description Here. Can contain any HTML.">
-                        <div class="carousel-overlay"></div>
-                            <iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/ShCs3YmUu8k?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First Slide Label</h5>
-                            <p>Short Description Here</p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="../../img/discover/1.jpg" class="img-pop-up" title="<span class='mfp-header'>Title | </span>Short Description Here. Can contain any HTML.">
-                        <div class="carousel-overlay"></div>
-                        <img class="d-block" src="../../img/discover/1.jpg" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First Slide Label</h5>
-                            <p>Short Description Here</p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="../../img/discover/2.jpg" class="img-pop-up" title="<span class='mfp-header'>Title | </span>Short Description Here. Can contain any HTML.">
-                        <div class="carousel-overlay"></div>
-                        <img class="d-block" src="../../img/discover/2.jpg" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second Slide Label</h5>
-                            <p>Short Description Here</p>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="../../img/discover/3.jpg" class="img-pop-up" title="<span class='mfp-header'>Title | </span>Short Description Here. Can contain any HTML.">
-                        <div class="carousel-overlay"></div>
-                        <img class="d-block" src="../../img/discover/3.jpg" alt="Third slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third Slide Label</h5>
-                            <p>Short Description Here</p>
-                        </div>
-                    </a>
-                  </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -177,18 +151,14 @@
                   <span class="sr-only">Next</span>
                 </a>
             </div>
-            <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" >
-                Have experience with singing? Come join Tembusu's A Capella Group! Here you can sing all the songs you want
-                and stuff and whatnot. Singy sing sing ting! On top of singing pieces from Pentatonix and The Nor'easters, we
-                also compose our own scores. If you're interested, find out more from our Website, TikTok, or Instagram Page!</p>
+            <p id="igdesc" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" >
+                No text at the moment.
+            </p>
             <div class="row justify-content-between">
                 <div class="col text-left">
-                    <blockquote class="generic-blockquote ig-quote">“Hahaha bass go doom doom doom” - Chloe Loh, Year 1 2019/20</blockquote>
+                    <blockquote id="igtagline" class="generic-blockquote ig-quote">No tagline at the moment.</blockquote>
                 </div>
-                <div class="col-md-3 text-right">
-                    <a class="social" href="#/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-2x"></i></a
-                    ><a class="social" href="#/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook fa-2x"></i></a
-                    ><a class="social" href="#/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter fa-2x"></i></a>
+                <div id="smcontainer" class="col-md-3 text-right">
                 </div>
             </div>
         </div>
@@ -237,12 +207,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../../js/rellax.min.js"></script>
     <script src="../../js/jquery.nicescroll.js"></script>
 
+    <!-- socket.io -->
+    <script src="../../../socket.io/socket.io.js"></script>
+
     <!--contact js-->
     <script src="../../js/contact.js"></script>
     <script src="../../js/jquery.ajaxchimp.min.js"></script>
     <script src="../../js/jquery.form.js"></script>
     <script src="../../js/jquery.validate.min.js"></script>
     <script src="../../js/mail-script.js"></script>
+
+    <!-- ig item loader js -->
+    <script src="../../js/singleigpopulator.js"></script>
 
     <script src="../../js/main.js"></script>
 </body>

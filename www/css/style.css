@@ -481,7 +481,7 @@ h3 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: #d18237;
+  background: #bc5029;
   z-index: 99;
   width: 40px;
   height: 40px;
@@ -506,25 +506,25 @@ h3 {
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn {
   background: #fff;
-  color: #d66c44;
+  color: #bc5029;
   display: inline-block;
   padding: 12px 44px;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #d66c44;
+  border: 1px solid #bc5029;
   text-align: center;
-  color: #d66c44 !important;
+  color: #bc5029 !important;
   text-transform: capitalize;
   cursor: pointer;
 }
 
 /* line 15, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #d66c44;
+  background: #bc5029;
   color: #fff !important;
-  border: 1px solid #d66c44;
+  border: 1px solid #bc5029;
 }
 
 /* line 20, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -539,7 +539,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn3 {
-  background: #d66c44;
+  background: #bc5029;
   /* IE6-9 */
   color: #fff;
   display: inline-block;
@@ -567,8 +567,8 @@ h3 {
 .boxed-btn3:hover {
   background: transparent;
   /* IE6-9 */
-  color: #d66c44 !important;
-  border: 1px solid #d66c44;
+  color: #bc5029 !important;
+  border: 1px solid #bc5029;
 }
 
 /* line 51, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -1157,7 +1157,7 @@ h3 {
 
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
-  background: #d18237;
+  background: #bc5029;
   font-family: 'Quicksand', sans-serif;
   padding: 12px 25px;
   font-size: 16px;
@@ -1179,8 +1179,8 @@ h3 {
 
 /* line 113, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a:hover {
-  border-color: #d18237;
-  color: #d18237;
+  border-color: #bc5029;
+  color: #bc5029;
   background: transparent;
 }
 
@@ -1951,7 +1951,7 @@ h3 {
 }
 
 .about_area p {
-  color: #dee4e9;
+  color: #eef2f5;
 }
 
 .about_area h3 {
@@ -3042,25 +3042,25 @@ h6 {
 
 .genric-btn.primary {
   color: #fff;
-  background: #d18237;
+  background: #bc5029;
   border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-  color: #d18237;
-  border: 1px solid #d18237;
+  color: #bc5029;
+  border: 1px solid #bc5029;
   background: #fff;
 }
 
 .genric-btn.primary-border {
-  color: #d18237;
-  border: 1px solid #d18237;
+  color: #bc5029;
+  border: 1px solid #bc5029;
   background: #fff;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #d18237;
+  background: #bc5029;
   border: 1px solid transparent;
 }
 
