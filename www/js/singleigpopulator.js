@@ -1,8 +1,38 @@
+(function ($) {
+"use strict";
+
 var socket = io({transports: ['websocket'], upgrade: false});
 const iosocket = socket.connect();
 
-(function ($) {
-"use strict";
+function initMagnificPopup(){
+    // $('.img-pop-up .popup-video').magnificPopup({
+    //     callbacks: {
+    //         elementParse: function(item) {
+    //             if (item.el.context.className == 'iframe') {
+    //                 item.type = 'iframe';
+    //             } else {
+    //                 item.type = 'image';
+    //                 item.image = {titlesrc: 'data-title'};
+    //             }
+    //         }
+    //     },
+    // });
+    // gallery: {enabled: true},
+    // type: 'image'
+    $('.img-pop-up').magnificPopup({
+        type: 'image',
+        gallery: { 
+           enabled: true 
+        },
+        image: {
+            titleSrc: 'data-title' 
+        }
+    });
+    $('.popup-video').magnificPopup({
+        type: 'iframe',
+    });
+    console.log("Magnific Initialised");
+}
 
 $(document).ready(function () {
 
@@ -47,7 +77,7 @@ $(document).ready(function () {
 
                     // If Image
                     if (img[i].type=="jpg" || img[i].type=="png") {
-                        carItem.class = "imp-pop-up";
+                        carItem.class = "img-pop-up";
                         carItem.url = `../../img/ig/${ig[0].name}/${img[i].ref}.${img[i].type}`;
                         carItem.content = `<img class="d-block" src="../../img/ig/${ig[0].name}/${img[i].ref}.${img[i].type}" alt="${img[i].title}">`;
                     }
@@ -65,7 +95,7 @@ $(document).ready(function () {
                         };
                     }
 
-                    var carElement = `<a href="${carItem.url}" class="${carItem.class}" title="<span class='mfp-header'>${carItem.title} | </span>${carItem.caption}">
+                    var carElement = `<a href="${carItem.url}" class="${carItem.class}" title="${carItem.title}" data-title="<span class='mfp-header'>${carItem.title} | </span>${carItem.caption}">
                                         <div class="carousel-overlay"></div>
                                         ${carItem.content}
                                         <div class="carousel-caption d-none d-md-block">
@@ -95,6 +125,7 @@ $(document).ready(function () {
             document.title = query;
             $('#cover').fadeOut(500);
             $('body').getNiceScroll().resize();
+            initMagnificPopup();
         });
 
         iosocket.on('disconnect', function() {
