@@ -4,8 +4,9 @@ require('dotenv').config();
 
 const express = require('express')
 , app = express()
-, server = require('http').createServer(app)
+, server = require('https').createServer(app)
 , port = process.env.PORT || 3000
+, path = require('path')
 , socketio = require('socket.io')
 , mysql = require('mysql')
 , pool = mysql.createPool({
@@ -17,10 +18,15 @@ const express = require('express')
     port : process.env.MYSQLPORT
 });
 
-app.use(express.static('www'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/*', function (req, res) {
+    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+})
 
 server.listen(port, function(){
-    console.log (`Server listening on port ${port}.`)
+    console.log (`Server listening on port ${port}.`);
+    // console.log (path.join(__dirname, 'public'));
 });
 
 socketio.listen(server).on('connection', function (socket) {
