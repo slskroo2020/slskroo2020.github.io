@@ -2444,7 +2444,7 @@ h3 {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 84%;
+  height: 85%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -2479,7 +2479,7 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram {
   display: block;
   position: relative;
-  margin-bottom: 13px;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -2535,7 +2535,6 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram:nth-child(2n) {
   width: 100%;
   float: left;
-  margin-top: -110px;
 }
 
 @media (max-width: 767px) {
@@ -6213,7 +6212,7 @@ hr.dashed {
 
 /* Single IG Display */
 .single-ig_area {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 70px;
   position: relative;
   margin-top: -2px;
@@ -6222,19 +6221,28 @@ hr.dashed {
 .single-ig_area h3 {
   color: rgb(0, 0, 0);
   font-size: 50px;
+  padding-top: 50px;
 }
 
 @media (min-width:992px) {
   .single-ig_area h3 {
     color: rgb(0, 0, 0);
     font-size: 70px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .single-ig_area {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-ig_area {
+    padding-top: 55px;
+    padding-bottom: 30px;
   }
 }
 
@@ -6967,4 +6975,27 @@ hr.dashed {
 /* Overflow */
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+/* Back Button */
+.back-container {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .back-container {
+    padding-bottom: 10px;
+  }
+}
+
+.back-button {
+  font-size: 16px;
+}
+
+.back-button.white {
+  color: #fff;
+}
+
+.back-button.white:hover {
+  color: #d66c44;
 }
