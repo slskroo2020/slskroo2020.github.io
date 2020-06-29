@@ -117,16 +117,20 @@ if(brand_active.length){
             nav:false
         },
         767:{
-            items:3
+            // items:3
+            items:1
         },
         992:{
-            items:4
+            // items:4
+            items:1
         },
         1200:{
-            items:4
+            // items:4
+            items:1
         },
         1500:{
-            items:5
+            // items:5
+            items:1
         }
     }
   });

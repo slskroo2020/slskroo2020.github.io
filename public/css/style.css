@@ -2328,6 +2328,9 @@ h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 80px;
 }
+.brand_area .brand_wrap img {
+  max-height: 100px; /* Temporary Addition */
+}
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_map.scss */
 .map_area {
