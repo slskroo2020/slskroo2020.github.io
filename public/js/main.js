@@ -469,6 +469,6 @@ $(function() {
     cursorwidth: 10,
     cursoropacitymin: 0.3,
     autohidemode: 'leave',
-    zindex: 10
+    zindex: 999
   });
 });
