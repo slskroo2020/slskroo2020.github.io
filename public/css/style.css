@@ -33,6 +33,180 @@
         url('../fonts/nasalization-free.regular-webfont.woff') format('woff');
 }
 
+/* TESTING FONTS */
+
+@font-face {
+  /* nice!! */
+  font-family: 'a_astro_spaceregular';
+  src: url('../fonts/astrospace-0wl3o-webfont.woff2') format('woff2'),
+       url('../fonts/astrospace-0wl3o-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* barons are naw */
+@font-face {
+  font-family: 'baron_neuebold';
+  src: url('../fonts/baronneue-bold-webfont.woff2') format('woff2'),
+       url('../fonts/baronneue-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'baron_neueregular';
+  src: url('../fonts/baronneue-regular-webfont.woff2') format('woff2'),
+       url('../fonts/baronneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* too funky but kinda like it for the countdown + logo */
+@font-face {
+  font-family: 'blankaregular';
+  src: url('../fonts/blanka-regular-webfont.woff2') format('woff2'),
+       url('../fonts/blanka-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* boring */
+@font-face {
+  font-family: 'dual300';
+  src: url('../fonts/dual-300-webfont.woff2') format('woff2'),
+       url('../fonts/dual-300-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* look at orbiterregular */
+@font-face {
+  font-family: 'earth_orbiter_titleregular';
+  src: url('../fonts/earthorbitertitle-ezdo-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbitertitle-ezdo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* hmmmmm */
+@font-face {
+  font-family: 'earth_orbiterregular';
+  src: url('../fonts/earthorbiter-yz12-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiter-yz12-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* p nice */
+@font-face {
+  font-family: 'earth_orbiter_3dregular';
+  src: url('../fonts/earthorbiter3d-r6ob-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiter3d-r6ob-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* nawwww */
+@font-face {
+  font-family: 'earth_orbiter_academyregular';
+  src: url('../fonts/earthorbiteracademy-kmgx-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiteracademy-kmgx-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* similar to but nicer than regular i think */
+@font-face {
+  font-family: 'earth_orbiter_boldbold';
+  src: url('../fonts/earthorbiterbold-vzd9-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiterbold-vzd9-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* a bit too much */
+@font-face {
+  font-family: 'earth_orbiter_deep_3dregular';
+  src: url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* NAWWW */
+@font-face {
+  font-family: 'future_techno_italicregular';
+  src: url('../fonts/futuretechnoitalic-x3epj-webfont.woff2') format('woff2'),
+       url('../fonts/futuretechnoitalic-x3epj-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* nope :( cool font though */
+@font-face {
+  font-family: 'mandaloreregular';
+  src: url('../fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
+       url('../fonts/mandalore-k77ld-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ehhh :( */
+@font-face {
+  font-family: 'mandalore_titleregular';
+  src: url('../fonts/mandaloretitle-lggae-webfont.woff2') format('woff2'),
+       url('../fonts/mandaloretitle-lggae-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* not bad */
+@font-face {
+  font-family: 'mandalore_3dregular';
+  src: url('../fonts/mandalore3d-8mm0b-webfont.woff2') format('woff2'),
+       url('../fonts/mandalore3d-8mm0b-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* too boring for title font but can be used with quicksand */
+@font-face {
+  font-family: 'exanregular';
+  src: url('../fonts/exan-regular-webfont.woff2') format('woff2'),
+       url('../fonts/exan-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* p good for 'NEW BEGINNINGS' and 'TEMBUSU WELCOME WEEK 2020' at the bottom */
+@font-face {
+  font-family: 'potralight';
+  src: url('../fonts/potra-webfont.woff2') format('woff2'),
+       url('../fonts/potra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* END TESTING FONTS */
+
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -111,7 +285,8 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'Nasalization', sans-serif;
+  font-family: 'a_astro_spaceregular';
+  /* sans-serif */
   color: #001D38;
 }
 
@@ -1076,7 +1251,7 @@ h3 {
 
 .header-area .main-header-area .logo h2 {
   color: white;
-  font-family: "Voyager Light", sans-serif;
+  font-family: "komorebi", sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -1627,9 +1802,9 @@ h3 {
 
 /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text span {
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   /* color: #C85930; */
   color: #c9c9c9;
   font-family: 'Quicksand', sans-serif;
@@ -1644,13 +1819,14 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Nasalization";
+  font-family: "a_astro_spaceregular";
+  letter-spacing: 5px;
   font-size: 100px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff;
   line-height: 1;
-  margin-top: 55px;
+  margin-top: 45px;
   margin-bottom: 10px;
 }
 
@@ -1659,7 +1835,7 @@ h3 {
   color: rgb(202, 202, 202);
   line-height: 1;
   margin-top: 0px;
-  letter-spacing: 12px;
+  letter-spacing: 5px;
   margin-bottom: 50px;
 }
 
@@ -1707,6 +1883,7 @@ h3 {
 
 .slider_area .single_slider .slider_text .deadline {
   font-weight: 500;
+  /* font-family: 'a_astro_spaceregular'; */
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2217,7 +2394,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Nasalization";
+  font-family: "earth_orbiter_boldbold";
   position: relative;
   z-index: 9;
 }
@@ -2702,6 +2879,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #fff;
+  font-family: 'a_astro_spaceregular';
 }
 
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
@@ -4741,7 +4919,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.05);
   content: attr(data-bg-text);
   display: block;
-  font-family: "nasalization", sans-serif;
+  font-family: "earth_orbiter_boldbold", sans-serif;
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -4767,7 +4945,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "nasalization", sans-serif;
+  font-family: "earth_orbiter_boldbold", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4803,7 +4981,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "nasalization", sans-serif;
+  font-family: "earth_orbiter_boldbold", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4922,7 +5100,7 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "nasalization", sans-serif;
+  font-family: "a_astro_spaceregular", sans-serif;
   display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
@@ -5217,7 +5395,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "nasalization", sans-serif;
+  font-family: "a_astro_spaceregular", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5476,7 +5654,7 @@ hr.dashed {
 
 /* Event Countdown */
 .countdown {
-  font-family: "Nasalization", sans-serif !important;
+  font-family: "blankaregular", sans-serif !important;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5508,6 +5686,7 @@ hr.dashed {
   font-size: 0.32em;
   line-height: 40px;
   font-weight: 300;
+  font-family: "a_astro_spaceregular"
 }
 
 @media (min-width: 767px) {
