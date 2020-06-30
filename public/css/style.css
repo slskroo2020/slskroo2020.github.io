@@ -10,7 +10,7 @@
   }
 
 @font-face {
-  font-family: 'Voyager Heavy';
+  font-family: 'Starforge Regular';
   src: url('../fonts/voyager_heavy-webfont.woff2') format('woff2'),
         url('../fonts/voyager_heavy-webfont.woff') format('woff');
 }
@@ -105,7 +105,7 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'Voyager Heavy', sans-serif;
+  font-family: 'Starforge Regular', sans-serif;
   color: #001D38;
 }
 
@@ -1062,13 +1062,19 @@ h3 {
 }
 
 /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
-.header-area .main-header-area .logo-img {
+.header-area .main-header-area .log o-img {
   text-align: center;
 }
 
 .header-area .main-header-area .logo h2 {
   color: white;
-  font-family: "Voyager Light", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .header-area .main-header-area .logo {
+    margin-right: 30em;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1539,7 +1545,7 @@ h3 {
 
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 900px;
+  height: 1150px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1555,7 +1561,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 600px;
+    height: 800px;
   }
 }
 
@@ -1636,13 +1642,13 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Voyager Heavy";
+  font-family: "Starforge Regular";
   font-size: 100px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff;
   line-height: 1;
-  margin-top: 55px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -1672,6 +1678,7 @@ h3 {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 60px;
+    margin-top: 20px;
   }
   .slider_area .single_slider .slider_text .subheading {
     letter-spacing: 10px;
@@ -2209,7 +2216,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Voyager Heavy";
+  font-family: "Starforge Regular";
   position: relative;
   z-index: 9;
 }
@@ -4733,7 +4740,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.05);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -4759,7 +4766,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4795,7 +4802,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4914,7 +4921,7 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
@@ -5209,7 +5216,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5533,4 +5540,33 @@ hr.dashed {
 }
 .countdown #second:before {
   content: 'Seconds';
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  z-index: -2;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background-video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Mute Button */
+.mutebtn {
+  margin-bottom: 30px;
+  opacity: 0.3;
 }
