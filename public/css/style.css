@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 
 @font-face {
   font-family: 'Komorebi Regular';
-  font-style: normal;
-  font-weight: normal;
   src: local('Komorebi Regular'), url('../fonts/Komorebi-PersonalUse.woff') format('woff');
   }
+
+@font-face {
+  font-family: 'Voyager Heavy';
+  src: url('../fonts/voyager_heavy-webfont.woff2') format('woff2'),
+        url('../fonts/voyager_heavy-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Voyager Light';
+  src: url('../fonts/voyager_light-webfont.woff2') format('woff2'),
+        url('../fonts/voyager_light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Starforge Regular';
+  src: url('../fonts/Starforge-Regular.woff2') format('woff2'),
+        url('../fonts/Starforge-Regular.woff') format('woff');
+}
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
@@ -86,7 +105,7 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'Komorebi Regular', sans-serif;
+  font-family: 'Voyager Heavy', sans-serif;
   color: #001D38;
 }
 
@@ -1047,6 +1066,11 @@ h3 {
   text-align: center;
 }
 
+.header-area .main-header-area .logo h2 {
+  color: white;
+  font-family: "Voyager Light", sans-serif;
+}
+
 @media (max-width: 767px) {
   /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
@@ -1612,14 +1636,23 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Komorebi Regular";
+  font-family: "Voyager Heavy";
   font-size: 100px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff;
   line-height: 1;
   margin-top: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.slider_area .single_slider .slider_text .subheading {
+  font-weight: 400;
+  color: rgb(202, 202, 202);
+  line-height: 1;
+  margin-top: 0px;
+  letter-spacing: 12px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -1627,7 +1660,11 @@ h3 {
   .slider_area .single_slider .slider_text h3 {
     font-size: 50px;
     line-height: 1.2;
-    margin: 20px 0;
+    margin: 5px 0;
+  }
+  .slider_area .single_slider .slider_text .subheading {
+    letter-spacing: 4px;
+    font-size: 15px;
   }
 }
 
@@ -1635,6 +1672,10 @@ h3 {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 60px;
+  }
+  .slider_area .single_slider .slider_text .subheading {
+    letter-spacing: 10px;
+    font-size: 17px;
   }
 }
 
@@ -1648,12 +1689,16 @@ h3 {
 /* line 86, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text p {
   font-size: 22px;
-  font-weight: lighter;
+  font-weight: 100;
   letter-spacing: 2px;
   color: #FFF;
   margin-bottom: 34px;
   margin-top: 10px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.slider_area .single_slider .slider_text .deadline {
+  font-weight: 500;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2164,7 +2209,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Komorebi Regular";
+  font-family: "Voyager Heavy";
   position: relative;
   z-index: 9;
 }
@@ -2303,6 +2348,9 @@ h3 {
 .brand_area .brand_wrap {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 80px;
+}
+.brand_area .brand_wrap img {
+  max-height: 100px; /* Temporary Addition */
 }
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_map.scss */
@@ -4212,7 +4260,16 @@ h6 {
 
 /* Social Media Icons */
 .logo-sm {
-  font-size: 20px !important;
+  font-size: 30px !important;
+  color: white;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.logo-sm:hover {
+  color: #d66c44;
 }
 
 /* Current Page Nav Highlight */
@@ -4676,7 +4733,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.05);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi regular", sans-serif;
+  font-family: "Voyager Heavy", sans-serif;
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -4702,7 +4759,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi regular", sans-serif;
+  font-family: "Voyager Heavy", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4738,7 +4795,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi regular", sans-serif;
+  font-family: "Voyager Heavy", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4857,8 +4914,8 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "komorebi regular", sans-serif;
-  display: inline-block;
+  font-family: "Voyager Heavy", sans-serif;
+  display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
   background-color: rgba(0, 0, 0, 0.85);
@@ -4874,6 +4931,38 @@ hr.dashed {
   line-height: 0;
   animation: enter 2s;
   animation-timing-function: ease-out;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 30px;
+  background: #111;
+  border-radius: 13px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+#progress {
+  width: 0px;
+  height: 30px;
+  background: #d66c44;
+  border-radius: 13px;
+}
+
+#percent {
+  position: absolute;
+  left: 50%;
+  transform: translate(-15px,0);
+  color: #ffd2df;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+@media (min-width: 992px) {
+  .progress-bar {
+    width: 400px;
+  }
 }
 
 .loading .loading-img {
@@ -4964,7 +5053,7 @@ hr.dashed {
   }
 
   .wrap .text{
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -5120,7 +5209,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "komorebi regular", sans-serif;
+  font-family: "Voyager Heavy", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5332,4 +5421,116 @@ hr.dashed {
 
 .back-button.white:hover {
   color: #d66c44;
+}
+
+
+/* Flag Section */
+.flag-section {
+  padding: 90px 0 100px;
+}
+
+@media (max-width: 991px) {
+  .flag-section {
+    padding: 70px 0 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .flag-section {
+    padding: 80px 0 50px;
+  }
+}
+
+.flag-section img {
+  max-width: 100%;
+}
+
+.flag-section h4 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.flag-section p {
+  color: hsl(208, 8%, 40%)
+}
+
+.flag-section .btn_2 {
+  background-color: #191d34;
+  padding: 18px 60px;
+  border-radius: 50px;
+  margin-top: 0;
+}
+
+.flag-section .btn_2:hover {
+  background-color: #ff5e13;
+}
+
+
+/* Event Countdown */
+.countdown {
+  font-family: "Voyager Light", sans-serif !important;
+  color: #fff;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.countdown div {
+  position: relative;
+  width: 90px;
+  height: 80px;
+  line-height: 85px;
+  text-align: center;
+  background: #333333dd;
+  color: #fff;
+  margin: 0 5px;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.countdown div:before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #fde05bdd;
+  color: #333;
+  font-size: 0.32em;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (min-width: 767px) {
+  .countdown div {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+  }
+  
+  .countdown div:before {
+    left: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 0.32em;
+    line-height: 35px;
+    font-weight: 300;
+  }
+}
+
+.countdown #day:before {
+  content: 'Days';
+}
+.countdown #hour:before {
+  content: 'Hours';
+}
+.countdown #minute:before {
+  content: 'Minutes';
+}
+.countdown #second:before {
+  content: 'Seconds';
 }

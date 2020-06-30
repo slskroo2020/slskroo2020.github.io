@@ -13,16 +13,35 @@ $(window).on('scroll', function () {
 	}
 });
 
+// Loading bar
+var count = 4;
+
+function animate() {
+  if(count == 100){
+    $('.loading.text').text("Completed!");
+    clearInterval(loading);
+  } else {
+    count = count + 1;
+    $('#progress').width(count+'%');
+    $('#percent').text(count+'%');
+  }
+}
+
+var loading = setInterval(animate, 50);
+
+
+
+
 $(window).on('load', function() {
     var url = document.title;
     if (url=="Loading...") return;
-    // Call the intro animation only if page is freshly loaded OR not scrolled
-    if (performance.navigation.type == performance.navigation.TYPE_RELOAD || $(window).scrollTop() != 0) {
-      $('#cover').fadeOut(500);
-    } else {
-      // Intro Sequence
-      $('#cover').fadeOut(500);
-    }
+
+    // Intro Sequence
+    $('#progress').width('100%');
+    $('#percent').text('100%');
+    $('#loadingtext').text('Hyperdrive ready!');
+    clearInterval(loading);
+    $('#cover').fadeOut(500);
 });
 
 $(document).ready(function(){
@@ -98,16 +117,20 @@ if(brand_active.length){
             nav:false
         },
         767:{
-            items:3
+            // items:3
+            items:1
         },
         992:{
-            items:4
+            // items:4
+            items:1
         },
         1200:{
-            items:4
+            // items:4
+            items:1
         },
         1500:{
-            items:5
+            // items:5
+            items:1
         }
     }
   });
@@ -381,7 +404,7 @@ mailChimp();
         
 
 
-        const tilt = $('.js-tilt').tilt({
+      const tilt = $('.js-tilt').tilt({
           maxTilt:        20,
           // perspective:    10,   // Transform perspective, the lower the more extreme the tilt gets.
           // easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
@@ -446,6 +469,6 @@ $(function() {
     cursorwidth: 10,
     cursoropacitymin: 0.3,
     autohidemode: 'leave',
-    zindex: 10
+    zindex: 999
   });
 });

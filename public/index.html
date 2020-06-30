@@ -36,13 +36,16 @@
         <div id="spacebg3" class="space"></div> -->
         <div class="wrap">
             <div class="loading text-center">
-                <div class="rocket-container text-center">
+                <!-- <div class="rocket-container text-center">
                     <img class="loading-img" src="img/loading/rocket.png" alt=""><br>
                     <img id="rocket-1" class="loading-img bottom-rocket" src="img/loading/rocket1.png" alt=""><br>
                     <img id="rocket-2" class="loading-img bottom-rocket" src="img/loading/rocket2.png" alt=""><br>
                     <img id="rocket-3" class="loading-img bottom-rocket" src="img/loading/rocket3.png" alt=""><br>
+                </div> -->
+                <div class="progress-bar">
+                    <div id="progress"><span id="percent"></span></div>
                 </div>
-                <div class="text">loading...</div>
+                <div id="loadingtext" class="text">Hyperdrive charging...</div>
             </div>
         </div>
     </div>
@@ -61,14 +64,14 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img class="header-logo" src="img/logo.png" alt="">
+                                        <h2>TWW2020</h2>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-8">
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
-                                        <ul id="navigation">
+                                        <!-- <ul id="navigation">
                                             <li><a href="index.html" class="current">Home</a></li
                                             ><li><a href="#/" class="dropdowner">Missions <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
@@ -89,20 +92,23 @@
                                             ><li><a href="gallery.html">Gallery</a></li
                                             ><li><a href="contact.html">Contact</a></li
                                             ><li><a class="d-block" href="https://www.instagram.com/tembusucollege" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                                        </ul> -->
+                                        <ul id="navigation">
+                                            <li><a href="index.html" class="active">Home</a></li
+                                            ><li><a href="flag.html">Flag</a></li
+                                            ><li><a href="contact.html">Contact</a></li
+                                            ><li class="d-lg-none"><a href="https://www.instagram.com/tembulletin" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                                 <div class="buy_tkt">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a href="#/">Sign Up Now</a>
+                                    <div class="col-xl-2 col-lg-2 d-none d-lg-block text-right">
+                                        <a class="d-block" href="https://www.instagram.com/tembulletin" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-lg logo-sm"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-2 col-lg-2 d-none d-lg-block text-right">
-                                <a class="d-block" href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-lg logo-sm"></i></a>
-                            </div> -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
@@ -122,16 +128,20 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
-                            <div class="shape_1 wow fadeInUp rellax-faster" data-wow-duration="1s" data-wow-delay=".2s">
-                                <img src="img/shape/shape_1.svg" alt="">
-                            </div>
-                            <div class="shape_2 wow fadeInDown rellax-faster" data-wow-duration="1s" data-wow-delay=".2s">
-                                <img src="img/shape/shape_2.svg" alt="">
-                            </div>
                             <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">2 - 5 AUGUST 2020</span>
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">New Beginnings</h3>
-                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">SIGN UPS NOW OPEN</p>
-                            <a href="#/" class="boxed-btn3 wow fadeInUp mt-2" data-wow-duration="4s" data-wow-delay=".6s">Sign Up Now</a>
+                            <p class="subheading wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Tembusu Welcome Week 2020</p>
+                            <p class="deadline wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">SIGN-UPS NOW OPEN TILL (DEADLINE)</p>
+                            <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                                <div class = "countdown justify-content-center">
+                                    <div id="day"></div>
+                                    <div id="hour"></div>
+                                    <div id="minute"></div>
+                                    <div id="second"></div>
+                                </div>
+                            </div>
+                            <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Check your email for the sign-up form!</p>
+                            <!-- <a href="#/" class="boxed-btn3 wow fadeInUp mt-2" data-wow-duration="4s" data-wow-delay=".6s">Sign Up Now</a> -->
                         </div>
                     </div>
                 </div>
@@ -154,27 +164,31 @@
                         <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >Story</h3>
                         <hr class="divider light my-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".35s">
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s" >
-                            You take a step out of the metallic debris around you, dazed. 
-                            The last thing you remember are the blaring alarms from within your landing pod before you passed out from the oxygen deprivation. 
-                            You wince a little as your grazed feet meet the hard gravel-like ground. It’s a miracle you survived the crash.
+                            You take a step out of the landing capsule, awestruck. 
+                        </p><br>
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s" >
+                            Beams of moonlight stream through rustling leaves above you like a scene from a movie as the sound of what seems to be crickets permeates the silent night.
+                            Fresh air fills your lungs as you take in a deep breath, and the wind gently kisses you on the cheek as it passes.
+                            It's been some time since you've set foot on a living planet, let alone one as beautiful as this.
                         </p><br>
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
                             Suddenly - something catches your eye. Beyond a small hill, you see billows of smoke and the glow of a fire warming the horizon. 
                             After an arduous trek to the top, you are greeted with an impressive sight.
                         </p><br>
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
-                            A huge tower looms over a lush valley of green littered with small groups of people surrounding campfires - 
-                            survivors from your ship covered in blankets and… others? 
-                            A cheery man sees you and gestures you to join them, to which you apprehensively do so. 
-                            He offers you a bowl of soup and covers you with a blanket, and a nurse checks you for any severe injuries. 
+                            A huge tower looms over a lush valley of green littered with small groups of people surrounding campfires.
+                            People are scurrying about, seeming to be preparing for something, but what?
                         </p><br>
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
-                            He tells you that their community is made up of people from everywhere in the universe. 
-                            They’d all come to this planet for various reasons over the past eleven years, 
-                            from accidental crash-landings to seeking a new life, and your shipwreck has brought the latest batch of newcomers. 
-                            As you struggle to process all this information, he laughs heartily at your confused face, pats you on the back, and bellows with a warm smile:
+                            As you approach the community, a cheery man notices you and gestures you to join his group.
+                            Over a crackling campfire, he tells you that their community is made up of explorers from all over the universe, all attracted like flies to this planet.
+                            Some come seeking a new life while others come to discover new lands - everyone has their unique backstory. Soon, they'll all be embarking on a great expedition together.
                         </p><br>
-                        <h4 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">"Welcome to Tembusu, my friend!</h4>
+                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
+                            The man remarks that their group still has space for one more for the adventure.
+                            With a big grin spread across his face, he turns to you and asks,
+                        </p><br>
+                        <h4 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">"Care to join us?"</h4>
                     </div>
                 </div>
             </div>
@@ -208,9 +222,9 @@
                             Therefore, through this Welcome Week, we wish to inspire students to chart their own journey and create their own legacy.
                         </p><br>
                         <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">
-                            ... Care to join us?
+                            Are you ready?
                         </p>
-                        <a href="#expeditionmap" class="boxed-btn3 mt-5 wow fadeInLeft js-scroll-trigger" data-wow-duration="1s" data-wow-delay=".7s">Begin Your Expedition</a>
+                        <a href="#signupfooter" class="boxed-btn3 mt-5 wow fadeInLeft js-scroll-trigger" data-wow-duration="1s" data-wow-delay=".7s">Join The Expedition</a>
                     </div>
                 </div>
             </div>
@@ -222,7 +236,7 @@
     </svg>
 
     <!-- expedition_area_start -->
-    <div class="program_details_area details_bg_1 overlay2" id="expeditionmap">
+    <!-- <div class="program_details_area details_bg_1 overlay2" id="expeditionmap">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -242,10 +256,6 @@
                                     <p class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Access the programme timetable, points tracker, and the tCanvas here</p>
                                     <a href="headquarters.html" class="genric-btn primary radius mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Access HQ</a>
                                 </div>
-                                <!-- <div class="thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                    <img src="img/program_details/1.png" alt="">
-                                </div>
-                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
                             </div>
                         </div>
                         <div class="single_propram mt-3">
@@ -282,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- expedition_area_end -->
 
     <!-- brand_area_start  -->
@@ -298,9 +308,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="brand_wrap">
-                        <div class="brand_active owl-carousel">
+                        <div class="sponsor text-center">
+                            <img src="img/brand/1.png" alt="I'm Kim">
+                        </div>
+                        <!-- <div class="brand_active owl-carousel">
                             <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
+                                <img src="img/brand/1.png" alt="I'm Kim">
                             </div>
                             <div class="single_brand text-center">
                                 <img src="img/brand/2.png" alt="">
@@ -314,13 +327,7 @@
                             <div class="single_brand text-center">
                                 <img src="img/brand/5.png" alt="">
                             </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -328,17 +335,17 @@
     </div>
     <!-- brand_area_end  -->
     <!-- footer_start  -->
-    <footer class="footer">
+    <footer id="signupfooter" class="footer">
         <div class="footer_top">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
                         <div class="footer_widget">
                             <div class="address_details text-center">
-                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">2 - 5 AUG 2020</h4>
+                                <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">2 - 5 August 2020</h4>
                                 <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">TEMBUSU WELCOME WEEK 2020</h3>
-                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">SIGN UPS OPEN TILL (DATE).</p>
-                                <a href="#/" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Sign Up Now</a>
+                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Sign-ups close on (deadline)</p>
+                                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Check your email for the sign-up form!</p>
                             </div>
                         </div>
                     </div>
@@ -391,6 +398,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
+
+    <!-- countdown js -->
+    <script src="js/countdown.js"></script>
 
     <script src="js/main.js"></script>
 </body>

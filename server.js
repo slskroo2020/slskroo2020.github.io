@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const express = require('express')
 , app = express()
-, server = require('https').createServer(app)
+, server = require('http').createServer(app)
 , port = process.env.PORT || 3000
 , path = require('path')
 , socketio = require('socket.io')
@@ -26,7 +26,6 @@ app.get('/*', function (req, res) {
 
 server.listen(port, function(){
     console.log (`Server listening on port ${port}.`);
-    // console.log (path.join(__dirname, 'public'));
 });
 
 socketio.listen(server).on('connection', function (socket) {
