@@ -26,6 +26,17 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <!-- FontAwesome Latest -->
+    <script src="https://kit.fontawesome.com/871251b055.js" crossorigin="anonymous"></script>
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:site_name" content="TWW2020: New Beginnings"/>
+    <meta property="og:title" content="Tembusu Welcome Week 2020: New Beginnings"/>
+    <meta property="og:description" content="Sign-ups now open!"/>
+    <meta property="og:image" content="https://tww2020.site/img/opengraph.jpg" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://tww2020.site/">
 </head>
 
 <body>
@@ -104,7 +115,7 @@
                             </div>
                             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                                 <div class="buy_tkt">
-                                    <div class="col-xl-2 col-lg-2 d-none d-lg-block text-right">
+                                    <div class="col-xl-1 col-lg-1 d-none d-lg-block text-right">
                                         <a class="d-block" href="https://www.instagram.com/tembulletin" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-lg logo-sm"></i></a>
                                     </div>
                                 </div>
@@ -124,11 +135,21 @@
     <!-- slider_area_start -->
     <div class="slider_area">
         <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-            <div class="container rellax-fast">
+            <div class="background-video">
+                <video id="videobackground" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="img/banner/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <audio id="bgaudio" loop>
+                <source src="audio/background.mp3" type="audio/mpeg">
+            </audio>
+            </audio>
+            <div class="container rellax-t">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-12">
                         <div class="slider_text text-center">
-                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">2 - 5 AUGUST</span>
+                            <a class="d-block mutebtn" href="#/"><i class="muteicon fas fa-volume-mute fa-lg logo-sm"></i></a>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">2 - 5 AUGUST 2020</span>
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">New Beginnings</h3>
                             <p class="subheading wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Tembusu Welcome Week 2020</p>
                             <p class="deadline wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">SIGN-UPS NOW OPEN TILL (DEADLINE) VIA FORM SENT OUT IN EMAIL!</p>
@@ -401,6 +422,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- countdown js -->
     <script src="js/countdown.js"></script>
+
+    <!-- background audio js -->
+    <script src="js/bgaudio.js"></script>
 
     <script src="js/main.js"></script>
 </body>

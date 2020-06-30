@@ -23,8 +23,31 @@
 
 @font-face {
   font-family: 'Starforge Regular';
-  src: url('../fonts/Starforge-Regular.woff2') format('woff2'),
-        url('../fonts/Starforge-Regular.woff') format('woff');
+  src: url('../fonts/Starforge-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'EOTG Regular';
+  src: url('../fonts/edgeofthegalaxy-regular.woff2') format('woff2'),
+        url('../fonts/edgeofthegalaxy-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EOTG Italic';
+  src: url('../fonts/edgeofthegalaxy-italic.woff2') format('woff2'),
+        url('../fonts/edgeofthegalaxy-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EOTG Poster';
+  src: url('../fonts/edgeofthegalaxy-poster.woff2') format('woff2'),
+        url('../fonts/edgeofthegalaxy-poster.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'EOTG Poster Italic';
+  src: url('../fonts/edgeofthegalaxy-posteritalic.woff2') format('woff2'),
+        url('../fonts/edgeofthegalaxy-posteritalic.woff') format('woff');
 }
 
 @font-face {
@@ -285,8 +308,8 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'a_astro_spaceregular';
-  /* sans-serif */
+  font-family: 'EOTG Regular', sans-serif;
+  letter-spacing: 1px;
   color: #001D38;
 }
 
@@ -1247,14 +1270,19 @@ h3 {
 }
 
 /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
-.header-area .main-header-area .logo-img {
+.header-area .main-header-area .log o-img {
   text-align: center;
 }
 
 .header-area .main-header-area .logo h2 {
   color: white;
-  font-family: "komorebi";
-  font-size: 23px;
+  font-family: "EOTG Regular", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .header-area .main-header-area .logo {
+    margin-right: 30em;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1725,7 +1753,7 @@ h3 {
 
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 900px;
+  height: 1150px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1741,7 +1769,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 600px;
+    height: 800px;
   }
 }
 
@@ -1824,12 +1852,12 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   font-family: "starforge regular";
   letter-spacing: 5px;
-  font-size: 100px;
+  font-size: 90px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff;
   line-height: 1;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 10px;
 }
 
@@ -1859,6 +1887,7 @@ h3 {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 60px;
+    margin-top: 20px;
   }
   .slider_area .single_slider .slider_text .subheading {
     letter-spacing: 10px;
@@ -1869,7 +1898,7 @@ h3 {
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -2194,7 +2223,7 @@ h3 {
 
 @media (min-width: 992px) {
   .about_area h3 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
@@ -2397,7 +2426,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "starforge regular";
+  font-family: "Starforge Regular";
   position: relative;
   z-index: 9;
 }
@@ -2880,6 +2909,8 @@ h3 {
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
   font-size: 33px;
+  font-family: 'EOTG Regular', sans-serif;
+  letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
   font-family: 'starforge regular';
@@ -2969,6 +3000,7 @@ h3 {
 /* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .contact-title {
   font-size: 27px;
+  font-family: "Starforge Regular", sans-serif;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -4919,27 +4951,32 @@ hr.dashed {
 }
 
 .bg-text::after {
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.02);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi", sans-serif;
-  font-size: 300px;
+  font-family: "EOTG Regular", sans-serif;
+  font-size: 500px;
   line-height: 0.5;
   position: absolute;
-  top: 0;
-  left: -30vw;
+  top: -20px;
+  left: 0vw;
   z-index: -1;
+  writing-mode: vertical-rl;
 }
 
 @media (min-width:768px) {
   .bg-text::after {
-    font-size: 400px;
+    top: 110px;
+    left: -10vw;
+    font-size: 500px;
+    writing-mode: horizontal-tb;
   }
 }
 
 @media (min-width:992px) {
   .bg-text::after {
-    font-size: 500px;
+    top: 160px;
+    font-size: 700px;
   }
 }
 
@@ -4948,7 +4985,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi", sans-serif;
+  font-family: "EOTG Regular", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4984,7 +5021,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "komorebi", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -5035,7 +5072,7 @@ hr.dashed {
 
 @media (min-width: 992px) {
   .story_area h3 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
@@ -5103,7 +5140,7 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "starforge regular", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
@@ -5398,7 +5435,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "starforge regular", sans-serif;
+  font-family: "Starforge Regular", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5657,7 +5694,7 @@ hr.dashed {
 
 /* Event Countdown */
 .countdown {
-  font-family: "blankaregular", sans-serif !important;
+  font-family: "Starforge Regular", sans-serif !important;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5723,4 +5760,33 @@ hr.dashed {
 }
 .countdown #second:before {
   content: 'Seconds';
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  z-index: -2;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.background-video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Mute Button */
+.mutebtn {
+  margin-bottom: 30px;
+  opacity: 0.3;
 }
