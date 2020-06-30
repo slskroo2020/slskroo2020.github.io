@@ -27,6 +27,12 @@
         url('../fonts/Starforge-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Nasalization';
+  src: url('../fonts/nasalization-free.regular-webfont.woff2') format('woff2'),
+        url('../fonts/nasalization-free.regular-webfont.woff') format('woff');
+}
+
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -105,7 +111,7 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'Voyager Heavy', sans-serif;
+  font-family: 'Nasalization', sans-serif;
   color: #001D38;
 }
 
@@ -228,8 +234,10 @@ h3 {
   background: #000000;
 }
 
+/* best2bb473a */
+/* 2b84336 */
 .red_bg {
-  background: 	#4A746A;
+  background: 	#25392F;
 }
 
 .dark_bg {
@@ -500,7 +508,7 @@ h3 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: #bc5029;
+  background: #C85930;
   z-index: 99;
   width: 40px;
   height: 40px;
@@ -525,25 +533,25 @@ h3 {
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn {
   background: #fff;
-  color: #bc5029;
+  color: #C85930;
   display: inline-block;
   padding: 12px 44px;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #bc5029;
+  border: 1px solid #C85930;
   text-align: center;
-  color: #bc5029 !important;
+  color: #C85930 !important;
   text-transform: capitalize;
   cursor: pointer;
 }
 
 /* line 15, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #bc5029;
+  background: #C85930;
   color: #fff !important;
-  border: 1px solid #bc5029;
+  border: 1px solid #C85930;
 }
 
 /* line 20, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -558,7 +566,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn3 {
-  background: #bc5029;
+  background: #C85930;
   /* IE6-9 */
   color: #fff;
   display: inline-block;
@@ -586,8 +594,8 @@ h3 {
 .boxed-btn3:hover {
   background: transparent;
   /* IE6-9 */
-  color: #bc5029 !important;
-  border: 1px solid #bc5029;
+  color: #C85930 !important;
+  border: 1px solid #C85930;
 }
 
 /* line 51, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -839,7 +847,7 @@ h3 {
 .section_title h4 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 0;
 }
@@ -905,12 +913,12 @@ h3 {
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 @media (max-width: 767px) {
@@ -1181,7 +1189,7 @@ h3 {
 
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
-  background: #bc5029;
+  background: #C85930;
   font-family: 'Quicksand', sans-serif;
   padding: 12px 25px;
   font-size: 16px;
@@ -1203,8 +1211,8 @@ h3 {
 
 /* line 113, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a:hover {
-  border-color: #bc5029;
-  color: #bc5029;
+  border-color: #C85930;
+  color: #C85930;
   background: transparent;
 }
 
@@ -1284,7 +1292,7 @@ h3 {
 
 /* line 185, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 187, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1295,7 +1303,7 @@ h3 {
 
 /* line 192, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 196, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1341,7 +1349,7 @@ h3 {
 
 /* line 221, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 226, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1444,7 +1452,7 @@ h3 {
 
 /* line 291, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .social_media_links a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 297, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1489,7 +1497,7 @@ h3 {
 
 /* line 321, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .short_contact_list ul li a i {
-  color: #d66c44;
+  color: #C85930;
   margin-right: 7px;
 }
 
@@ -1622,7 +1630,7 @@ h3 {
   font-size: 23px;
   font-weight: 200;
   letter-spacing: 2px;
-  /* color: #d66c44; */
+  /* color: #C85930; */
   color: #c9c9c9;
   font-family: 'Quicksand', sans-serif;
 }
@@ -1636,7 +1644,7 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Voyager Heavy";
+  font-family: "Nasalization";
   font-size: 100px;
   text-transform: uppercase;
   font-weight: 400;
@@ -2076,7 +2084,7 @@ h3 {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 54, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
@@ -2209,7 +2217,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Voyager Heavy";
+  font-family: "Nasalization";
   position: relative;
   z-index: 9;
 }
@@ -2327,7 +2335,7 @@ h3 {
 
 /* line 37, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading span {
-  color: #d66c44;
+  color: #C85930;
   font-weight: 400;
   font-size: 20px;
 }
@@ -2390,7 +2398,7 @@ h3 {
 .map_area .location_information h3 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   margin-bottom: 20px;
 }
 
@@ -2625,7 +2633,7 @@ h3 {
 
 /* line 90, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .program_details_area .program_detail_wrap .single_propram .porgram_top span {
-  color: #d66c44;
+  color: #C85930;
   font-size: 30px;
   font-family: 'Quicksand', sans-serif;
   display: block;
@@ -2685,7 +2693,7 @@ h3 {
 .footer .footer_top .footer_widget h4 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   margin-bottom: 24px;
 }
 
@@ -2725,7 +2733,7 @@ h3 {
 
 /* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .copy-right_text .copy_right a {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /*=================== contact banner start ====================*/
@@ -3089,25 +3097,25 @@ h6 {
 
 .genric-btn.primary {
   color: #fff;
-  background: #bc5029;
+  background: #C85930;
   border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-  color: #bc5029;
-  border: 1px solid #bc5029;
+  color: #C85930;
+  border: 1px solid #C85930;
   background: #fff;
 }
 
 .genric-btn.primary-border {
-  color: #bc5029;
-  border: 1px solid #bc5029;
+  color: #C85930;
+  border: 1px solid #C85930;
   background: #fff;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #bc5029;
+  background: #C85930;
   border: 1px solid transparent;
 }
 
@@ -3137,25 +3145,25 @@ h6 {
 
 .genric-btn.tertiary {
   color: #fff;
-  background: #4a746a;
+  background: #25392F;
   border: 1px solid transparent;
 }
 
 .genric-btn.tertiary:hover {
-  color: #4a746a;
-  border: 1px solid #4a746a;
+  color: #25392F;
+  border: 1px solid #25392F;
   background: #fff;
 }
 
 .genric-btn.tertiary-border {
-  color: #4a746a;
-  border: 1px solid #4a746a;
+  color: #25392F;
+  border: 1px solid #25392F;
   background: #fff;
 }
 
 .genric-btn.tertiary-border:hover {
   color: #fff;
-  background: #4a746a;
+  background: #25392F;
   border: 1px solid transparent;
 }
 
@@ -4269,12 +4277,12 @@ h6 {
 }
 
 .logo-sm:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* Current Page Nav Highlight */
 .current {
-  color: #d66c44 !important;
+  color: #C85930 !important;
 }
 
 /* Divider */
@@ -4327,7 +4335,7 @@ hr.dashed {
   border-top: 1px solid #f9f9ff !important;
   border-right: 1px solid #f9f9ff !important;
   border-left: 1px solid #f9f9ff !important;
-  background: #D66C44 !important;
+  background: #C85930 !important;
 }
 
 /* Carousel Customisations */
@@ -4487,7 +4495,7 @@ hr.dashed {
 }
 
 .missions_area .mission .mission_heading span {
-  color: #d66c44;
+  color: #C85930;
   font-weight: 400;
   font-size: 20px;
 }
@@ -4577,7 +4585,7 @@ hr.dashed {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
 }
 
 .programmes_area .programmes_info p {
@@ -4733,7 +4741,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.05);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "nasalization", sans-serif;
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -4759,7 +4767,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "nasalization", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4795,7 +4803,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "nasalization", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4864,14 +4872,14 @@ hr.dashed {
   display: block;
   width: 100%;
   height: 90px;
-  background: #4A746A;
+  background: #25392F;
 }
 
 .diagonal-divider-2 {
   display: block;
   width: 100%;
   height: 90px;
-  background: #4A746A;
+  background: #25392F;
 }
 
 
@@ -4914,7 +4922,7 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "nasalization", sans-serif;
   display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
@@ -4945,7 +4953,7 @@ hr.dashed {
 #progress {
   width: 0px;
   height: 30px;
-  background: #d66c44;
+  background: #C85930;
   border-radius: 13px;
 }
 
@@ -5179,7 +5187,7 @@ hr.dashed {
 }
 
 .ig-navbar ul li a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 .ig-navbar ul li a.active::before {
@@ -5188,7 +5196,7 @@ hr.dashed {
 }
 
 .ig-navbar ul li a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* Interest Groups Grids */
@@ -5209,7 +5217,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "Voyager Heavy", sans-serif;
+  font-family: "nasalization", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5420,7 +5428,7 @@ hr.dashed {
 }
 
 .back-button.white:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 
@@ -5468,7 +5476,7 @@ hr.dashed {
 
 /* Event Countdown */
 .countdown {
-  font-family: "Voyager Light", sans-serif !important;
+  font-family: "Nasalization", sans-serif !important;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5491,14 +5499,14 @@ hr.dashed {
 .countdown div:before {
   content: '';
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   left: 0;
   width: 100%;
   height: 40px;
-  background: #fde05bdd;
+  background: #F3845A;
   color: #333;
   font-size: 0.32em;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: 300;
 }
 
