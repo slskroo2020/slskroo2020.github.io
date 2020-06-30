@@ -411,8 +411,10 @@ h3 {
 
 /* best2bb473a */
 /* 2b84336 */
+/* 2b5392F */
+/* 2b64339 */
 .red_bg {
-  background: 	#25392F;
+  background: 	#346452;
 }
 
 .dark_bg {
@@ -1251,7 +1253,8 @@ h3 {
 
 .header-area .main-header-area .logo h2 {
   color: white;
-  font-family: "komorebi", sans-serif;
+  font-family: "komorebi";
+  font-size: 23px;
 }
 
 @media (max-width: 767px) {
@@ -1819,7 +1822,7 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "a_astro_spaceregular";
+  font-family: "starforge regular";
   letter-spacing: 5px;
   font-size: 100px;
   text-transform: uppercase;
@@ -1883,7 +1886,7 @@ h3 {
 
 .slider_area .single_slider .slider_text .deadline {
   font-weight: 500;
-  /* font-family: 'a_astro_spaceregular'; */
+  font-size: 18px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2394,7 +2397,7 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "earth_orbiter_boldbold";
+  font-family: "starforge regular";
   position: relative;
   z-index: 9;
 }
@@ -2876,10 +2879,10 @@ h3 {
 
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 400;
   color: #fff;
-  font-family: 'a_astro_spaceregular';
+  font-family: 'starforge regular';
 }
 
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
@@ -3323,25 +3326,25 @@ h6 {
 
 .genric-btn.tertiary {
   color: #fff;
-  background: #25392F;
+  background: #346452;
   border: 1px solid transparent;
 }
 
 .genric-btn.tertiary:hover {
-  color: #25392F;
-  border: 1px solid #25392F;
+  color: #346452;
+  border: 1px solid #346452;
   background: #fff;
 }
 
 .genric-btn.tertiary-border {
-  color: #25392F;
-  border: 1px solid #25392F;
+  color: #346452;
+  border: 1px solid #346452;
   background: #fff;
 }
 
 .genric-btn.tertiary-border:hover {
   color: #fff;
-  background: #25392F;
+  background: #346452;
   border: 1px solid transparent;
 }
 
@@ -4919,7 +4922,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.05);
   content: attr(data-bg-text);
   display: block;
-  font-family: "earth_orbiter_boldbold", sans-serif;
+  font-family: "komorebi", sans-serif;
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -4945,7 +4948,7 @@ hr.dashed {
   color: rgba(255, 255, 255, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "earth_orbiter_boldbold", sans-serif;
+  font-family: "komorebi", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -4981,7 +4984,7 @@ hr.dashed {
   color: rgba(0, 0, 0, 0.09);
   content: attr(data-bg-text);
   display: block;
-  font-family: "earth_orbiter_boldbold", sans-serif;
+  font-family: "komorebi", sans-serif;
   font-size: 400px;
   line-height: 0.6;
   position: absolute;
@@ -5050,14 +5053,14 @@ hr.dashed {
   display: block;
   width: 100%;
   height: 90px;
-  background: #25392F;
+  background: #346452;
 }
 
 .diagonal-divider-2 {
   display: block;
   width: 100%;
   height: 90px;
-  background: #25392F;
+  background: #346452;
 }
 
 
@@ -5100,7 +5103,7 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "a_astro_spaceregular", sans-serif;
+  font-family: "starforge regular", sans-serif;
   display: inline-block;fwrap
   font-size: 25px;
   margin-left: 5px;
@@ -5395,7 +5398,7 @@ hr.dashed {
 
 .ig-container .ig-item h4 {
   color: rgb(0, 0, 0);
-  font-family: "a_astro_spaceregular", sans-serif;
+  font-family: "starforge regular", sans-serif;
   font-weight: 700 !important;
   font-size: 22px;
   margin-bottom: 0.3em;
@@ -5686,7 +5689,7 @@ hr.dashed {
   font-size: 0.32em;
   line-height: 40px;
   font-weight: 300;
-  font-family: "a_astro_spaceregular"
+  font-family: "starforge regular"
 }
 
 @media (min-width: 767px) {
@@ -5704,7 +5707,7 @@ hr.dashed {
     width: 100%;
     height: 50px;
     font-size: 0.32em;
-    line-height: 35px;
+    line-height: 50px;
     font-weight: 300;
   }
 }
