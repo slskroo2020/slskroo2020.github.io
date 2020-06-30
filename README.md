@@ -1,5 +1,6 @@
 # slswebsite
-TWW2020 Student Life Showcase
+TWW2020 Website Prototype
+https://tww2020prototype.herokuapp.com/
 
 ## READ ME:
 **We'll be using the Forking workflow, so avoid pushing directly to the master repo. Guide here:

@@ -50,6 +50,186 @@
         url('../fonts/edgeofthegalaxy-posteritalic.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Nasalization';
+  src: url('../fonts/nasalization-free.regular-webfont.woff2') format('woff2'),
+        url('../fonts/nasalization-free.regular-webfont.woff') format('woff');
+}
+
+/* TESTING FONTS */
+
+@font-face {
+  /* nice!! */
+  font-family: 'a_astro_spaceregular';
+  src: url('../fonts/astrospace-0wl3o-webfont.woff2') format('woff2'),
+       url('../fonts/astrospace-0wl3o-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* barons are naw */
+@font-face {
+  font-family: 'baron_neuebold';
+  src: url('../fonts/baronneue-bold-webfont.woff2') format('woff2'),
+       url('../fonts/baronneue-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'baron_neueregular';
+  src: url('../fonts/baronneue-regular-webfont.woff2') format('woff2'),
+       url('../fonts/baronneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* too funky but kinda like it for the countdown + logo */
+@font-face {
+  font-family: 'blankaregular';
+  src: url('../fonts/blanka-regular-webfont.woff2') format('woff2'),
+       url('../fonts/blanka-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* boring */
+@font-face {
+  font-family: 'dual300';
+  src: url('../fonts/dual-300-webfont.woff2') format('woff2'),
+       url('../fonts/dual-300-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* look at orbiterregular */
+@font-face {
+  font-family: 'earth_orbiter_titleregular';
+  src: url('../fonts/earthorbitertitle-ezdo-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbitertitle-ezdo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* hmmmmm */
+@font-face {
+  font-family: 'earth_orbiterregular';
+  src: url('../fonts/earthorbiter-yz12-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiter-yz12-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* p nice */
+@font-face {
+  font-family: 'earth_orbiter_3dregular';
+  src: url('../fonts/earthorbiter3d-r6ob-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiter3d-r6ob-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* nawwww */
+@font-face {
+  font-family: 'earth_orbiter_academyregular';
+  src: url('../fonts/earthorbiteracademy-kmgx-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiteracademy-kmgx-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* similar to but nicer than regular i think */
+@font-face {
+  font-family: 'earth_orbiter_boldbold';
+  src: url('../fonts/earthorbiterbold-vzd9-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiterbold-vzd9-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* a bit too much */
+@font-face {
+  font-family: 'earth_orbiter_deep_3dregular';
+  src: url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff2') format('woff2'),
+       url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* NAWWW */
+@font-face {
+  font-family: 'future_techno_italicregular';
+  src: url('../fonts/futuretechnoitalic-x3epj-webfont.woff2') format('woff2'),
+       url('../fonts/futuretechnoitalic-x3epj-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* nope :( cool font though */
+@font-face {
+  font-family: 'mandaloreregular';
+  src: url('../fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
+       url('../fonts/mandalore-k77ld-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* ehhh :( */
+@font-face {
+  font-family: 'mandalore_titleregular';
+  src: url('../fonts/mandaloretitle-lggae-webfont.woff2') format('woff2'),
+       url('../fonts/mandaloretitle-lggae-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* not bad */
+@font-face {
+  font-family: 'mandalore_3dregular';
+  src: url('../fonts/mandalore3d-8mm0b-webfont.woff2') format('woff2'),
+       url('../fonts/mandalore3d-8mm0b-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* too boring for title font but can be used with quicksand */
+@font-face {
+  font-family: 'exanregular';
+  src: url('../fonts/exan-regular-webfont.woff2') format('woff2'),
+       url('../fonts/exan-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* p good for 'NEW BEGINNINGS' and 'TEMBUSU WELCOME WEEK 2020' at the bottom */
+@font-face {
+  font-family: 'potralight';
+  src: url('../fonts/potra-webfont.woff2') format('woff2'),
+       url('../fonts/potra-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* END TESTING FONTS */
+
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -252,8 +432,12 @@ h3 {
   background: #000000;
 }
 
+/* best2bb473a */
+/* 2b84336 */
+/* 2b5392F */
+/* 2b64339 */
 .red_bg {
-  background: 	#4A746A;
+  background: 	#346452;
 }
 
 .dark_bg {
@@ -524,7 +708,7 @@ h3 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: #bc5029;
+  background: #C85930;
   z-index: 99;
   width: 40px;
   height: 40px;
@@ -549,25 +733,25 @@ h3 {
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn {
   background: #fff;
-  color: #bc5029;
+  color: #C85930;
   display: inline-block;
   padding: 12px 44px;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #bc5029;
+  border: 1px solid #C85930;
   text-align: center;
-  color: #bc5029 !important;
+  color: #C85930 !important;
   text-transform: capitalize;
   cursor: pointer;
 }
 
 /* line 15, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #bc5029;
+  background: #C85930;
   color: #fff !important;
-  border: 1px solid #bc5029;
+  border: 1px solid #C85930;
 }
 
 /* line 20, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -582,7 +766,7 @@ h3 {
 
 /* line 27, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn3 {
-  background: #bc5029;
+  background: #C85930;
   /* IE6-9 */
   color: #fff;
   display: inline-block;
@@ -610,8 +794,8 @@ h3 {
 .boxed-btn3:hover {
   background: transparent;
   /* IE6-9 */
-  color: #bc5029 !important;
-  border: 1px solid #bc5029;
+  color: #C85930 !important;
+  border: 1px solid #C85930;
 }
 
 /* line 51, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
@@ -863,7 +1047,7 @@ h3 {
 .section_title h4 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 0;
 }
@@ -929,12 +1113,12 @@ h3 {
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 32, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 @media (max-width: 767px) {
@@ -1211,7 +1395,7 @@ h3 {
 
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
-  background: #bc5029;
+  background: #C85930;
   font-family: 'Quicksand', sans-serif;
   padding: 12px 25px;
   font-size: 16px;
@@ -1233,8 +1417,8 @@ h3 {
 
 /* line 113, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a:hover {
-  border-color: #bc5029;
-  color: #bc5029;
+  border-color: #C85930;
+  color: #C85930;
   background: transparent;
 }
 
@@ -1314,7 +1498,7 @@ h3 {
 
 /* line 185, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 187, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1325,7 +1509,7 @@ h3 {
 
 /* line 192, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 196, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1371,7 +1555,7 @@ h3 {
 
 /* line 221, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 226, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1474,7 +1658,7 @@ h3 {
 
 /* line 291, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .social_media_links a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 297, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
@@ -1519,7 +1703,7 @@ h3 {
 
 /* line 321, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .header-top_area .short_contact_list ul li a i {
-  color: #d66c44;
+  color: #C85930;
   margin-right: 7px;
 }
 
@@ -1649,10 +1833,10 @@ h3 {
 
 /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text span {
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 200;
-  letter-spacing: 2px;
-  /* color: #d66c44; */
+  letter-spacing: 3px;
+  /* color: #C85930; */
   color: #c9c9c9;
   font-family: 'Quicksand', sans-serif;
 }
@@ -1666,7 +1850,8 @@ h3 {
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "Starforge Regular";
+  font-family: "starforge regular";
+  letter-spacing: 5px;
   font-size: 90px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1681,7 +1866,7 @@ h3 {
   color: rgb(202, 202, 202);
   line-height: 1;
   margin-top: 0px;
-  letter-spacing: 12px;
+  letter-spacing: 5px;
   margin-bottom: 50px;
 }
 
@@ -1730,6 +1915,7 @@ h3 {
 
 .slider_area .single_slider .slider_text .deadline {
   font-weight: 500;
+  font-size: 18px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2107,7 +2293,7 @@ h3 {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* line 54, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
@@ -2358,7 +2544,7 @@ h3 {
 
 /* line 37, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading span {
-  color: #d66c44;
+  color: #C85930;
   font-weight: 400;
   font-size: 20px;
 }
@@ -2421,7 +2607,7 @@ h3 {
 .map_area .location_information h3 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   margin-bottom: 20px;
 }
 
@@ -2656,7 +2842,7 @@ h3 {
 
 /* line 90, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .program_details_area .program_detail_wrap .single_propram .porgram_top span {
-  color: #d66c44;
+  color: #C85930;
   font-size: 30px;
   font-family: 'Quicksand', sans-serif;
   display: block;
@@ -2716,16 +2902,18 @@ h3 {
 .footer .footer_top .footer_widget h4 {
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
   margin-bottom: 24px;
 }
 
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
-  font-size: 30px;
+  font-size: 33px;
   font-family: 'EOTG Regular', sans-serif;
+  letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
+  font-family: 'starforge regular';
 }
 
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
@@ -2757,7 +2945,7 @@ h3 {
 
 /* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .copy-right_text .copy_right a {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /*=================== contact banner start ====================*/
@@ -3122,25 +3310,25 @@ h6 {
 
 .genric-btn.primary {
   color: #fff;
-  background: #bc5029;
+  background: #C85930;
   border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-  color: #bc5029;
-  border: 1px solid #bc5029;
+  color: #C85930;
+  border: 1px solid #C85930;
   background: #fff;
 }
 
 .genric-btn.primary-border {
-  color: #bc5029;
-  border: 1px solid #bc5029;
+  color: #C85930;
+  border: 1px solid #C85930;
   background: #fff;
 }
 
 .genric-btn.primary-border:hover {
   color: #fff;
-  background: #bc5029;
+  background: #C85930;
   border: 1px solid transparent;
 }
 
@@ -3170,25 +3358,25 @@ h6 {
 
 .genric-btn.tertiary {
   color: #fff;
-  background: #4a746a;
+  background: #346452;
   border: 1px solid transparent;
 }
 
 .genric-btn.tertiary:hover {
-  color: #4a746a;
-  border: 1px solid #4a746a;
+  color: #346452;
+  border: 1px solid #346452;
   background: #fff;
 }
 
 .genric-btn.tertiary-border {
-  color: #4a746a;
-  border: 1px solid #4a746a;
+  color: #346452;
+  border: 1px solid #346452;
   background: #fff;
 }
 
 .genric-btn.tertiary-border:hover {
   color: #fff;
-  background: #4a746a;
+  background: #346452;
   border: 1px solid transparent;
 }
 
@@ -4302,12 +4490,12 @@ h6 {
 }
 
 .logo-sm:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* Current Page Nav Highlight */
 .current {
-  color: #d66c44 !important;
+  color: #C85930 !important;
 }
 
 /* Divider */
@@ -4360,7 +4548,7 @@ hr.dashed {
   border-top: 1px solid #f9f9ff !important;
   border-right: 1px solid #f9f9ff !important;
   border-left: 1px solid #f9f9ff !important;
-  background: #D66C44 !important;
+  background: #C85930 !important;
 }
 
 /* Carousel Customisations */
@@ -4520,7 +4708,7 @@ hr.dashed {
 }
 
 .missions_area .mission .mission_heading span {
-  color: #d66c44;
+  color: #C85930;
   font-weight: 400;
   font-size: 20px;
 }
@@ -4610,7 +4798,7 @@ hr.dashed {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   font-weight: 400;
-  color: #d66c44;
+  color: #C85930;
 }
 
 .programmes_area .programmes_info p {
@@ -4902,14 +5090,14 @@ hr.dashed {
   display: block;
   width: 100%;
   height: 90px;
-  background: #4A746A;
+  background: #346452;
 }
 
 .diagonal-divider-2 {
   display: block;
   width: 100%;
   height: 90px;
-  background: #4A746A;
+  background: #346452;
 }
 
 
@@ -4983,7 +5171,7 @@ hr.dashed {
 #progress {
   width: 0px;
   height: 30px;
-  background: #d66c44;
+  background: #C85930;
   border-radius: 13px;
 }
 
@@ -5217,7 +5405,7 @@ hr.dashed {
 }
 
 .ig-navbar ul li a.active {
-  color: #d66c44;
+  color: #C85930;
 }
 
 .ig-navbar ul li a.active::before {
@@ -5226,7 +5414,7 @@ hr.dashed {
 }
 
 .ig-navbar ul li a:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 /* Interest Groups Grids */
@@ -5458,7 +5646,7 @@ hr.dashed {
 }
 
 .back-button.white:hover {
-  color: #d66c44;
+  color: #C85930;
 }
 
 
@@ -5529,15 +5717,16 @@ hr.dashed {
 .countdown div:before {
   content: '';
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   left: 0;
   width: 100%;
   height: 40px;
-  background: #fde05bdd;
+  background: #F3845A;
   color: #333;
   font-size: 0.32em;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: 300;
+  font-family: "starforge regular"
 }
 
 @media (min-width: 767px) {
@@ -5555,7 +5744,7 @@ hr.dashed {
     width: 100%;
     height: 50px;
     font-size: 0.32em;
-    line-height: 35px;
+    line-height: 50px;
     font-weight: 300;
   }
 }

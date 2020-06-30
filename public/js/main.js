@@ -465,7 +465,7 @@ mailChimp();
 $(function() {  
   $("body").niceScroll({
     cursorborder: "none",
-    cursorcolor:'#D66C44',
+    cursorcolor:'#C85930',
     cursorwidth: 10,
     cursoropacitymin: 0.3,
     autohidemode: 'leave',
