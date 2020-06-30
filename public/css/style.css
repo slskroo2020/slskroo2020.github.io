@@ -308,8 +308,8 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'EOTG Regular', sans-serif;
-  letter-spacing: 1px;
+  font-family: 'a_astro_spaceregular', sans-serif;
+  letter-spacing: 2px;
   color: #001D38;
 }
 
@@ -2908,12 +2908,11 @@ h3 {
 
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
-  font-size: 33px;
+  font-size: 35px;
   font-family: 'EOTG Regular', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 400;
   color: #fff;
-  font-family: 'starforge regular';
 }
 
 /* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
@@ -3000,7 +2999,7 @@ h3 {
 /* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .contact-title {
   font-size: 27px;
-  font-family: "Starforge Regular", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -4987,7 +4986,7 @@ hr.dashed {
   display: block;
   font-family: "EOTG Regular", sans-serif;
   font-size: 400px;
-  line-height: 0.6;
+  line-height: 0.7;
   position: absolute;
   top: 0.2em;
   left: -10vw;
@@ -5694,7 +5693,8 @@ hr.dashed {
 
 /* Event Countdown */
 .countdown {
-  font-family: "Starforge Regular", sans-serif !important;
+  font-family: "blankaregular", sans-serif !important;
+  letter-spacing: 2px;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5726,7 +5726,7 @@ hr.dashed {
   font-size: 0.32em;
   line-height: 40px;
   font-weight: 300;
-  font-family: "starforge regular"
+  font-family: "Starforge Regular"
 }
 
 @media (min-width: 767px) {
@@ -5756,10 +5756,10 @@ hr.dashed {
   content: 'Hours';
 }
 .countdown #minute:before {
-  content: 'Minutes';
+  content: 'Mins';
 }
 .countdown #second:before {
-  content: 'Seconds';
+  content: 'Secs';
 }
 
 /* Background Video */
