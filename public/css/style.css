@@ -5591,7 +5591,7 @@ hr.dashed {
   color: #333;
   font-size: 0.32em;
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -5610,7 +5610,7 @@ hr.dashed {
     height: 50px;
     font-size: 0.32em;
     line-height: 2.3;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 
@@ -5630,7 +5630,7 @@ hr.dashed {
     height: 50px;
     font-size: 0.32em;
     line-height: 2;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 
