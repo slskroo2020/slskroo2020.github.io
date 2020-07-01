@@ -56,35 +56,10 @@
         url('../fonts/nasalization-free.regular-webfont.woff') format('woff');
 }
 
-/* TESTING FONTS */
-
 @font-face {
-  /* nice!! */
   font-family: 'a_astro_spaceregular';
   src: url('../fonts/astrospace-0wl3o-webfont.woff2') format('woff2'),
        url('../fonts/astrospace-0wl3o-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* barons are naw */
-@font-face {
-  font-family: 'baron_neuebold';
-  src: url('../fonts/baronneue-bold-webfont.woff2') format('woff2'),
-       url('../fonts/baronneue-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'baron_neueregular';
-  src: url('../fonts/baronneue-regular-webfont.woff2') format('woff2'),
-       url('../fonts/baronneue-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
 }
 
 /* too funky but kinda like it for the countdown + logo */
@@ -92,119 +67,6 @@
   font-family: 'blankaregular';
   src: url('../fonts/blanka-regular-webfont.woff2') format('woff2'),
        url('../fonts/blanka-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* boring */
-@font-face {
-  font-family: 'dual300';
-  src: url('../fonts/dual-300-webfont.woff2') format('woff2'),
-       url('../fonts/dual-300-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* look at orbiterregular */
-@font-face {
-  font-family: 'earth_orbiter_titleregular';
-  src: url('../fonts/earthorbitertitle-ezdo-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbitertitle-ezdo-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* hmmmmm */
-@font-face {
-  font-family: 'earth_orbiterregular';
-  src: url('../fonts/earthorbiter-yz12-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbiter-yz12-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* p nice */
-@font-face {
-  font-family: 'earth_orbiter_3dregular';
-  src: url('../fonts/earthorbiter3d-r6ob-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbiter3d-r6ob-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* nawwww */
-@font-face {
-  font-family: 'earth_orbiter_academyregular';
-  src: url('../fonts/earthorbiteracademy-kmgx-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbiteracademy-kmgx-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* similar to but nicer than regular i think */
-@font-face {
-  font-family: 'earth_orbiter_boldbold';
-  src: url('../fonts/earthorbiterbold-vzd9-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbiterbold-vzd9-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* a bit too much */
-@font-face {
-  font-family: 'earth_orbiter_deep_3dregular';
-  src: url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff2') format('woff2'),
-       url('../fonts/earthorbiterdeep3d-r4ev-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* NAWWW */
-@font-face {
-  font-family: 'future_techno_italicregular';
-  src: url('../fonts/futuretechnoitalic-x3epj-webfont.woff2') format('woff2'),
-       url('../fonts/futuretechnoitalic-x3epj-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* nope :( cool font though */
-@font-face {
-  font-family: 'mandaloreregular';
-  src: url('../fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
-       url('../fonts/mandalore-k77ld-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* ehhh :( */
-@font-face {
-  font-family: 'mandalore_titleregular';
-  src: url('../fonts/mandaloretitle-lggae-webfont.woff2') format('woff2'),
-       url('../fonts/mandaloretitle-lggae-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-/* not bad */
-@font-face {
-  font-family: 'mandalore_3dregular';
-  src: url('../fonts/mandalore3d-8mm0b-webfont.woff2') format('woff2'),
-       url('../fonts/mandalore3d-8mm0b-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
 }
 
 
@@ -227,7 +89,6 @@
   font-style: normal;
 
 }
-
 /* END TESTING FONTS */
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
@@ -309,7 +170,6 @@ button {
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
   font-family: 'a_astro_spaceregular', sans-serif;
-  letter-spacing: 2px;
   color: #001D38;
 }
 
@@ -1833,7 +1693,7 @@ h3 {
 
 /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text span {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 200;
   letter-spacing: 3px;
   /* color: #C85930; */
@@ -1851,7 +1711,6 @@ h3 {
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   font-family: "starforge regular";
-  letter-spacing: 5px;
   font-size: 90px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1862,12 +1721,13 @@ h3 {
 }
 
 .slider_area .single_slider .slider_text .subheading {
-  font-weight: 400;
+  font-weight: 300;
   color: rgb(202, 202, 202);
   line-height: 1;
   margin-top: 0px;
   letter-spacing: 5px;
   margin-bottom: 50px;
+  font-size: 22px;
 }
 
 @media (max-width: 767px) {
@@ -1878,7 +1738,7 @@ h3 {
     margin: 5px 0;
   }
   .slider_area .single_slider .slider_text .subheading {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 15px;
   }
 }
@@ -1890,7 +1750,7 @@ h3 {
     margin-top: 20px;
   }
   .slider_area .single_slider .slider_text .subheading {
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     font-size: 17px;
   }
 }
@@ -1899,6 +1759,10 @@ h3 {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 70px;
+  }
+  .slider_area .single_slider .slider_text .subheading {
+    letter-spacing: 4px;
+    font-size: 19px;
   }
 }
 
@@ -2900,7 +2764,7 @@ h3 {
 
 /* line 17, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h4 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #C85930;
   margin-bottom: 24px;
@@ -2908,7 +2772,7 @@ h3 {
 
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
-  font-size: 35px;
+  font-size: 33px;
   font-family: 'EOTG Regular', sans-serif;
   letter-spacing: 2px;
   font-weight: 400;
@@ -2957,6 +2821,12 @@ h3 {
   transition: all 0.3s;
 }
 
+.contact-title {
+  font-size: 27px;
+  font-family: "a_astro_spaceregular", sans-serif;
+  margin-bottom: 20px;
+}
+
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .contact-info {
   margin-bottom: 25px;
@@ -2996,14 +2866,6 @@ h3 {
 
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
-/* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
-.contact-title {
-  font-size: 27px;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
 /* line 53, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .form-contact label {
   font-size: 14px;
@@ -5789,4 +5651,10 @@ hr.dashed {
 .mutebtn {
   margin-bottom: 30px;
   opacity: 0.3;
+}
+
+
+/* Italicising */
+.italic {
+  font-style: italic;
 }
