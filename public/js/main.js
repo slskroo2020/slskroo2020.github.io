@@ -41,7 +41,7 @@ $(window).on('load', function() {
     $('#percent').text('100%');
     $('#loadingtext').text('Hyperdrive ready!');
     clearInterval(loading);
-    $('#cover').fadeOut(500);
+    // $('#cover').fadeOut(500);
 });
 
 $(document).ready(function(){

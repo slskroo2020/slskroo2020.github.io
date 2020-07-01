@@ -5005,6 +5005,7 @@ hr.dashed {
   font-family: "inversionz unboxed regular", sans-serif;
   display: inline-block;
   font-size: 25px;
+  letter-spacing: -2px;
   margin-left: 5px;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 10px 20px;
@@ -5080,6 +5081,20 @@ hr.dashed {
   animation: fire3 var(--fire-duration) infinite;
 }
 
+@media (min-width: 992px) {
+  .loading .loading-img {
+    height: 200px;
+  }
+
+  .loading .bottom-rocket {
+    left: 0px;
+  }
+
+  .wrap .text{
+    font-size: 30px;
+  }
+}
+
 /* Enter Animation */
 @keyframes enter {
   0% {left: -50vw; opacity: 0;}
@@ -5130,20 +5145,6 @@ hr.dashed {
   75% {opacity: 0;}
   99% {opacity: 0;}
   100% {opacity: 0;}
-}
-
-@media (min-width: 992px) {
-  .loading .loading-img {
-    height: 200px;
-  }
-
-  .loading .bottom-rocket {
-    left: 0px;
-  }
-
-  .wrap .text{
-    font-size: 20px;
-  }
 }
 
 
