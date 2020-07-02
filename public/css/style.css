@@ -5558,7 +5558,7 @@ hr.dashed {
 /* Event Countdown */
 .countdown {
   font-family: "blankaregular", sans-serif !important;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5580,6 +5580,7 @@ hr.dashed {
 
 .countdown div:before {
   font-family: "Exo 2", sans-serif;
+  letter-spacing: 1px;
   content: '';
   position: absolute;
   bottom: -40px;
@@ -5627,23 +5628,23 @@ hr.dashed {
     left: 0;
     width: 100%;
     height: 50px;
-    font-size: 0.32em;
+    font-size: 0.31em;
     line-height: 2;
     font-weight: 400;
   }
 }
 
 .countdown #day:before {
-  content: 'Days';
+  content: 'DAYS';
 }
 .countdown #hour:before {
-  content: 'Hours';
+  content: 'HOURS';
 }
 .countdown #minute:before {
-  content: 'Minutes';
+  content: 'MINUTES';
 }
 .countdown #second:before {
-  content: 'Seconds';
+  content: 'SECONDS';
 }
 
 /* Background Video */
