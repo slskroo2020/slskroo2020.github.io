@@ -2822,9 +2822,10 @@ h3 {
 }
 
 .contact-title {
-  font-size: 26px;
-  font-family: "starforge regular", sans-serif;
+  font-size: 45px;
+  font-family: "inversionz unboxed regular", sans-serif;
   margin-bottom: 20px;
+  letter-spacing: -8px;
 }
 
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
