@@ -17,8 +17,8 @@ $(window).on('scroll', function () {
 var count = 4;
 
 function animate() {
-  if(count == 100){
-    $('.loading.text').text("Completed!");
+  if(count == 99){
+    $('.loading.text').text(  "Completed!");
     clearInterval(loading);
   } else {
     count = count + 1;
