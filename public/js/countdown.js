@@ -4,7 +4,9 @@
 var countDate = new Date('Aug 2, 2020 18:00:00').getTime();
 
 function countdown(){
-  var now = new Date().getTime();
+  var date = new Date();
+  var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
+  var now = new Date(utc + (3600000*8)).getTime();
   var gap = countDate - now;
 
   var second = 1000;
