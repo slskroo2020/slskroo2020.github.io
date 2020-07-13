@@ -7,6 +7,7 @@ $(window).on('load', function() {
 });
 
 $('.mutebtn').on('click', function() {
+  event.preventDefault();
   $('.muteicon').toggleClass('fa-volume-mute');
   $('.muteicon').toggleClass('fa-volume-up');
   if (audio.paused == false) {
