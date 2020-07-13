@@ -6,8 +6,8 @@ $(window).on('load', function() {
   audio.volume = 0.3;
 });
 
-$('.mutebtn').on('click', function() {
-  event.preventDefault();
+$('.mutebtn').on('click', function(ev) {
+  ev.preventDefault();
   $('.muteicon').toggleClass('fa-volume-mute');
   $('.muteicon').toggleClass('fa-volume-up');
   if (audio.paused == false) {
