@@ -487,6 +487,11 @@ h3 {
   border: 1px solid transparent;
 }
 
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
 /* line 300, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .mb-20px {
   margin-bottom: 20px;
@@ -2430,7 +2435,8 @@ h3 {
   padding-bottom: 80px;
 }
 .brand_area .brand_wrap img {
-  max-height: 100px; /* Temporary Addition */
+  max-height: 100px;
+  object-fit: contain;
 }
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_map.scss */
@@ -3001,7 +3007,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff5e13;
+  color: #C85930;
 }
 
 /* line 93, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
