@@ -108,12 +108,12 @@ if(brand_active.length){
   navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
   nav:false,
   dots:false,
-  autoplayHoverPause: true,
+  autoplayHoverPause: false,
   autoplaySpeed: 800,
   center: false,
     responsive:{
         0:{
-            items:1,
+            items:2,
             nav:false
         },
         767:{
@@ -123,7 +123,7 @@ if(brand_active.length){
             items:4
         },
         1200:{
-            items:4
+            items:5
         },
         1500:{
             items:5
