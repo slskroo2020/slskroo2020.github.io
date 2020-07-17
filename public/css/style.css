@@ -1707,14 +1707,6 @@ h3 {
   font-family: 'inversionz unboxed regular', sans-serif;
 }
 
-@media (max-width: 767px) {
-  /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
-  .slider_area .single_slider .slider_text span {
-    font-size: 30px;
-    letter-spacing: -6px;
-  }
-}
-
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   font-family: "inversionz unboxed regular", sans-serif;
@@ -1723,7 +1715,7 @@ h3 {
   font-weight: 400;
   color: #fff;
   line-height: 1;
-  margin-top: 15px;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
@@ -1738,8 +1730,23 @@ h3 {
   font-size: 40px;
 }
 
+.slider_area .single_slider .slider_text .mainheading {
+  font-family: "inversionz unboxed regular", sans-serif;
+  font-size: 70px;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.5;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
 @media (max-width: 767px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 30px;
+    letter-spacing: -7px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 50px;
     line-height: 0.8;
@@ -1748,26 +1755,43 @@ h3 {
   .slider_area .single_slider .slider_text .subheading {
     font-size: 25px;
   }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 35px;
+    letter-spacing: -5px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 40px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 60px;
-    margin-top: 20px;
   }
   .slider_area .single_slider .slider_text .subheading {
     font-size: 30px;
+  }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 45px;
+    letter-spacing: -5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 45px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 70px;
   }
   .slider_area .single_slider .slider_text .subheading {
     font-size: 35px;
+  }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 55px;
+    letter-spacing: -5px;
   }
 }
 
@@ -4775,6 +4799,7 @@ hr.dashed {
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 15px;
+  line-height: 2;
   color: rgb(49, 49, 49);
 }
 
@@ -4786,23 +4811,49 @@ hr.dashed {
 .single-ig_area .ig-quote {
   margin-left: auto;
   opacity: 0.75;
+  font-size: 1rem;
   font-style: italic;
+}
+
+.single-ig_area .ig-quote-author {
+  margin-left: 20px;
+  opacity: 0.65;
+  font-size: 0.75rem;
+}
+
+#igtitle {
+  font-size: 60px;
+  letter-spacing: -10px;
 }
 
 @media (min-width:768px) {
   .single-ig_area p {
     font-size: 17px;
   }
+  #igtitle {
+    font-size: 70px;
+    letter-spacing: -10px;
+  }
+  
 }
 
 @media (min-width:992px) {
   .single-ig_area .ig-quote {
     margin-left: 35px;
-    font-size: 22px;
+    font-size: 20px;
   }  
+  .single-ig_area .ig-quote-author {
+    margin-left: 50px;
+    font-size: 17px;
+  }
   .single-ig_area p {
     font-size: 20px;
   }
+  #igtitle {
+    font-size: 90px;
+    letter-spacing: -10px;
+  }
+  
 }
 
 .bradcam_area .single-ig_bradcam {
