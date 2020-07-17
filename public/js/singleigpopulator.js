@@ -48,13 +48,15 @@ $(document).ready(function () {
                 window.location.replace("https://tww2020.site/404.html");
             } else {
                 var ig = DB.ig;
+                var reviews = DB.reviews;
                 var img = DB.img;
-                var sm = DB.sm;
+                // var sm = DB.sm;
 
                 $('#bgtext').attr("data-bg-text", ig[0].name);
                 $('#igtitle').text(ig[0].name);
                 $('#igdesc').text(ig[0].description);
                 $('#igtagline').text(ig[0].tagline);
+                $('#igcovidplans').text(ig[0].covidplans);
                 
                 // Carousel
                 for (var i=0;i<img.length;i++) {
@@ -108,18 +110,28 @@ $(document).ready(function () {
                     $('.carousel-inner').append(carDiv);
                 }
 
-                for (var i=0;i<sm.length;i++) {
-                    var smLink = $('<a></a>').attr({
-                        class: "social",
-                        href: sm[i].url,
-                        target: "_blank",
-                        rel: "noopener noreferrer"
+                for (var i=0;i<reviews.length;i++) {
+                    var quote = $("<blockquote></blockquote>");
+                    quote.attr({
+                        'class': 'generic-blockquote ig-quote'
                     })
-                    var smIcon = $('<i></i>').addClass(`fa fa-${sm[i].type} fa-2x`);
-                    smLink.append(smIcon);
-                    
-                    $('#smcontainer').append(smLink);
+                    quote.html(reviews[i].quote+'<br><span class="ig-quote-author"> - '+reviews[i].person+'</span>');
+                    console.log(reviews);
+                    $('#igquotecontainer').append(quote)
                 }
+
+                // for (var i=0;i<sm.length;i++) {
+                //     var smLink = $('<a></a>').attr({
+                //         class: "social",
+                //         href: sm[i].url,
+                //         target: "_blank",
+                //         rel: "noopener noreferrer"
+                //     })
+                //     var smIcon = $('<i></i>').addClass(`fa fa-${sm[i].type} fa-2x`);
+                //     smLink.append(smIcon);
+                    
+                //     $('#smcontainer').append(smLink);
+                // }
             }
             document.title = query;
             $('#cover').fadeOut(500);

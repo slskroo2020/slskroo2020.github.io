@@ -6,7 +6,7 @@ $(window).on('load', function() {
   audio.volume = 0.3;
 });
 
-$('.mutebtn').on('click', function() {
+$('.mutebtn').on('click', function(ev) {
   $('.muteicon').toggleClass('fa-volume-mute');
   $('.muteicon').toggleClass('fa-volume-up');
   if (audio.paused == false) {
@@ -14,6 +14,7 @@ $('.mutebtn').on('click', function() {
   } else {
     audio.play();
   }
+  ev.preventDefault();
 });
 
 // Seamless Audio Loop Fix

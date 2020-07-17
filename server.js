@@ -36,8 +36,9 @@ socketio.listen(server).on('connection', function (socket) {
         pool.getConnection(function(err, connection){
             if (err) throw err;
             var igDetails = [];
-            var imagesVideos = [];
-            var socialMedia = [];
+            var igImages = [];
+            var igReviews = [];
+            // var socialMedia = [];
             connection.query(`SELECT * FROM ig_details WHERE name='${targetIG}'`, function (err, result1) {
                 if (err) throw err;
                 if (result1.length < 1) {
@@ -47,15 +48,19 @@ socketio.listen(server).on('connection', function (socket) {
                 } else {
                     igDetails = result1;
                     console.log(`Step 1 Success`);
-                    connection.query(`SELECT * FROM images_videos WHERE name='${targetIG}'`, function (err, result2) {
+                    connection.query(`SELECT * FROM reviews WHERE name='${targetIG}'`, function (err, result2) {
                         if (err) throw err;
-                        imagesVideos = result2;
+                        igReviews = result2;
                         console.log(`Step 2 Success`);
-                        connection.query(`SELECT * FROM social_media WHERE name='${targetIG}'`, function (err, result3) {
-                            if (err) throw err;
-                            socialMedia = result3;
-                            console.log(`Step 3 Success`);
-                            socket.emit('retIG', {ig: igDetails, img: imagesVideos, sm: socialMedia});
+                    connection.query(`SELECT * FROM images_videos WHERE name='${targetIG}'`, function (err, result3) {
+                        if (err) throw err;
+                        igImages = result3;
+                        console.log(`Step 3 Success`);
+                        // connection.query(`SELECT * FROM social_media WHERE name='${targetIG}'`, function (err, result3) {
+                        //     if (err) throw err;
+                        //     socialMedia = result3;
+                        //     console.log(`Step 3 Success`);
+                            socket.emit('retIG', {ig: igDetails, reviews: igReviews, img: igImages});
                             connection.release();
                         });
                     });

@@ -1,25 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
   font-family: 'Komorebi Regular';
   src: local('Komorebi Regular'), url('../fonts/Komorebi-PersonalUse.woff') format('woff');
   }
-
-@font-face {
-  font-family: 'Voyager Heavy';
-  src: url('../fonts/voyager_heavy-webfont.woff2') format('woff2'),
-        url('../fonts/voyager_heavy-webfont.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Voyager Light';
-  src: url('../fonts/voyager_light-webfont.woff2') format('woff2'),
-        url('../fonts/voyager_light-webfont.woff') format('woff');
-}
 
 @font-face {
   font-family: 'Starforge Regular';
@@ -62,34 +47,48 @@
        url('../fonts/astrospace-0wl3o-webfont.woff') format('woff');
 }
 
-/* too funky but kinda like it for the countdown + logo */
 @font-face {
   font-family: 'blankaregular';
   src: url('../fonts/blanka-regular-webfont.woff2') format('woff2'),
        url('../fonts/blanka-regular-webfont.woff') format('woff');
 }
 
-
-/* too boring for title font but can be used with quicksand */
 @font-face {
   font-family: 'exanregular';
   src: url('../fonts/exan-regular-webfont.woff2') format('woff2'),
        url('../fonts/exan-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
 }
 
-/* p good for 'NEW BEGINNINGS' and 'TEMBUSU WELCOME WEEK 2020' at the bottom */
 @font-face {
   font-family: 'potralight';
   src: url('../fonts/potra-webfont.woff2') format('woff2'),
        url('../fonts/potra-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
 }
-/* END TESTING FONTS */
+
+@font-face {
+  font-family: 'inversionz italic';
+  src: url('../fonts/inversionz_italic-webfont.woff2') format('woff2'),
+       url('../fonts/inversionz_italic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'inversionz unboxed italic';
+  src: url('../fonts/inversionz_unboxed_italic-webfont.woff2') format('woff2'),
+       url('../fonts/inversionz_unboxed_italic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'inversionz unboxed regular';
+  src: url('../fonts/inversionz_unboxed-webfont.woff2') format('woff2'),
+       url('../fonts/inversionz_unboxed-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'inversionz regular';
+  src: url('../fonts/inversionz-webfont.woff2') format('woff2'),
+       url('../fonts/inversionz-webfont.woff') format('woff');
+}
+/* END FONTS */
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_extend.scss */
 .flex-center-start {
@@ -117,7 +116,7 @@
 /* Large Mobile :480px. */
 /* line 6, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -169,12 +168,12 @@ button {
 
 /* line 52, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 h1, h2, h3 {
-  font-family: 'a_astro_spaceregular', sans-serif;
+  font-family: 'inversionz unboxed regular', sans-serif;
   color: #001D38;
 }
 
 h4, h5 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: #001D38;
 }
 
@@ -190,17 +189,17 @@ h6 a {
 
 /* line 64, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 a {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* line 67, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 input::placeholder {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* line 70, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 textarea::placeholder {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* line 73, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
@@ -216,13 +215,13 @@ li {
 
 /* line 80, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 p {
-  font-size: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
   color: #AAB1B7;
   line-height: 32px;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 /* line 90, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
@@ -488,6 +487,11 @@ h3 {
   border: 1px solid transparent;
 }
 
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
 /* line 300, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .mb-20px {
   margin-bottom: 20px;
@@ -596,7 +600,7 @@ h3 {
   color: #C85930;
   display: inline-block;
   padding: 12px 44px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 400;
   border: 0;
@@ -631,7 +635,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 14px 35px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 20px;
   font-weight: 500;
   border: 0;
@@ -673,7 +677,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 13px 27px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 600;
   border: 0;
@@ -719,7 +723,7 @@ h3 {
   color: #fff !important;
   display: inline-block;
   padding: 14px 47px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: 0;
@@ -762,7 +766,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 18px 24px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 600;
   border: 0;
@@ -887,13 +891,13 @@ h3 {
 
 /* line 34, ../../Arafath/CL/December/236. Event-02/HTML/scss/_section_title.scss */
 .section_title p {
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #AAB1B7;
-  line-height: 32px;
+  /* line-height: 32px; */
   margin-bottom: 0;
-  font-weight: 400;
+  /* font-weight: 200; */
   margin-bottom: 0px;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Exo 2', sans-serif; */
 }
 
 @media (max-width: 767px) {
@@ -908,7 +912,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #C85930;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Exo 2', sans-serif; */
   margin-bottom: 0;
 }
 
@@ -1063,7 +1067,7 @@ h3 {
   padding: 5px;
   right: 0;
   margin-top: -5px;
-  top: -36px;
+  top: -50px;
 }
 
 /* line 106, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slick-nav.scss */
@@ -1136,7 +1140,9 @@ h3 {
 
 .header-area .main-header-area .logo h2 {
   color: white;
-  font-family: "EOTG Regular", sans-serif;
+  font-family: "Inversionz Unboxed Regular", sans-serif;
+  letter-spacing: -10px;
+  font-size: 50px;
 }
 
 @media (max-width: 991px) {
@@ -1256,7 +1262,7 @@ h3 {
 /* line 100, ../../Arafath/CL/December/236. Event-02/HTML/scss/_header.scss */
 .header-area .main-header-area .buy_tkt .book_btn a {
   background: #C85930;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   padding: 12px 25px;
   font-size: 16px;
   font-weight: 400;
@@ -1316,7 +1322,7 @@ h3 {
   font-weight: normal;
   display: inline-block;
   padding: 30px 0 30px  0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   position: relative;
   text-transform: uppercase;
 }
@@ -1693,93 +1699,116 @@ h3 {
 
 /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text span {
-  font-size: 25px;
+  font-size: 45px;
+  letter-spacing: -10px;
   font-weight: 200;
-  letter-spacing: 3px;
   /* color: #C85930; */
   color: #c9c9c9;
-  font-family: 'Quicksand', sans-serif;
-}
-
-@media (max-width: 767px) {
-  /* line 56, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
-  .slider_area .single_slider .slider_text span {
-    font-size: 15px;
-  }
+  font-family: 'inversionz unboxed regular', sans-serif;
 }
 
 /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
-  font-family: "starforge regular";
-  font-size: 90px;
+  font-family: "inversionz unboxed regular", sans-serif;
+  font-size: 100px;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff;
   line-height: 1;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 .slider_area .single_slider .slider_text .subheading {
+  font-family: "inversionz unboxed regular", sans-serif;
   font-weight: 300;
   color: rgb(202, 202, 202);
   line-height: 1;
   margin-top: 0px;
-  letter-spacing: 5px;
+  letter-spacing: -5px;
   margin-bottom: 50px;
-  font-size: 22px;
+  font-size: 40px;
+}
+
+.slider_area .single_slider .slider_text .mainheading {
+  font-family: "inversionz unboxed regular", sans-serif;
+  font-size: 70px;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.5;
+  margin-top: 35px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 767px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 30px;
+    letter-spacing: -7px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 50px;
-    line-height: 1.2;
+    line-height: 0.8;
     margin: 5px 0;
   }
   .slider_area .single_slider .slider_text .subheading {
-    letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 25px;
+  }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 35px;
+    letter-spacing: -5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 40px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 60px;
-    margin-top: 20px;
   }
   .slider_area .single_slider .slider_text .subheading {
-    letter-spacing: 4px;
-    font-size: 17px;
+    font-size: 30px;
+  }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 45px;
+    letter-spacing: -5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 65, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
+  .slider_area .single_slider .slider_text span {
+    font-size: 45px;
+  }
   .slider_area .single_slider .slider_text h3 {
     font-size: 70px;
   }
   .slider_area .single_slider .slider_text .subheading {
-    letter-spacing: 4px;
-    font-size: 19px;
+    font-size: 35px;
+  }
+  .slider_area .single_slider .slider_text .mainheading {
+    font-size: 55px;
+    letter-spacing: -5px;
   }
 }
 
 /* line 86, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text p {
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2px;
   color: #FFF;
   margin-bottom: 34px;
   margin-top: 10px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .slider_area .single_slider .slider_text .deadline {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2154,7 +2183,7 @@ h3 {
 
 /* line 48, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area .about_info h4 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #C85930;
@@ -2277,12 +2306,12 @@ h3 {
   font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* line 69, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */
 .bradcam_area .single_bradcam .bradcam_text h3 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'inversionz unboxed regular', sans-serif;
   font-size: 80px;
   text-transform: capitalize;
   font-weight: 400;
@@ -2290,7 +2319,6 @@ h3 {
   line-height: 1;
   margin-top: 5px;
   margin-bottom: 23px;
-  font-family: "Starforge Regular";
   position: relative;
   z-index: 9;
 }
@@ -2400,7 +2428,7 @@ h3 {
 /* line 30, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer .performer_heading h4 {
   font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: #fff;
   font-weight: 400;
   margin-bottom: 14px;
@@ -2431,7 +2459,8 @@ h3 {
   padding-bottom: 80px;
 }
 .brand_area .brand_wrap img {
-  max-height: 100px; /* Temporary Addition */
+  max-height: 150px;
+  object-fit: contain;
 }
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_map.scss */
@@ -2495,7 +2524,7 @@ h3 {
 
 /* line 39, ../../Arafath/CL/December/236. Event-02/HTML/scss/_map.scss */
 .map_area .location_information .info_wrap .single_info span {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 600;
   font-size: 20px;
   margin-right: 20px;
@@ -2708,7 +2737,7 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram .porgram_top span {
   color: #C85930;
   font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   display: block;
   margin-bottom: 8px;
 }
@@ -2764,17 +2793,18 @@ h3 {
 
 /* line 17, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h4 {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 300;
   color: #C85930;
   margin-bottom: 24px;
 }
 
 /* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget h3 {
-  font-size: 33px;
-  font-family: 'EOTG Regular', sans-serif;
-  letter-spacing: 2px;
+  font-size: 41px;
+  font-family: 'Inversionz Unboxed Regular', sans-serif;
+  letter-spacing: -8px;
+  line-height: 1;
   font-weight: 400;
   color: #fff;
 }
@@ -2795,8 +2825,8 @@ h3 {
   font-size: 14px;
   color: #AAB1B7;
   margin-bottom: 0;
-  font-weight: 400;
-  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  font-family: 'Exo 2', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2822,9 +2852,10 @@ h3 {
 }
 
 .contact-title {
-  font-size: 27px;
-  font-family: "a_astro_spaceregular", sans-serif;
+  font-size: 45px;
+  font-family: "inversionz unboxed regular", sans-serif;
   margin-bottom: 20px;
+  letter-spacing: -8px;
 }
 
 /* line 10, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
@@ -3000,7 +3031,7 @@ sup,
 sub,
 u,
 del {
-  color: #ff5e13;
+  color: #C85930;
 }
 
 /* line 93, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
@@ -4562,7 +4593,7 @@ hr.dashed {
 
 .missions_area .mission .mission_heading h4 {
   font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: #fff;
   font-weight: 400;
   margin-bottom: 14px;
@@ -4656,7 +4687,7 @@ hr.dashed {
 }
 
 .programmes_area .programmes_info h4 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #C85930;
@@ -4768,6 +4799,7 @@ hr.dashed {
   margin-top: 30px;
   margin-bottom: 40px;
   font-size: 15px;
+  line-height: 2;
   color: rgb(49, 49, 49);
 }
 
@@ -4779,23 +4811,49 @@ hr.dashed {
 .single-ig_area .ig-quote {
   margin-left: auto;
   opacity: 0.75;
+  font-size: 1rem;
   font-style: italic;
+}
+
+.single-ig_area .ig-quote-author {
+  margin-left: 20px;
+  opacity: 0.65;
+  font-size: 0.75rem;
+}
+
+#igtitle {
+  font-size: 60px;
+  letter-spacing: -10px;
 }
 
 @media (min-width:768px) {
   .single-ig_area p {
     font-size: 17px;
   }
+  #igtitle {
+    font-size: 70px;
+    letter-spacing: -10px;
+  }
+  
 }
 
 @media (min-width:992px) {
   .single-ig_area .ig-quote {
     margin-left: 35px;
-    font-size: 22px;
+    font-size: 20px;
   }  
+  .single-ig_area .ig-quote-author {
+    margin-left: 50px;
+    font-size: 17px;
+  }
   .single-ig_area p {
     font-size: 20px;
   }
+  #igtitle {
+    font-size: 90px;
+    letter-spacing: -10px;
+  }
+  
 }
 
 .bradcam_area .single-ig_bradcam {
@@ -5001,9 +5059,10 @@ hr.dashed {
 
 .wrap .text{
   color: #ffffff;
-  font-family: "Starforge Regular", sans-serif;
-  display: inline-block;fwrap
+  font-family: "inversionz unboxed regular", sans-serif;
+  display: inline-block;
   font-size: 25px;
+  letter-spacing: -2px;
   margin-left: 5px;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 10px 20px;
@@ -5041,6 +5100,7 @@ hr.dashed {
   left: 50%;
   transform: translate(-15px,0);
   color: #ffd2df;
+  font-family: "inversionz unboxed regular", sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 23px;
@@ -5076,6 +5136,20 @@ hr.dashed {
 
 .loading #rocket-3 {
   animation: fire3 var(--fire-duration) infinite;
+}
+
+@media (min-width: 992px) {
+  .loading .loading-img {
+    height: 200px;
+  }
+
+  .loading .bottom-rocket {
+    left: 0px;
+  }
+
+  .wrap .text{
+    font-size: 30px;
+  }
 }
 
 /* Enter Animation */
@@ -5128,20 +5202,6 @@ hr.dashed {
   75% {opacity: 0;}
   99% {opacity: 0;}
   100% {opacity: 0;}
-}
-
-@media (min-width: 992px) {
-  .loading .loading-img {
-    height: 200px;
-  }
-
-  .loading .bottom-rocket {
-    left: 0px;
-  }
-
-  .wrap .text{
-    font-size: 20px;
-  }
 }
 
 
@@ -5248,7 +5308,7 @@ hr.dashed {
   font-weight: normal;
   display: inline-block;
   padding: 30px 0 30px  0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   position: relative;
   text-transform: uppercase;
 }
@@ -5556,7 +5616,7 @@ hr.dashed {
 /* Event Countdown */
 .countdown {
   font-family: "blankaregular", sans-serif !important;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #fff;
   display: flex;
   margin-top: 30px;
@@ -5577,6 +5637,8 @@ hr.dashed {
 }
 
 .countdown div:before {
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 1px;
   content: '';
   position: absolute;
   bottom: -40px;
@@ -5586,12 +5648,31 @@ hr.dashed {
   background: #F3845A;
   color: #333;
   font-size: 0.32em;
-  line-height: 40px;
-  font-weight: 300;
-  font-family: "Starforge Regular"
+  line-height: 2;
+  font-weight: 400;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  .countdown div {
+    width: 95px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 15px;
+    font-size: 2.6em;
+    font-weight: 500;
+  }
+  
+  .countdown div:before {
+    left: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 0.32em;
+    line-height: 2.3;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 992px) {
   .countdown div {
     width: 100px;
     height: 100px;
@@ -5605,23 +5686,23 @@ hr.dashed {
     left: 0;
     width: 100%;
     height: 50px;
-    font-size: 0.32em;
-    line-height: 50px;
-    font-weight: 300;
+    font-size: 0.31em;
+    line-height: 2;
+    font-weight: 400;
   }
 }
 
 .countdown #day:before {
-  content: 'Days';
+  content: 'DAYS';
 }
 .countdown #hour:before {
-  content: 'Hours';
+  content: 'HOURS';
 }
 .countdown #minute:before {
-  content: 'Mins';
+  content: 'MINUTES';
 }
 .countdown #second:before {
-  content: 'Secs';
+  content: 'SECONDS';
 }
 
 /* Background Video */
