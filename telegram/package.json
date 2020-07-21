@@ -1,0 +1,17 @@
+{
+  "name": "tplace",
+  "version": "1.0.0",
+  "description": "tplace js",
+  "main": "telegram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "khairul",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0",
+    "telegraf-inline-menu": "^5.0.0"
+  }
+}

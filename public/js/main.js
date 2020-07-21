@@ -458,13 +458,14 @@ mailChimp();
   });
 
 // NiceScroll
-$(function() {  
-  $("body").niceScroll({
-    cursorborder: "none",
-    cursorcolor:'#C85930',
-    cursorwidth: 10,
-    cursoropacitymin: 0.3,
-    autohidemode: 'leave',
-    zindex: 999
-  });
-});
+// $(function() {
+//   $("body").niceScroll({
+//     cursorborder: "none",
+//     cursorcolor:'#C85930',
+//     cursorwidth: 10,
+//     cursoropacitymin: 0.3,
+//     autohidemode: 'leave',
+//     zindex: 999
+//   });
+// });
+
