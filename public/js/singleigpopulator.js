@@ -89,10 +89,14 @@ $(document).ready(function () {
                         
                         if (img[i].type=="youtube") {
                             carItem.url = `https://www.youtube.com/watch?v=${img[i].ref}%autoplay=1`;
-                            carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
+                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].title}">
+                                                <div class="play-button"></div>`
+                            // carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
                         } else { // Vimeo
                             carItem.url = `https://www.youtube.com/watch?v=${img[i].ref}%autoplay=1`;
-                            carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
+                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].title}">
+                                                <div class="play-button"></div>`
+                            // carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
                         };
                     }
 
