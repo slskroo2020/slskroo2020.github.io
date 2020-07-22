@@ -33,8 +33,8 @@ var loading = setInterval(animate, 50);
 
 
 $(window).on('load', function() {
-    var url = document.title;
-    if (url=="Loading...") return;
+    // var url = document.title;
+    // if (url=="Loading...") return;
 
     // Intro Sequence
     $('#progress').width('100%');

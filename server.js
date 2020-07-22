@@ -68,6 +68,34 @@ socketio.listen(server).on('connection', function (socket) {
             });
         });
     })
+
+    socket.on('reqIGPage', function(targetCategory) {
+        console.log(`Retrieving IG data for ${targetCategory}`);
+        pool.getConnection(function(err, connection){
+            if (err) throw err;
+            var igDetails = [];
+            var igImages = [];
+            // var socialMedia = [];
+            connection.query(`SELECT * FROM ig_details WHERE category='${targetCategory}'`, function (err, result1) {
+                if (err) throw err;
+                if (result1.length < 1) {
+                    socket.emit('retIG', "empty");
+                    console.log(`Step 1 Failed: No IGs in category exist.`);
+                    connection.release();
+                } else {
+                    igDetails = result1;
+                    console.log(`Step 1 Success`);
+                    connection.query(`SELECT * FROM images_videos WHERE name in (SELECT name FROM ig_details WHERE category='${targetCategory}')`, function (err, result2) {
+                        if (err) throw err;
+                        igImages = result2;
+                        console.log(`Step 2 Success`);
+                        socket.emit('retIGPage', {ig: igDetails, img: igImages});
+                        connection.release();
+                    });
+                };
+            });
+        });
+    })
     
     socket.on('disconnect', function(){
         console.log(`Socket: ${socket} disconnected.`);
