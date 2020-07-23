@@ -80,7 +80,7 @@ $(document).ready(function () {
                     if (img[i].type=="jpg" || img[i].type=="png" || img[i].type=="jpeg") {
                         carItem.class = "img-pop-up";
                         carItem.url = `../img/ig/${img[i].ref}.${img[i].type}`;
-                        carItem.content = `<img class="d-block" src="../img/ig/${img[i].ref}.${img[i].type}" alt="${img[i].title}">`;
+                        carItem.content = `<img class="d-block" src="../img/ig/${img[i].ref}.${img[i].type}" alt="${img[i].ref}">`;
                     }
                     
                     // If Video
@@ -89,24 +89,25 @@ $(document).ready(function () {
                         
                         if (img[i].type=="youtube") {
                             carItem.url = `https://www.youtube.com/watch?v=${img[i].ref}`;
-                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].title}">
+                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].ref}">
                                                 <div class="play-button"></div>`
                             // carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
                         } else { // Vimeo
                             carItem.url = `https://www.youtube.com/watch?v=${img[i].ref}`;
-                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].title}">
+                            carItem.content = `<img class="d-block" src="http://img.youtube.com/vi/${img[i].ref}/0.jpg" alt="${img[i].ref}">
                                                 <div class="play-button"></div>`
                             // carItem.content = `<iframe class="carousel-embed-responsive-item" src="https://www.youtube.com/embed/${img[i].ref}?rel=0&mute=1" allow="autoplay" frameborder="0" allowfullscreen alt="${img[i].title}"></iframe>`;
                         };
                     }
 
-                    var carElement = `<a href="${carItem.url}" class="${carItem.class}" title="${carItem.title}" data-title="<span class='mfp-header'>${carItem.title} | </span>${carItem.caption}">
+                    // var carElement = `<a href="${carItem.url}" class="${carItem.class}" title="${carItem.title}" data-title="<span class='mfp-header'>${carItem.title} | </span>${carItem.caption}">
+                    var carElement = `<a href="${carItem.url}" class="${carItem.class}">
                                         ${carItem.content}
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>${carItem.title}</h5>
-                                            <p>${carItem.caption}</p>
-                                        </div>
                                     </a>`;
+                                        // <div class="carousel-caption d-none d-md-block">
+                                        //     <h5>${carItem.title}</h5>
+                                        //     <p>${carItem.caption}</p>
+                                        // </div>
 
                     carDiv.append(carElement);
                     $('.carousel-indicators').append(indic);

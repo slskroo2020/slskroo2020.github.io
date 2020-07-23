@@ -190,7 +190,6 @@ $('.img-pop-up-d1').magnificPopup({
 	}
 });
 
-/* magnificPopup img view */
 $('.img-pop-up-d2').magnificPopup({
 	type: 'image',
 	gallery: {
@@ -205,9 +204,15 @@ $('.img-pop-up-d3').magnificPopup({
 	}
 });
 
-/* magnificPopup img view */
 $('.img-pop-up-d4').magnificPopup({
 	type: 'image',
+	gallery: {
+	  enabled: true
+	}
+});
+
+$('.vid-pop-up').magnificPopup({
+	type: 'iframe',
 	gallery: {
 	  enabled: true
 	}
