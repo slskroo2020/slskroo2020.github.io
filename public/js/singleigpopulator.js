@@ -39,6 +39,11 @@ $(document).ready(function () {
     const urlParams = new URLSearchParams(window.location.search);
     var query = urlParams.get('ig');
 
+    if (query=="College_Students'_Committee") $('#cscnav').addClass('active');
+    if (query=="Tembusu_Ambassadors") $('#tambsnav').addClass('active');
+    if (query=="Education_Working_Group_(EWG)") $('#ewgnav').addClass('active');
+    if (query=="Alumni_Working_Group") $('#awgnav').addClass('active');
+
     iosocket.on('connect', function() {
         console.log("Connected!");
 

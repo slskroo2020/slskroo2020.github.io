@@ -171,7 +171,7 @@ $('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
-	}
+  }
 });
 
 /* magnificPopup img view */
@@ -473,4 +473,3 @@ mailChimp();
 //     zindex: 999
 //   });
 // });
-

@@ -29,6 +29,27 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <!-- FontAwesome Latest -->
+    <script src="https://kit.fontawesome.com/871251b055.js" crossorigin="anonymous"></script>
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:site_name" content="TWW2020: New Beginnings"/>
+    <meta property="og:title" content="Expedition Gallery"/>
+    <meta property="og:description" content="Photos and Videos from TWW2020"/>
+    <meta property="og:image" content="https://tww2020.site/img/opengraph.jpg" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://tww2020.site/">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68496379-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-68496379-5');
+    </script>
 </head>
 
 <body>
@@ -150,13 +171,15 @@
                     </div>
                 </div>
             </div>
-            <ul class="nav nav-tabs gallery wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#day1">DAY 1</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day2">DAY 2</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day3">DAY 3</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day4">DAY 4</a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#videos">VIDEOS</a></li>
-            </ul>
+            <div class="tabbable">
+                <ul class="nav nav-tabs gallery wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#day1">DAY 1</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day2">DAY 2</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day3">DAY 3</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#day4">DAY 4</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#videos">VIDEOS</a></li>
+                </ul>
+            </div>
             <!-- <div class="section-top-border-solid gallery pt-0"></div> -->
             <div class="tab-content wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="tab-pane container fade show active" id="day1">
