@@ -19,7 +19,7 @@ menuTemplate.interact('Start Drawing', 'draw', {
     }
 })
 
-menuTemplate.url('See Canvas', 'https://tww2020.site/tplace.html')
+menuTemplate.url('See Canvas', 'https://tww2020.site/headquarters/tplace')
 
 menuTemplate.url('See Instructions', 'https://docs.google.com/presentation/d/1PvEgIjDTDicbbiSd4Mj8fXBc6uV1n9qT9pmAv2R-OfI/edit?usp=sharing')
 
