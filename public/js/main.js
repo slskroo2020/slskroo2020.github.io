@@ -33,8 +33,8 @@ var loading = setInterval(animate, 50);
 
 
 $(window).on('load', function() {
-    var url = document.title;
-    if (url=="Loading...") return;
+    // var url = document.title;
+    // if (url=="Loading...") return;
 
     // Intro Sequence
     $('#progress').width('100%');
@@ -171,7 +171,7 @@ $('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
-	}
+  }
 });
 
 /* magnificPopup img view */
@@ -190,7 +190,6 @@ $('.img-pop-up-d1').magnificPopup({
 	}
 });
 
-/* magnificPopup img view */
 $('.img-pop-up-d2').magnificPopup({
 	type: 'image',
 	gallery: {
@@ -205,9 +204,15 @@ $('.img-pop-up-d3').magnificPopup({
 	}
 });
 
-/* magnificPopup img view */
 $('.img-pop-up-d4').magnificPopup({
 	type: 'image',
+	gallery: {
+	  enabled: true
+	}
+});
+
+$('.vid-pop-up').magnificPopup({
+	type: 'iframe',
 	gallery: {
 	  enabled: true
 	}
@@ -370,10 +375,10 @@ $(document).ready(function() {
 
 
 //------- Mailchimp js --------//  
-function mailChimp() {
-  $('#mc_embed_signup').find('form').ajaxChimp();
-}
-mailChimp();
+// function mailChimp() {
+//   $('#mc_embed_signup').find('form').ajaxChimp();
+// }
+// mailChimp();
 
 
 
@@ -458,13 +463,13 @@ mailChimp();
   });
 
 // NiceScroll
-$(function() {  
-  $("body").niceScroll({
-    cursorborder: "none",
-    cursorcolor:'#C85930',
-    cursorwidth: 10,
-    cursoropacitymin: 0.3,
-    autohidemode: 'leave',
-    zindex: 999
-  });
-});
+// $(function() {
+//   $("body").niceScroll({
+//     cursorborder: "none",
+//     cursorcolor:'#C85930',
+//     cursorwidth: 10,
+//     cursoropacitymin: 0.3,
+//     autohidemode: 'leave',
+//     zindex: 999
+//   });
+// });

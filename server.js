@@ -39,7 +39,7 @@ socketio.listen(server).on('connection', function (socket) {
             var igImages = [];
             var igReviews = [];
             // var socialMedia = [];
-            connection.query(`SELECT * FROM ig_details WHERE name='${targetIG}'`, function (err, result1) {
+            connection.query(`SELECT * FROM ig_details WHERE name='${targetIG.replace(/\'/g, `''`)}'`, function (err, result1) {
                 if (err) throw err;
                 if (result1.length < 1) {
                     socket.emit('retIG', "empty");
@@ -48,11 +48,11 @@ socketio.listen(server).on('connection', function (socket) {
                 } else {
                     igDetails = result1;
                     console.log(`Step 1 Success`);
-                    connection.query(`SELECT * FROM reviews WHERE name='${targetIG}'`, function (err, result2) {
+                    connection.query(`SELECT * FROM reviews WHERE name='${targetIG.replace(/\'/g, `''`)}'`, function (err, result2) {
                         if (err) throw err;
                         igReviews = result2;
                         console.log(`Step 2 Success`);
-                    connection.query(`SELECT * FROM images_videos WHERE name='${targetIG}'`, function (err, result3) {
+                    connection.query(`SELECT * FROM images_videos WHERE name='${targetIG.replace(/\'/g, `''`)}'`, function (err, result3) {
                         if (err) throw err;
                         igImages = result3;
                         console.log(`Step 3 Success`);
@@ -63,6 +63,34 @@ socketio.listen(server).on('connection', function (socket) {
                             socket.emit('retIG', {ig: igDetails, reviews: igReviews, img: igImages});
                             connection.release();
                         });
+                    });
+                };
+            });
+        });
+    })
+
+    socket.on('reqIGPage', function(targetCategory) {
+        console.log(`Retrieving IG data for ${targetCategory}`);
+        pool.getConnection(function(err, connection){
+            if (err) throw err;
+            var igDetails = [];
+            var igImages = [];
+            // var socialMedia = [];
+            connection.query(`SELECT * FROM ig_details WHERE category='${targetCategory}'`, function (err, result1) {
+                if (err) throw err;
+                if (result1.length < 1) {
+                    socket.emit('retIG', "empty");
+                    console.log(`Step 1 Failed: No IGs in category exist.`);
+                    connection.release();
+                } else {
+                    igDetails = result1;
+                    console.log(`Step 1 Success`);
+                    connection.query(`SELECT * FROM images_videos WHERE name in (SELECT name FROM ig_details WHERE category='${targetCategory}')`, function (err, result2) {
+                        if (err) throw err;
+                        igImages = result2;
+                        console.log(`Step 2 Success`);
+                        socket.emit('retIGPage', {ig: igDetails, img: igImages});
+                        connection.release();
                     });
                 };
             });
