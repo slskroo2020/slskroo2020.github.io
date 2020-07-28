@@ -42,7 +42,7 @@ $(document).ready(function () {
                     igBox.attr({
                         'class': 'col-lg-3 ig-item shadow rounded',
                     });
-                    igBox.html(`<a href="./?ig=${ig[i].name.replace(/\&/g, "%26")}" class="ig-link">
+                    igBox.html(`<a href="g/?ig=${ig[i].name.replace(/\&/g, "%26")}" class="ig-link">
                                     <div class="ig-thumb rounded-top" style="background: url(../img/ig/${thumbnail.filename}.${thumbnail.type});"></div>
                                     <div class="row py-2 px-3">
                                         <div class="col">

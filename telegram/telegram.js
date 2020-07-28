@@ -22,7 +22,7 @@ menuTemplate.url('See Canvas', 'https://tww2020.site/tplace.html')
 
 menuTemplate.url('Instructions', 'https://docs.google.com/presentation/d/1PvEgIjDTDicbbiSd4Mj8fXBc6uV1n9qT9pmAv2R-OfI/edit?usp=sharing')
 
-menuTemplate.url('See the canvas made by the seniors!', 'https://tww2020.site/tplace.html')
+menuTemplate.url('See the canvas made by the seniors!', 'https://tww2020.site/tplaceseniors.html')
 
 menuTemplate.interact('Whitelist this Chat', 'whitelist', {
     do: ctx => {

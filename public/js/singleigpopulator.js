@@ -85,7 +85,7 @@ $(document).ready(function () {
                     if (img[i].type=="jpg" || img[i].type=="png" || img[i].type=="jpeg") {
                         carItem.class = "img-pop-up";
                         carItem.url = `../img/ig/${img[i].ref}.${img[i].type}`;
-                        carItem.content = `<img class="d-block" src="../img/ig/${img[i].ref}.${img[i].type}" alt="${img[i].ref}">`;
+                        carItem.content = `<img class="d-block" src="../../img/ig/${img[i].ref}.${img[i].type}" alt="${img[i].ref}">`;
                     }
                     
                     // If Video
