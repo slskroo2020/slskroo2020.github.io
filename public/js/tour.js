@@ -28,12 +28,12 @@ function switchImgs(room) {
     interval = setInterval(function(){
         if (isFirstImg) {
             mainImage.src = filepath2;
-            console.log(filepath2);
+            // console.log(filepath2);
             // tourDiv.style.background = `url(${filepath2})`;
             isFirstImg = false;
         } else {
             mainImage.src = filepath1;
-            console.log(filepath1);
+            // console.log(filepath1);
             // tourDiv.style.background = `url(${filepath1})`;
             isFirstImg = true;
         }
