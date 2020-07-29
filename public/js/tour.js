@@ -1,5 +1,5 @@
 // let ImageMap = require('image-map');
-console.log("version 2");
+console.log("version 3");
 
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
@@ -8,26 +8,37 @@ const maps = {
     "abbey": [2782.3, 3283.14, 524.566, 622.262]
 };
 
+let interval;
+let svgMap = document.createElement('object');
+svgMap.type = "image/svg+xml";
+svgMap.class = "tour-overlay";
+overlayDiv.appendChild(svgMap);
+
 function switchImgs(room) {
-    const filepath1 = `./img/${room}1.jpg`;
-    const filepath2 = `./img/${room}2.jpg`;
+    let filepath1 = `./img/${room}1.jpg`;
+    let filepath2 = `./img/${room}2.jpg`;
+    // console.log(filepath1);
+    // console.log(filepath2);
 
     let isFirstImg = false; 
 
     mainImage.src = filepath1;
     // tourDiv.style.background = `url(${filepath1})`;
     // mainImage.setAttribute("usemap", `#${room}`);
-    const interval = setInterval(function(){
+    interval = setInterval(function(){
         if (isFirstImg) {
             mainImage.src = filepath2;
+            console.log(filepath2);
             // tourDiv.style.background = `url(${filepath2})`;
             isFirstImg = false;
         } else {
             mainImage.src = filepath1;
+            console.log(filepath1);
             // tourDiv.style.background = `url(${filepath1})`;
             isFirstImg = true;
         }
     }, 1000);
+    
 }
 
 // function createImgMap(room) {
@@ -49,12 +60,10 @@ function switchImgs(room) {
 
 function createSvgMap(room) {
     // let svgMap = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    let svgMap = document.createElement('object');
-    svgMap.type = "image/svg+xml";
+    
     svgMap.data = `./img/${room}.svg`;
-    svgMap.class = "overlay";
     // svgMap.style.position = "absolute";
-    overlayDiv.appendChild(svgMap);
+    
 
     // let svgObj = svgMap.contentDocument;
     // console.log(svgObj);    
@@ -86,6 +95,7 @@ function moveRooms(nextRoom) {
 
     console.log(nextRoom);
 
+    clearInterval(interval);
     switchImgs(nextRoom);
     createSvgMap(nextRoom);
     // createImgMap(nextRoom);
