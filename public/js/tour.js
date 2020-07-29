@@ -1,4 +1,5 @@
 // let ImageMap = require('image-map');
+console.log("version 2");
 
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
