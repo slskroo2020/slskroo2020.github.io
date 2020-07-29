@@ -4625,6 +4625,10 @@ hr.dashed {
   margin-top: -20px !important;
 }
 
+#handbook_thumb {
+  max-height: 500px;
+}
+
 #missions {
   padding-top: 100px;
   margin-top: -50px;

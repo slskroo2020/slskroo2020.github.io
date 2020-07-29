@@ -18,31 +18,31 @@ menuTemplate.interact('Start Drawing', 'draw', {
     }
 })
 
-menuTemplate.url('See Canvas', 'https://tww2020.site/headquarters/tplace')
+// menuTemplate.url('See Canvas', 'https://tww2020.site/headquarters/tplace')
 
 menuTemplate.url('Instructions', 'https://docs.google.com/presentation/d/1PvEgIjDTDicbbiSd4Mj8fXBc6uV1n9qT9pmAv2R-OfI/edit?usp=sharing')
 
-menuTemplate.url('See the canvas made by the seniors!', 'https://tww2020.site/headquarters/tplaceseniors')
+// menuTemplate.url('See the canvas made by the seniors!', 'https://tww2020.site/headquarters/tplaceseniors')
 
-menuTemplate.interact('Whitelist this Chat', 'whitelist', {
-    do: ctx => {
-        const chatId = ctx.update.callback_query.message.chat.id
-        const url = `${appEntry}/whitelist`
-        axios.post(url, {chatId: chatId})
-            .then(res => {
-                if (res.status === 200) {
-                    ctx.reply('This chat group has been successfully whitelisted!')
-                } else {
-                    ctx.reply('Uh oh looks like the whitelist period is up. Contact @Khairoulll for more info')
-                }
-            })
-            .catch(err => {
-                console.log(err)
-                ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
-            })
-        return false
-    }
-})
+// menuTemplate.interact('Whitelist this Chat', 'whitelist', {
+//     do: ctx => {
+//         const chatId = ctx.update.callback_query.message.chat.id
+//         const url = `${appEntry}/whitelist`
+//         axios.post(url, {chatId: chatId})
+//             .then(res => {
+//                 if (res.status === 200) {
+//                     ctx.reply('This chat group has been successfully whitelisted!')
+//                 } else {
+//                     ctx.reply('Uh oh looks like the whitelist period is up. Contact @Khairoulll for more info')
+//                 }
+//             })
+//             .catch(err => {
+//                 console.log(err)
+//                 ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
+//             })
+//         return false
+//     }
+// })
 
 menuTemplate.interact('F', 'respect', {
     do: ctx => {
