@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <a href="javascript:top.moveRooms('b1rightcorridor')"><rect id="back" x="933.054" y="1012.75" width="252.816" height="248.531" style="fill:white;fill-opacity:0;"/></a>
+    <rect id="3dprinter" x="525.977" y="417.136" width="347.087" height="334.232" style="fill:white;fill-opacity:0;"/>
+    <rect id="doorToAmphi" x="1340.13" y="511.407" width="182.113" height="402.792" style="fill:white;fill-opacity:0;"/>
+    <rect id="shelf" x="1555.59" y="532.894" width="141.289" height="283.456" style="fill:white;fill-opacity:0;"/>
+</svg>
