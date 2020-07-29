@@ -5646,8 +5646,8 @@ hr.dashed {
 
 /* Virtual Tour Area */
 .tour_area {
-  padding-top: 30px;
-  padding-bottom: 70px;
+  padding-top: 10px;
+  padding-bottom: 40px;
   position: relative;
   margin-top: -2px;
 }
@@ -5655,7 +5655,7 @@ hr.dashed {
 .tour_area h3 {
   color: white;
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -5980,17 +5980,34 @@ hr.dashed {
 /* Tour Wrapper */
 .tour-wrapper {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-size: cover;
+  /* height: 0; */
 }
 
-.tour-wrapper iframe {
+/* .tour-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%
+} */
+
+.tour-img {
+  max-height: 100%;
+  width: auto;
+  /* height: 100%;
+  width: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#tour-room-name {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-bottom: 5px;
 }
 
 /* Play Overlay */
