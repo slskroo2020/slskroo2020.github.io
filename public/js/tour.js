@@ -1,44 +1,52 @@
 // let ImageMap = require('image-map');
+// const maps = {
+//     "abbey": [2782.3, 3283.14, 524.566, 622.262]
+// };
+
 console.log("version 3");
 
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
 let overlayDiv = document.getElementById("tour-overlay-div");
-const maps = {
-    "abbey": [2782.3, 3283.14, 524.566, 622.262]
-};
+let roomName = document.getElementById("tour-room-name");
+let roomDesc = document.getElementById("tour-room-description");
 
 let interval;
+let previousRoom;
+
 let svgMap = document.createElement('object');
 svgMap.type = "image/svg+xml";
 svgMap.class = "tour-overlay";
 overlayDiv.appendChild(svgMap);
 
 function switchImgs(room) {
-    let filepath1 = `./img/${room}1.jpg`;
-    let filepath2 = `./img/${room}2.jpg`;
-    // console.log(filepath1);
-    // console.log(filepath2);
+    let bg = `./img/${room}.jpg`; 
+    // might change to jpg
+    let filepath1 = `./img/${room}1.svg`;
+    let filepath2 = `./img/${room}2.svg`;
 
-    let isFirstImg = false; 
+    let isFirstImg = true; 
 
+    tourDiv.style.backgroundImage = `url(${bg})`;
     mainImage.src = filepath1;
-    // tourDiv.style.background = `url(${filepath1})`;
     // mainImage.setAttribute("usemap", `#${room}`);
     interval = setInterval(function(){
         if (isFirstImg) {
             mainImage.src = filepath2;
-            // console.log(filepath2);
-            // tourDiv.style.background = `url(${filepath2})`;
+            console.log("switch to " + filepath2);
             isFirstImg = false;
         } else {
             mainImage.src = filepath1;
-            // console.log(filepath1);
-            // tourDiv.style.background = `url(${filepath1})`;
+            console.log("switch to " + filepath1);
             isFirstImg = true;
+            previousRoom = room;
         }
-    }, 1000);
-    
+    }, 1000); 
+}
+
+function fileNotFound() {
+    moveRooms(previousRoom);
+    alert("Sorry, the next room hasn't been implemented yet!");
 }
 
 // function createImgMap(room) {
@@ -62,16 +70,10 @@ function createSvgMap(room) {
     // let svgMap = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     
     svgMap.data = `./img/${room}.svg`;
-    // svgMap.style.position = "absolute";
-    
-
-    // let svgObj = svgMap.contentDocument;
-    // console.log(svgObj);    
-    // let sections = svgObj.getElementsByClassName("clickable");
-    // console.log(sections);
-
     console.log("svg map created");
 
+    // let svgObj = svgMap.contentDocument;
+    // let sections = svgObj.getElementsByClassName("clickable");
 }
 
 // function createInlineSvg(room) {
@@ -88,7 +90,11 @@ function createSvgMap(room) {
 //     tourDiv.appendChild(svgMap);
 // }
 
-// rmb to clear interval on clicking into another page
+// TODO
+function createRoomText(room) {
+    
+}
+
 function moveRooms(nextRoom) {
     nextRoom = nextRoom.toLowerCase();
     nextRoom.replace(/\s/g, '');
@@ -98,8 +104,7 @@ function moveRooms(nextRoom) {
     clearInterval(interval);
     switchImgs(nextRoom);
     createSvgMap(nextRoom);
-    // createImgMap(nextRoom);
-    // createInlineSvg(nextRoom);
+    // createRoomText(nextRoom);
 }
 
 moveRooms("abbey");
