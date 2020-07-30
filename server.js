@@ -20,8 +20,8 @@ const express = require('express')
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/*', function (req, res) {
-    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+app.get('/:id', function (req, res) {
+    res.sendFile('index.html', {root: path.join(__dirname, 'public/'+req.params.id)});
 })
 
 server.listen(port, function(){

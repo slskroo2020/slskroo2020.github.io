@@ -3431,46 +3431,38 @@ h6 {
   border-left: 2px solid #ff5e13;
 }
 
-/* line 353, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table-wrap {
   overflow-x: auto;
 }
 
-/* line 357, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table {
   background: #324856;
   padding: 15px 0px 5px 0px;
   min-width: 800px;
 }
 
-/* line 361, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .serial {
   width: 11.83%;
   padding-left: 30px;
 }
 
-/* line 365, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .country {
   width: 28.07%;
 }
 
-/* line 368, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .visit {
   width: 19.74%;
 }
 
-/* line 371, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .percentage {
   width: 40.36%;
   padding-right: 50px;
 }
 
-/* line 375, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-head {
   display: flex;
 }
 
-/* line 377, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-head .serial,
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
@@ -3481,7 +3473,6 @@ h6 {
   font-weight: 500;
 }
 
-/* line 387, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row {
   padding: 15px 0;
   border-top: 1px solid #edf3fd;
@@ -3489,7 +3480,6 @@ h6 {
   color: #AAB1B7;
 }
 
-/* line 391, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
@@ -3498,65 +3488,53 @@ h6 {
   align-items: center;
 }
 
-/* line 399, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .country img {
   margin-right: 15px;
 }
 
-/* line 404, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress {
   width: 80%;
   border-radius: 0px;
   background: transparent;
 }
 
-/* line 408, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar {
   height: 5px;
   line-height: 5px;
 }
 
-/* line 411, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-1 {
   background-color: #6382e6;
 }
 
-/* line 414, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-2 {
   background-color: #e66686;
 }
 
-/* line 417, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-3 {
   background-color: #f09359;
 }
 
-/* line 420, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-4 {
   background-color: #73fbaf;
 }
 
-/* line 423, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-5 {
   background-color: #73fbaf;
 }
 
-/* line 426, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-6 {
   background-color: #6382e6;
 }
 
-/* line 429, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-7 {
   background-color: #a367e7;
 }
 
-/* line 432, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
   background-color: #e66686;
 }
 
-/* line 441, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .single-gallery-image {
   margin-top: 30px;
   background-repeat: no-repeat !important;
@@ -4627,6 +4605,10 @@ hr.dashed {
 
 #handbook_thumb {
   max-height: 500px;
+}
+
+#lifehacks_thumb {
+  max-height: 300px;
 }
 
 #missions {
@@ -6237,4 +6219,81 @@ hr.dashed {
   .fellows-container .fellows-item {
     margin: 1.5em;
   }
+}
+
+/* Telebots */
+#hq-telebots {
+  font-size: 70px;
+}
+
+#hq-telebots > a {
+  color: #0088CC;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+#hq-telebots > a:hover {
+  color: #fff
+}
+
+
+/* TeleBot Table */
+.telebot-table-wrap {
+  overflow-x: auto;
+}
+
+.telebot-table {
+  background: #324856;
+  padding: 15px 0px 5px 0px;
+  min-width: 800px;
+}
+
+.telebot-table .botname {
+  width: 20%;
+  padding-left: 30px;
+}
+
+.telebot-table .handle {
+  width: 20%;
+}
+
+.telebot-table .description {
+  width: 60%;
+}
+
+.telebot-table .table-head {
+  display: flex;
+}
+
+.telebot-table .table-head .botname,
+.telebot-table .table-head .handle,
+.telebot-table .table-head .description {
+  color: #fff;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.telebot-table .table-row {
+  padding: 15px 0;
+  border-top: 1px solid #edf3fd;
+  display: flex;
+  color: #AAB1B7;
+}
+
+.telebot-table .table-row a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.telebot-table .table-row a:hover {
+  color: #0088CC;
+  text-decoration: underline;
+}
+
+.telebot-table .table-row .botname,
+.telebot-table .table-row .handle,
+.telebot-table .table-row .description {
+  display: flex;
+  align-items: center;
 }
