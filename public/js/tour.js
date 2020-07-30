@@ -3,7 +3,7 @@
 //     "abbey": [2782.3, 3283.14, 524.566, 622.262]
 // };
 
-console.log("version 3");
+console.log("version 4");
 
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
@@ -18,6 +18,25 @@ let svgMap = document.createElement('object');
 svgMap.type = "image/svg+xml";
 svgMap.class = "tour-overlay";
 overlayDiv.appendChild(svgMap);
+
+const roomNames = {
+    "17liftstairsview": "Lifts",
+    "17liftloungeview": "Lifts",
+    "17leftcorridor": "USP-facing corridor",
+    "17pantry": "Pantry",
+    "17laundrycorridor": "Forest-facing corridor",
+    "17laundryroom": "Laundry Room",
+
+}
+
+const roomDescriptions = {
+    "17liftstairsview": "You can see the stairs on the left!",
+    "17liftloungeview": "On the right is the level lounge! Take note that you can only enter lounges of your own zone / house using your matric card",
+    "17leftcorridor": "We usually chalk each other's doors so everyone has a fun, personalised door instead of a plain one :') Also, the pantry is up ahead!",
+    "17pantry": "There's a pantry every 4 floors, with amenities like a fridge, water cooler (which dispenses both hot and ice water), microwave, electric stove and sink to store ice cream, wash your tupperware or do your cooking! Remember to label your food before putting it into the fridge!",
+    "17laundrycorridor": "The garbage disposal room and laundry room are along this corridor. The garbage disposal room has different chutes for recyclables and general waste, as well as some cleaning supplies like a mop and bucket. Click the arrow ahead to see the laundry room!",
+    "17laundryroom": "Located on 2 floors, Level 9 and Level 17, the laundry rooms come equipped with both washing machines and dryers :) They cost $1 each and would provide you with a fresh set of clothes in no time! (Well, specifically, 30 minutes for the washing machines and 40 minutes for the dryers)",
+}
 
 function switchImgs(room) {
     let bg = `./img/${room}.jpg`; 
@@ -90,9 +109,19 @@ function createSvgMap(room) {
 //     tourDiv.appendChild(svgMap);
 // }
 
-// TODO
 function createRoomText(room) {
-    
+    if (roomNames[room]) {
+        let uppCase = roomNames[room].toUpperCase();
+        roomName.innerText = uppCase;
+    } else {
+        roomName.innerText = "Well I have no idea where you are";
+    }
+
+    if (roomDescriptions[room]) {
+        roomDesc.innerText = roomDescriptions[room];
+    } else {
+        roomName.innerText = "";
+    }
 }
 
 function moveRooms(nextRoom) {
@@ -104,8 +133,8 @@ function moveRooms(nextRoom) {
     clearInterval(interval);
     switchImgs(nextRoom);
     createSvgMap(nextRoom);
-    // createRoomText(nextRoom);
+    createRoomText(nextRoom);
 }
 
-moveRooms("abbey");
+moveRooms("17liftloungeview");
 
