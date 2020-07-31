@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(6.37118,0,0,4.08089,-8815.82,-2144.62)">
-        <rect x="1383.7" y="525.527" width="301.357" height="313.657" style="fill:white;fill-opacity:0;"/>
+    <g transform="matrix(1.11537,0,0,0.897402,-200.814,123.041)">
+        <a href="javascript:top.moveRooms('outsidemaindoors')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
     </g>
-    <g id="svg">
-        <g transform="matrix(1.11537,0,0,0.897402,-200.814,123.041)">
-            <rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:rgb(235,235,235);fill-opacity:0;"/>
-        </g>
-        <g transform="matrix(-0.786895,-0.0524546,0.0492607,-0.738982,1605.23,1834.28)">
-            <rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:rgb(235,235,235);fill-opacity:0;"/>
-        </g>
-        <rect x="699.669" y="607.073" width="369.92" height="220.494" style="fill:white;fill-opacity:0;"/>
+    <g transform="matrix(-0.786895,-0.0524546,0.0492607,-0.738982,1605.23,1834.28)">
+        <a href="javascript:alert('mph')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
     </g>
+    <a href="javascript:alert('mph')"><rect x="699.669" y="607.073" width="369.92" height="220.494" style="fill:white;fill-opacity:0;"/></a>
 </svg>

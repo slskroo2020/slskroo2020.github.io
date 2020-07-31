@@ -147,7 +147,7 @@ function createRoomText(room) {
         let uppCase = roomNames[room].toUpperCase();
         roomName.innerText = uppCase;
     } else {
-        roomName.innerText = "Well I have no idea where you are";
+        roomName.innerText = "IDK";
     }
 
     if (roomDescriptions[room]) {
@@ -159,7 +159,8 @@ function createRoomText(room) {
 
 function search() {
     const nextRoom = document.getElementById('tour-search-text').value;
-    // do some stuff here to map common search terms to the right room;
+    // do some stuff here to map common search terms to the right room
+    // if starts with 'the ' just remove; lower case everything
     moveRooms(nextRoom);
 }
 
@@ -175,5 +176,5 @@ function moveRooms(nextRoom) {
     // createRoomText(nextRoom);
 }
 
-moveRooms("17liftstairsview");
+moveRooms("outsidemaindoors");
 
