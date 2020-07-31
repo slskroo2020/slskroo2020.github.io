@@ -28,8 +28,22 @@ const roomNames = {
     "17pantry": "Pantry",
     "17laundrycorridor": "Forest-facing corridor",
     "17laundryroom": "Laundry Room",
-    "abbey": "Abbey",
 
+    "outsidemaindoors": "Outside Main Doors",
+    "mph": "Multi-purpose Hall",
+    "mphoutside": "Walkway to MPH",
+    "bridgetolearnlobe": "Walkway to Learn Lobe",
+
+    "abbey": "Abbey",
+    "b1fullcorridor": "Learn Lobe B1",
+    "b1rightcorridor": "Learn Lobe B1",
+    "blankcanvas": "Blank Canvas",
+    "boxoffice": "Box Office",
+    "l1fullcorridor": "Learn Lobe L1",
+    "l1incorridor": "Learn Lobe L1",
+    "l1rightcorridor": "Learn Lobe L1",
+    "oasis": "Oasis",
+    "readingroom": "Reading Room",
 
 }
 
@@ -144,6 +158,7 @@ function createSvgMap(room) {
 
 function createRoomText(room) {
     if (roomNames[room]) {
+        console.log("boop");
         let uppCase = roomNames[room].toUpperCase();
         roomName.innerText = uppCase;
     } else {
@@ -153,7 +168,7 @@ function createRoomText(room) {
     if (roomDescriptions[room]) {
         roomDesc.innerText = roomDescriptions[room];
     } else {
-        roomName.innerText = "";
+        roomDesc.innerText = "";
     }
 }
 

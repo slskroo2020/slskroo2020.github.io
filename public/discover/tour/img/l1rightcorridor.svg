@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1917 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-        <a href="javascript:top.moveRooms('l1fullcorridor')"><rect id="tob1leftcorridor" href="javascript:top.moveRooms('abbey')" x="960" y="1091.36" width="197.14" height="159.762" style="fill:white;fill-opacity:0;"/></a>
-        <!-- note: csc room not abbey!! -->
-        <a href="javascript:top.moveRooms('abbey')"><rect href="javascript:top.moveRooms('abbey')" x="1095.51" y="922.172" width="120.916" height="117.51" style="fill:white;fill-opacity:0;"/></a>
-        <a href="javascript:top.moveRooms('abbey')"><rect href="javascript:top.moveRooms('abbey')" x="1227.36" y="502.017" width="58.897" height="465.678" style="fill:white;fill-opacity:0;"/></a>
+    <g transform="matrix(1,0,0,1,-0.773444,-0.939535)">
+        <g transform="matrix(1,0,0,1.09022,0,-98.4633)">
+            <a href="javascript:top.moveRooms('l1incorridor')"><rect x="960" y="1091.36" width="197.14" height="159.762" style="fill:white;fill-opacity:0;"/></a>
+        </g>
+        <!-- travelling to b1 -->
+        <g transform="matrix(-0.998495,0,0,0.915085,2066.6,73.8456)">
+            <a href="javascript:top.moveRooms('b1rightcorridor')"><rect x="1095.51" y="922.172" width="120.916" height="117.51" style="fill:white;fill-opacity:0;"/></a>
+        </g>
+        <g transform="matrix(0.443082,0,0,0.95774,295.166,29.8063)">
+            <a href="javascript:top.moveRooms('b1rightcorridor')"><rect x="1227.36" y="502.017" width="58.897" height="465.678" style="fill:white;fill-opacity:0;"/></a>
+        </g>
+        <g transform="matrix(-0.0505113,-1.44645,-0.795791,0.0277896,1306.06,3159.55)">
+            <a href="javascript:alert('This is just another seminar room')"><path d="M1920,685.394L1322.9,685.394L1433.33,573.883L1879.5,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+        </g>
+        <a href="javascript:alert('This is the CSC (College Students\' Committee) room')"><rect x="1230.76" y="487.583" width="53.546" height="464.548" style="fill:white;fill-opacity:0;"/></a>
+    </g>
 </svg>
