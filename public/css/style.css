@@ -2843,6 +2843,10 @@ h3 {
   color: #C85930;
 }
 
+.footer .copy-right_text .copy_right a:hover {
+  color: #ffffff;
+}
+
 /*=================== contact banner start ====================*/
 /* line 3, ../../Arafath/CL/December/236. Event-02/HTML/scss/_contact.scss */
 .dropdown .dropdown-menu {
@@ -3533,6 +3537,13 @@ h6 {
 
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
   background-color: #e66686;
+}
+
+.progress-table .table-row .percentage .progress .progress-boots {
+  background-image: url(../img/programmes/bootsbar.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .single-gallery-image {
