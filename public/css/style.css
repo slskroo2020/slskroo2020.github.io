@@ -4220,6 +4220,8 @@ h6 {
 /* line 999, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .default-select {
   height: 40px;
+  position: relative;
+  z-index: 999;
 }
 
 /* line 1001, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
@@ -5653,6 +5655,8 @@ hr.dashed {
   padding-bottom: 40px;
   position: relative;
   margin-top: -2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tour_area h3 {
@@ -5670,6 +5674,8 @@ hr.dashed {
   .tour_area {
     padding-top: 50px;
     padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .tour_area h3 {
@@ -6039,6 +6045,7 @@ hr.dashed {
   font-size: 2rem;
   font-weight: bolder;
   padding-bottom: 5px;
+  text-decoration: underline;
 }
 
 /* Play Overlay */
