@@ -2605,7 +2605,7 @@ h3 {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 85%;
+  height: 87%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -2622,7 +2622,7 @@ h3 {
   .program_details_area .program_detail_wrap::before {
     left: 13px;
     transform: translateX(0);
-    height: 86%;
+    height: 87%;
     top: 20px;
   }
 }
@@ -2752,6 +2752,11 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+}
+
+.program_details_area .program_detail_wrap .single_propram .porgram_top > a {
+  z-index: 999;
+  position: relative;
 }
 
 /* line 103, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
@@ -4215,6 +4220,8 @@ h6 {
 /* line 999, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .default-select {
   height: 40px;
+  position: relative;
+  z-index: 999;
 }
 
 /* line 1001, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
@@ -4518,7 +4525,7 @@ hr.dashed {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 79%;
+  height: 84%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -4528,7 +4535,7 @@ hr.dashed {
   #expeditionmap .program_detail_wrap::before {
     left: 13px;
     transform: translateX(0);
-    height: 78%;
+    height: 87%;
     top: 20px;
   }
 }
@@ -4761,6 +4768,7 @@ hr.dashed {
   padding-bottom: 70px;
   position: relative;
   margin-top: -2px;
+  min-height: 100vh;
 }
 
 .single-ig_area h3 {
@@ -5301,6 +5309,7 @@ hr.dashed {
   padding-bottom: 70px;
   position: relative;
   margin-top: -2px;
+  min-height: 100vh;
 }
 
 .ig_area h3 {
@@ -5621,8 +5630,15 @@ hr.dashed {
 
 .tplace_area h3 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
+  letter-spacing: -4px;
   margin-top: 10px;
+  line-height: 0.6;
+}
+
+.tplace_area .section_title p {
+  margin-top: 1em;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -5632,13 +5648,13 @@ hr.dashed {
   }
 
   .tplace_area h3 {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .tplace_area h3 {
-    font-size: 70px;
+    font-size: 90px;
   }
 }
 
@@ -5648,6 +5664,8 @@ hr.dashed {
   padding-bottom: 40px;
   position: relative;
   margin-top: -2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tour_area h3 {
@@ -5656,10 +5674,17 @@ hr.dashed {
   margin-top: 0px;
 }
 
+.tour_area h4 {
+  color: white;
+  font-size: 30px;
+}
+
 @media (min-width: 768px) {
   .tour_area {
     padding-top: 50px;
     padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .tour_area h3 {
@@ -5671,6 +5696,17 @@ hr.dashed {
   .tour_area h3 {
     font-size: 70px;
   }
+}
+
+#loading-overlay {
+  background-color: black;
+  padding-top: 30%;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -5987,7 +6023,6 @@ hr.dashed {
   margin-bottom: 20px;
   margin-top: 10px;
   background-size: cover;
-  /* height: 0; */
 }
 
 /* .tour-wrapper iframe {
@@ -6019,6 +6054,7 @@ hr.dashed {
   font-size: 2rem;
   font-weight: bolder;
   padding-bottom: 5px;
+  text-decoration: underline;
 }
 
 /* Play Overlay */
