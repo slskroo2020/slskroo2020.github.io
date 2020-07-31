@@ -18,7 +18,23 @@ const express = require('express')
     port : process.env.MYSQLPORT
 });
 
+var options = {
+    host: 'tplace.xyz',
+    port: 5000,
+    path: '/api/grid'
+},
+body = '';
+
 app.use(express.static(path.join(__dirname, 'public')));
+
+// app.get(options, function(responseFromRemoteAPI) {
+//     responseFromRepoteApi.on('data', function(chunk) {
+//         body += chunk;
+//     });
+//     responseFromRemoteAPI.on('end', function() {
+//         response.writeHead(200, {"grid": grid})
+//     })
+// });
 
 app.get('/:id', function (req, res) {
     res.status(404).redirect('/404.html');

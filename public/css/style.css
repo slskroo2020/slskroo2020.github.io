@@ -2605,7 +2605,7 @@ h3 {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 85%;
+  height: 87%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -2622,7 +2622,7 @@ h3 {
   .program_details_area .program_detail_wrap::before {
     left: 13px;
     transform: translateX(0);
-    height: 86%;
+    height: 87%;
     top: 20px;
   }
 }
@@ -4525,7 +4525,7 @@ hr.dashed {
   transform: translateX(-50%);
   content: '';
   background: rgba(255, 255, 255, 0.2);
-  height: 79%;
+  height: 84%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -4535,7 +4535,7 @@ hr.dashed {
   #expeditionmap .program_detail_wrap::before {
     left: 13px;
     transform: translateX(0);
-    height: 78%;
+    height: 87%;
     top: 20px;
   }
 }
@@ -5628,8 +5628,15 @@ hr.dashed {
 
 .tplace_area h3 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
+  letter-spacing: -4px;
   margin-top: 10px;
+  line-height: 0.6;
+}
+
+.tplace_area .section_title p {
+  margin-top: 1em;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -5639,13 +5646,13 @@ hr.dashed {
   }
 
   .tplace_area h3 {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .tplace_area h3 {
-    font-size: 70px;
+    font-size: 90px;
   }
 }
 
