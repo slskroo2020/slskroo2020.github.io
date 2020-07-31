@@ -28,6 +28,8 @@ const roomNames = {
     "17pantry": "Pantry",
     "17laundrycorridor": "Forest-facing corridor",
     "17laundryroom": "Laundry Room",
+    "abbey": "Abbey",
+
 
 }
 
@@ -94,7 +96,7 @@ function switchImgs(room){
 
 function fileNotFound() {
     moveRooms(previousRoom);
-    alert("Sorry, the next room hasn't been implemented yet!");
+    alert("Sorry, that room hasn't been implemented yet!");
 }
 
 // function createImgMap(room) {
@@ -153,6 +155,12 @@ function createRoomText(room) {
     } else {
         roomName.innerText = "";
     }
+}
+
+function search() {
+    const nextRoom = document.getElementById('tour-search-text').value;
+    // do some stuff here to map common search terms to the right room;
+    moveRooms(nextRoom);
 }
 
 function moveRooms(nextRoom) {
