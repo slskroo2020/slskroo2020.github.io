@@ -2754,6 +2754,11 @@ h3 {
   color: #fff;
 }
 
+.program_details_area .program_detail_wrap .single_propram .porgram_top > a {
+  z-index: 999;
+  position: relative;
+}
+
 /* line 103, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
 .program_details_area .program_detail_wrap .single_propram .thumb {
   margin-bottom: 12px;
@@ -5656,6 +5661,11 @@ hr.dashed {
   margin-top: 0px;
 }
 
+.tour_area h4 {
+  color: white;
+  font-size: 30px;
+}
+
 @media (min-width: 768px) {
   .tour_area {
     padding-top: 50px;
@@ -5671,6 +5681,17 @@ hr.dashed {
   .tour_area h3 {
     font-size: 70px;
   }
+}
+
+#loading-overlay {
+  background-color: black;
+  padding-top: 30%;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -5987,7 +6008,6 @@ hr.dashed {
   margin-bottom: 20px;
   margin-top: 10px;
   background-size: cover;
-  /* height: 0; */
 }
 
 /* .tour-wrapper iframe {

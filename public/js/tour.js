@@ -1,7 +1,9 @@
+"use strict";
 // let ImageMap = require('image-map');
 // const maps = {
 //     "abbey": [2782.3, 3283.14, 524.566, 622.262]
 // };
+
 
 console.log("version 4");
 
@@ -48,6 +50,8 @@ function checkImgs(room) {
     const filepath2 = `./img/${room}2.svg`;
     const svgData = `./img/${room}.svg`;
 
+    var loadTime = setTimeout(function(){$('#loading-overlay').fadeIn(100);}, 100);
+    
     myImage.src = bg;
     myImage.onload = function(){
         myImage.src = filepath1;
@@ -61,6 +65,8 @@ function checkImgs(room) {
                     switchImgs(room);
                     createRoomText(room);
                     svgMap.data = svgData;
+                    window.clearTimeout(loadTime);
+                    $('#loading-overlay').fadeOut(100);
                 }
             }
         }
@@ -178,3 +184,14 @@ function moveRooms(nextRoom) {
 
 moveRooms("outsidemaindoors");
 
+// $("#tour-img").on("error", function(){fileNotFound()});
+
+// Buttons
+// $("#L17Button").on("click", function(){moveRooms('17liftstairsview')});
+// $("#L1Button").click(function(){moveRooms('17liftstairsview')});
+// $("#LLButton").click(function(){moveRooms('17liftstairsview')});
+// $("#abbeyButton").click(function(){moveRooms('17liftstairsview')});
+
+$(window).on('load', function() {
+    $('#loading-overlay').fadeOut(500);
+});
