@@ -2570,6 +2570,7 @@ h3 {
 
 .program_details_area h3{
   font-size: 45px;
+  letter-spacing: -7px;
 }
 
 .program_details_area .genric-btn {
@@ -2639,6 +2640,8 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram {
   display: block;
   position: relative;
+  padding-top: 100px;
+  margin-top: -100px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -2767,6 +2770,8 @@ h3 {
   font-weight: 400;
   color: #fff;
 }
+
+
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer {
