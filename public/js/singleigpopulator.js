@@ -142,8 +142,6 @@ $(document).ready(function () {
                 // }
             }
             document.title = query;
-            // $('#cover').fadeOut(500);
-            // $('body').getNiceScroll().resize();
             initMagnificPopup();
         });
 

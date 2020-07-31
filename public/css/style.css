@@ -2570,6 +2570,7 @@ h3 {
 
 .program_details_area h3{
   font-size: 45px;
+  letter-spacing: -7px;
 }
 
 .program_details_area .genric-btn {
@@ -2639,6 +2640,8 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram {
   display: block;
   position: relative;
+  padding-top: 100px;
+  margin-top: -100px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -2767,6 +2770,8 @@ h3 {
   font-weight: 400;
   color: #fff;
 }
+
+
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer {
@@ -3442,25 +3447,25 @@ h6 {
 .progress-table {
   background: #324856;
   padding: 15px 0px 5px 0px;
-  min-width: 800px;
+  min-width: 700px;
 }
 
 .progress-table .serial {
-  width: 11.83%;
+  width: 10%;
   padding-left: 30px;
 }
 
 .progress-table .country {
-  width: 28.07%;
+  width: 25%;
 }
 
 .progress-table .visit {
-  width: 19.74%;
+  width: 12%;
 }
 
 .progress-table .percentage {
-  width: 40.36%;
-  padding-right: 50px;
+  width: 53%;
+  padding-right: 50px
 }
 
 .progress-table .table-head {
@@ -3497,7 +3502,7 @@ h6 {
 }
 
 .progress-table .table-row .percentage .progress {
-  width: 80%;
+  width: 100%;
   border-radius: 0px;
   background: transparent;
 }
@@ -5825,6 +5830,12 @@ hr.dashed {
 .flag-section h4 {
   font-size: 27px;
   margin-bottom: 20px;
+}
+
+.flag-section h1 {
+  font-size: 50px;
+  line-height: 0.6;
+  letter-spacing: -7px;
 }
 
 .flag-section p {
