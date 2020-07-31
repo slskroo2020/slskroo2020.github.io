@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.0624425,-1.78812,1.83135,0.0639521,170.178,3551.02)">
+        <a href="javascript:top.moveRooms('boxoffice')"><path d="M1920,685.394L1322.9,685.394L1449.29,573.883L1855.95,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <!-- <g transform="matrix(-0.0638715,-1.82904,-1.317,0.0459905,1521.27,3641.89)">
+        <a href="javascript:top.moveRooms('sr')"><path d="M1920,685.394L1322.9,685.394L1458.82,573.883L1855.95,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <g transform="matrix(-0.0199387,-1.05349,-0.612744,0.011597,1148.8,2310.21)">
+        <a href="javascript:top.moveRooms('sr')"><path d="M1920,685.394L1322.9,685.394L1408.75,573.883L1870.94,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+    </g> -->
+    <g transform="matrix(0.0365221,-1.04586,0.701355,0.0244919,737.677,2296.52)">
+        <a href="javascript:top.moveRooms('oasis')"><path d="M1920,685.394L1322.9,685.394L1408.95,573.883L1877.28,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-5)">
+        <a href="javascript:top.moveRooms('l1rightcorridor')"><rect x="910.706" y="734.885" width="134.083" height="123.702" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <!-- <g transform="matrix(-1.19071,7.56118e-18,9.33515e-18,-1.39384,2150.49,2294.85)">
+        <rect id="outoflearnlobe" x="910.706" y="734.885" width="134.083" height="123.702" style="fill:white;fill-opacity:0;"/></a>
+    </g> -->
+    <g transform="matrix(0.764145,0,0,0.694222,285.993,276.987)">
+        <a href="javascript:top.moveRooms('oasis')"><rect x="1094.59" y="855.983" width="138.583" height="113.983" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <a href="javascript:top.moveRooms('boxoffice')"><rect x="1201.19" y="999.487" width="131.203" height="125.463" style="fill:white;fill-opacity:0;"/></a>
+</svg>
