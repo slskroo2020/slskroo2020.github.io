@@ -16,9 +16,12 @@ $(window).on('scroll', function () {
 // Loading bar
 var count = 4;
 
+var url = document.title;
+var pageChk = false;
+if (url == "LOCIPs" || url == "Arts - Interest Groups"|| url == "Loading..."|| url == "Sports - Interest Groups" || url == "Enrichment - Interest Groups" || url == "OCTs") pageChk = true;
+
 function animate() {
-  if(count == 99){
-    $('.loading.text').text(  "Completed!");
+  if(count == 99 || $('#percent').text() == '100%'){
     clearInterval(loading);
   } else {
     count = count + 1;
@@ -29,20 +32,18 @@ function animate() {
 
 var loading = setInterval(animate, 50);
 
-
-
-
 $(window).on('load', function() {
-    // var url = document.title;
-    // if (url=="Loading...") return;
-
     // Intro Sequence
-    $('#progress').width('100%');
-    $('#percent').text('100%');
-    $('#loadingtext').text('Hyperdrive ready!');
-    clearInterval(loading);
-    $('#cover').fadeOut(500);
+    if (pageChk == false) {
+      clearInterval(loading);
+      $('#progress').width('100%');
+      $('#percent').text('100%');
+      $('#loadingtext').text('Hyperdrive ready!');
+      $('#cover').fadeOut(500);
+    }
 });
+
+
 
 $(document).ready(function(){
 

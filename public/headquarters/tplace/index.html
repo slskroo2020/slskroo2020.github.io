@@ -55,17 +55,8 @@
 <body class="black_bg">
     <!-- Loading Screen -->
     <div id="cover">
-        <!-- <div id="spacebg1" class="space"></div> -->
-        <!-- <div id="spacebg2" class="space"></div>
-        <div id="spacebg3" class="space"></div> -->
         <div class="wrap">
             <div class="loading text-center">
-                <!-- <div class="rocket-container text-center">
-                    <img class="loading-img" src="img/loading/rocket.png" alt=""><br>
-                    <img id="rocket-1" class="loading-img bottom-rocket" src="img/loading/rocket1.png" alt=""><br>
-                    <img id="rocket-2" class="loading-img bottom-rocket" src="img/loading/rocket2.png" alt=""><br>
-                    <img id="rocket-3" class="loading-img bottom-rocket" src="img/loading/rocket3.png" alt=""><br>
-                </div> -->
                 <div class="progress-bar">
                     <div id="progress"><span id="percent"></span></div>
                 </div>
@@ -157,9 +148,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="section_title text-center mb-80">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >tPlace-holder</h3>
-                        <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s" >The tPlace canvas will be implemented here.</p>
+                    <div id="canvas-div" class="section_title text-center">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >tPlace</h3>
+                        <hr class="divider light wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                        <canvas id="canvas" width="490" height="490" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s"></canvas>
+                        <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s" >Access the canvas for drawing via your WG Telegram chat's tPlace bot!</p>
                     </div>
                 </div>
             </div>
@@ -206,6 +199,11 @@ Copyright &copy; <a href="https://tembusu.nus.edu.sg/" target="_blank" rel="noop
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="../../js/rellax.min.js"></script>
     <script src="../../js/jquery.nicescroll.js"></script>
+
+    <!-- Canvas -->
+    <script src="js/canvas_commons.js"></script>
+    <script src="js/colors.js"></script>
+    <script src="js/tplace.js"></script>
 
     <script src="../../js/main.js"></script>
 </body>
