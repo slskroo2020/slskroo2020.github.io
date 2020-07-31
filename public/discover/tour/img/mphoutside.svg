@@ -5,7 +5,7 @@
         <a href="javascript:top.moveRooms('outsidemaindoors')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(-0.786895,-0.0524546,0.0492607,-0.738982,1605.23,1834.28)">
-        <a href="javascript:alert('mph')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
+        <a href="javascript:top.moveRooms('mph')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
     </g>
-    <a href="javascript:alert('mph')"><rect x="699.669" y="607.073" width="369.92" height="220.494" style="fill:white;fill-opacity:0;"/></a>
+    <a href="javascript:top.moveRooms('mph')"><rect x="699.669" y="607.073" width="369.92" height="220.494" style="fill:white;fill-opacity:0;"/></a>
 </svg>
