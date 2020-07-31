@@ -18,7 +18,7 @@ var count = 4;
 
 var url = document.title;
 var pageChk = false;
-if (url == "LOCIPs" || url == "Arts"|| url == "Loading..."|| url == "Sports" || url == "Enrichment" || url == "OCTs") pageChk = true;
+if (url == "LOCIPs" || url == "Arts - Interest Groups"|| url == "Loading..."|| url == "Sports - Interest Groups" || url == "Enrichment - Interest Groups" || url == "OCTs") pageChk = true;
 
 function animate() {
   if(count == 99 || $('#percent').text() == '100%'){
