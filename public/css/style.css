@@ -4768,6 +4768,7 @@ hr.dashed {
   padding-bottom: 70px;
   position: relative;
   margin-top: -2px;
+  min-height: 100vh;
 }
 
 .single-ig_area h3 {
@@ -5308,6 +5309,7 @@ hr.dashed {
   padding-bottom: 70px;
   position: relative;
   margin-top: -2px;
+  min-height: 100vh;
 }
 
 .ig_area h3 {
