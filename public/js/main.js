@@ -21,7 +21,7 @@ var pageChk = false;
 if (url == "LOCIPs" || url == "Arts"|| url == "Loading..."|| url == "Sports" || url == "Enrichment" || url == "OCTs") pageChk = true;
 
 function animate() {
-  if(count == 99){
+  if(count == 99 || $('#percent').text() == '100%'){
     clearInterval(loading);
   } else {
     count = count + 1;
@@ -30,20 +30,18 @@ function animate() {
   }
 }
 
-if (pageChk == false) {
-  var loading = setInterval(animate, 50);
+var loading = setInterval(animate, 50);
 
-  $(window).on('load', function() {
-      if (url=="Loading...") return;
-
-      // Intro Sequence
+$(window).on('load', function() {
+    // Intro Sequence
+    if (pageChk == false) {
+      clearInterval(loading);
       $('#progress').width('100%');
       $('#percent').text('100%');
       $('#loadingtext').text('Hyperdrive ready!');
-      clearInterval(loading);
       $('#cover').fadeOut(500);
-  });
-}
+    }
+});
 
 
 

@@ -6,18 +6,6 @@ const iosocket = socket.connect();
 
 var drawnCheck = false;
 
-function animate() {
-    if(count == 99){
-      clearInterval(loading);
-    } else {
-      count = count + 1;
-      $('#progress').width(count+'%');
-      $('#percent').text(count+'%');
-    }
-}
-
-var loading = setInterval(animate, 50);
-
 function initMagnificPopup(){
     // $('.img-pop-up .popup-video').magnificPopup({
     //     callbacks: {
@@ -162,7 +150,6 @@ $(document).ready(function () {
             $('#progress').width('100%');
             $('#percent').text('100%');
             $('#loadingtext').text('Hyperdrive ready!');
-            clearInterval(loading);
             $('#cover').fadeOut(500);
         });
 
