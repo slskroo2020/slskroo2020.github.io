@@ -20,9 +20,14 @@ const express = require('express')
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/*', function (req, res) {
-    res.sendFile('index.html', {root: path.join(__dirname, 'public')});
+app.get('/:id', function (req, res) {
+    res.status(404).redirect('/404.html');
+    res.sendFile('index.html', {root: path.join(__dirname, 'public/'+req.params.id)});
 })
+
+app.get('*', function(req, res) {
+    res.status(404).redirect('/404.html');
+});
 
 server.listen(port, function(){
     console.log (`Server listening on port ${port}.`);
