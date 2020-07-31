@@ -4,6 +4,8 @@
 var socket = io({transports: ['websocket'], upgrade: false});
 const iosocket = socket.connect();
 
+var drawnCheck = false;
+
 $(document).ready(function () {
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -14,6 +16,8 @@ $(document).ready(function () {
 
         iosocket.emit('reqIGPage', query);
         iosocket.on('retIGPage', function(DB) {
+            if (drawnCheck == true) return;
+            drawnCheck = true;
             if (DB == "empty") {
                 window.location.replace("https://tww2020.site/404.html");
             } else {

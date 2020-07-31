@@ -4,6 +4,8 @@
 var socket = io({transports: ['websocket'], upgrade: false});
 const iosocket = socket.connect();
 
+var drawnCheck = false;
+
 function initMagnificPopup(){
     // $('.img-pop-up .popup-video').magnificPopup({
     //     callbacks: {
@@ -49,6 +51,8 @@ $(document).ready(function () {
 
         iosocket.emit('reqIG', query);
         iosocket.on('retIG', function(DB) {
+            if (drawnCheck == true) return;
+            drawnCheck = true;
             if (DB == "empty") {
                 window.location.replace("https://tww2020.site/404.html");
             } else {
