@@ -151,27 +151,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-2 wow fadeInDown text-center d-lg-none" data-wow-duration="2s" data-wow-delay=".5s">
-                    <h4>Navigate</h4>
-                    <input type="text" id="tour-search-text" class="mb-2" placeholder="Search for a place!"><button type="submit" onclick="search()"><i class="fa fa-search"></i></button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('abbey')">Learn Lobe B1</button>
-                    <!-- <div class="row justify-content-center">
-                        <div class="default-select" id="default-select">
-                        <select onchange="if (this.selectedIndex) {moveRooms(this.selectedIndex.value);}">
-                                <option value="17liftstairsview">Main Building L17</option>
-                                <option value="outsidemaindoors">Main Building L1</option>
-                                <option value="l1fullcorridor">Learn Lobe L1</option>
-                                <option value="abbey">Learn Lobe B1</option>
-                            </select>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                <div class="col-lg-8 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
                     <div class="tour-wrapper" id="tour-div">
                         <img class="tour-img img-fluid" id="tour-img" src="./img/#" onerror="fileNotFound()">
                         <!-- <iframe src="https://xd.adobe.com/embed/dae0008e-401c-41e7-ac11-a608d68abf85-8fb3/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe> -->
@@ -181,20 +161,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 wow fadeInLeft d-none d-lg-block" data-wow-duration="2s" data-wow-delay=".5s">
-                    <h4>Navigate</h4>
-                    <input type="text" id="tour-search-text" class="mb-2" placeholder="Search for a place!" size="15"><button type="submit" onclick="search()"><i class="fa fa-search"></i></button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button><br>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
-                </div>
-            </div>
-            <div class="row justify-content-center mb-5">
-                <div class="col-9 text-center wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">
+                <div class="col-lg-4 text-center wow fadeInDown mb-3" data-wow-duration="2s" data-wow-delay=".3s">
                     <p id="tour-room-name">THE ABBEY</p>
                     <p id="tour-room-description">Some placeholder description.</p>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 wow fadeInDown text-center d-lg-none" data-wow-duration="2s" data-wow-delay=".5s">
+                        <!-- for mobile -->
+                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
+                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>
+                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button>
+                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
+                        <form autocomplete="off" class="tour-search">
+                            <div class="autocomplete">
+                                <input type="text" id="tour-search-text" class="mb-2" placeholder=" Search for a place!">
+                                <button id="search" type="submit" onclick="search()">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <div class="row justify-content-center">
+                            <div class="default-select" id="default-select">
+                            <select onchange="if (this.selectedIndex) {moveRooms(this.selectedIndex.value);}">
+                                    <option value="17liftstairsview">Main Building L17</option>
+                                    <option value="outsidemaindoors">Main Building L1</option>
+                                    <option value="l1fullcorridor">Learn Lobe L1</option>
+                                    <option value="abbey">Learn Lobe B1</option>
+                                </select>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 wow fadeInLeft d-none d-lg-block text-center" data-wow-duration="2s" data-wow-delay=".5s">
+                    <!-- <h4>Navigate</h4> -->
+                    <!-- <input type="text" id="tour-search-text" class="mb-2" placeholder="Search for a place!" size="15"><button type="submit" onclick="search()"><i class="fa fa-search"></i></button><br> -->
+                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
+                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>
+                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button>
+                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
+                    <form autocomplete="off" class="tour-search">
+                        <input class="autocomplete" type="text" id="tour-search-text" class="mb-2" placeholder=" Search for a place!">
+                        <button id="search" type="submit" onclick="search()">
+                            <i class="fa fa-search"></i>
+                        </button> 
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>

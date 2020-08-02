@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,-6)">
+        <a href="javascript:top.moveRooms('lobbypostboxview')"><rect x="802.843" y="1097.99" width="192.281" height="174.048" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <g transform="matrix(1,0,0,1,0,10)">
+        <a href="javascript:top.moveRooms('mphfromdropoffpoint')"><rect x="1545.45" y="696.856" width="169.075" height="149.184" style="fill:white;fill-opacity:0;"/></a>
+    </g>
+    <a href="javascript:top.moveRooms('')"><rect x="1736.07" y="940.523" width="167.417" height="142.553" style="fill:white;fill-opacity:0;"/></a>
+</svg>

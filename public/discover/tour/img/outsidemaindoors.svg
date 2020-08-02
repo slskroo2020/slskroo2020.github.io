@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(-0.0846759,0.968003,-1.1434,-0.100018,1657.99,314.8)">
-        <a href="javascript:top.moveRooms('lobbymaindoorsview')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
+        <a href="javascript:top.moveRooms('lobbymain')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(-0.806906,0.424437,-0.416959,-0.853083,1721.7,1382.72)">
         <a href="javascript:top.moveRooms('mphoutside')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:white;fill-opacity:0;"/></a>

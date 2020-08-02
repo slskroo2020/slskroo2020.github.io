@@ -4,4 +4,7 @@
     <g transform="matrix(1.11537,0,0,0.897402,-166.358,123.834)">
         <a href="javascript:top.moveRooms('mphoutside')"><rect x="897.682" y="1077.67" width="183.546" height="195.43" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     </g>
+    <g transform="matrix(1.26282,-0.105977,0.107007,1.2751,-1121.57,-145.314)">
+        <a href="javascript:top.moveRooms('mphfromdropoffpoint')"><rect x="868.042" y="780.656" width="137.442" height="123.738" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+    </g>
 </svg>

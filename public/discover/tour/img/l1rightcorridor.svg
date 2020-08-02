@@ -3,7 +3,7 @@
 <svg width="100%" height="100%" viewBox="0 0 1917 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-0.773444,-0.939535)">
         <g transform="matrix(1,0,0,1.09022,0,-98.4633)">
-            <a href="javascript:top.moveRooms('l1incorridor')"><rect x="960" y="1091.36" width="197.14" height="159.762" style="fill:white;fill-opacity:0;"/></a>
+            <a href="javascript:top.moveRooms('l1fullcorridor')"><rect x="960" y="1091.36" width="197.14" height="159.762" style="fill:white;fill-opacity:0;"/></a>
         </g>
         <!-- travelling to b1 -->
         <g transform="matrix(-0.998495,0,0,0.915085,2066.6,73.8456)">
