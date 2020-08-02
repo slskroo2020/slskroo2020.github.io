@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.45713,0.148634,-0.144816,1.4197,-976.597,-322.648)">
+        <a href="javascript:top.moveRooms('lobbydhview')"><rect x="868.042" y="780.656" width="137.442" height="123.738" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+    </g>
+    <a href="javascript:top.moveRooms('outsidemaindoors')"><rect x="795.9" y="1092.18" width="203.234" height="174.732" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+    <g transform="matrix(1.04769,-0.0350279,0.0392329,0.935397,61.2608,86.0755)">
+        <a href="javascript:top.moveRooms('lobbypostboxview')"><rect x="1292.83" y="948.433" width="215.627" height="203.234" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+    </g>
+</svg>

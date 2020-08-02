@@ -20,4 +20,5 @@
     <g transform="matrix(0.927191,0.0312872,-0.0328654,0.973961,18.8309,91.2348)">
         <a href="javascript:top.moveRooms('readingroom')"><rect x="868.042" y="780.656" width="137.442" height="123.738" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     </g>
+    <a href="javascript:top.moveRooms('b1outcorridor')"><rect x="1092.92" y="685.901" width="66.181" height="55.743" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
 </svg>

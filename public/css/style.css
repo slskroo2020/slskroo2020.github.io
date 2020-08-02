@@ -6050,11 +6050,24 @@ hr.dashed {
   left: 0;
 }
 
+#search {
+  /* search button */
+  border: none;
+}
+
+.tour-search {
+  margin: 5px 0;
+}
+
+.tour-button {
+  display:inline-block;
+}
+
 #tour-room-name {
   font-size: 2rem;
   font-weight: bolder;
   padding-bottom: 5px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 /* Play Overlay */
