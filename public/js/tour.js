@@ -277,7 +277,7 @@ const roomDict = {
 
 const masterLounge = ["mcl", "master's common lounge", "master's lounge", "third floor lounge"];
 const diningHall = ["dh", "cookhouse", "dining hall", "canteen", "eating"];
-const boxOffice = ["L1", "box office"];
+// const boxOffice = ["L1", "box office"];
 var Rooms = masterLounge.concat(diningHall).sort();
 
 function autocomplete(inp, arr) {
