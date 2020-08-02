@@ -5,7 +5,7 @@
         <a href="javascript:top.moveRooms('boxoffice')"><path d="M1920,685.394L1322.9,685.394L1449.29,573.883L1855.95,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(-0.0638715,-1.82904,-1.317,0.0459905,1521.27,3641.89)">
-        <a href="javascript:top.moveRooms('seminarroom')"><path d="M1920,685.394L1322.9,685.394L1458.82,573.883L1855.95,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
+        <a href="javascript:alert('This is just another seminar room')"><path d="M1920,685.394L1322.9,685.394L1458.82,573.883L1855.95,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(-0.0199387,-1.05349,-0.612744,0.011597,1148.8,2310.21)">
         <a href="javascript:top.moveRooms('seminarroom')"><path d="M1920,685.394L1322.9,685.394L1408.75,573.883L1870.94,573.883L1920,685.394Z" style="fill:white;fill-opacity:0;"/></a>
