@@ -5,7 +5,7 @@
 // };
 
 
-console.log("version 4");
+console.log("version 5");
 
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
@@ -243,13 +243,13 @@ function createRoomText(room) {
         let uppCase = roomNames[room].toUpperCase();
         roomName.innerText = uppCase;
     } else {
-        roomName.innerText = "aw man where are you even??";
+        roomName.innerText = "aw man idk where you are";
     }
 
     if (roomDescriptions[room]) {
         roomDesc.innerText = roomDescriptions[room];
     } else {
-        roomDesc.innerText = "Some realllllyyyyyyyyyyyyyyyyyyy looooooooooonnnnnnnnnnnnngggggggggggggg placeholder description";
+        roomDesc.innerText = "Some placeholder description";
     }
 }
 
@@ -286,145 +286,145 @@ $(window).on('load', function() {
 
 // ignore everything after this, it's the not fully functional search stuff currently
 
-const DH = "Dining Hall";
-const MCL = "Master&#39;s Common Lounge";
-const abbey = "Abbey";
-const learnlobeL1 = "Learn Lobe L1";
-const learnlobeB1 = "Learn Lobe B1";
-const boxOffice = "Box Office";
-const MPH = "Multi-purpose Hall";
+// const DH = "Dining Hall";
+// const MCL = "Master&#39;s Common Lounge";
+// const abbey = "Abbey";
+// const learnlobeL1 = "Learn Lobe L1";
+// const learnlobeB1 = "Learn Lobe B1";
+// const boxOffice = "Box Office";
+// const MPH = "Multi-purpose Hall";
 
-const roomDict = {
-    "mcl" : MCL,
-    "master's common lounge" : MCL,
-    "master's lounge" : MCL,
-    "third floor lounge": MCL,
-    "dh" : DH,
-    "cookhouse" : DH,
-    "canteen" : DH,
-    "eating" : DH,
-    "dining hall" : DH,
-    "abbey" : abbey,
-    "music" : abbey,
-    "jamming" : abbey,
-    "L1 learnlobe" : learnlobeL1,
-    "learnlobe l1" : learnlobeL1,
-    "b1 learnlobe" : learnlobeB1,
-    "learnlobe b1" : learnlobeB1,
-    "box office" : boxOffice,
-    "coffee" : boxOffice,
-    "hall" : MPH,
-    "mph" : MPH,
-    "multi-purpose hall" : MPH,
-    "multipurpose hall" : MPH,
-    "sports" : MPH,
-}
+// const roomDict = {
+//     "mcl" : MCL,
+//     "master's common lounge" : MCL,
+//     "master's lounge" : MCL,
+//     "third floor lounge": MCL,
+//     "dh" : DH,
+//     "cookhouse" : DH,
+//     "canteen" : DH,
+//     "eating" : DH,
+//     "dining hall" : DH,
+//     "abbey" : abbey,
+//     "music" : abbey,
+//     "jamming" : abbey,
+//     "L1 learnlobe" : learnlobeL1,
+//     "learnlobe l1" : learnlobeL1,
+//     "b1 learnlobe" : learnlobeB1,
+//     "learnlobe b1" : learnlobeB1,
+//     "box office" : boxOffice,
+//     "coffee" : boxOffice,
+//     "hall" : MPH,
+//     "mph" : MPH,
+//     "multi-purpose hall" : MPH,
+//     "multipurpose hall" : MPH,
+//     "sports" : MPH,
+// }
 
-const masterLounge = ["mcl", "master's common lounge", "master's lounge", "third floor lounge"];
-const diningHall = ["dh", "cookhouse", "dining hall", "canteen", "eating"];
-// const boxOffice = ["L1", "box office"];
-var Rooms = masterLounge.concat(diningHall).sort();
+// const masterLounge = ["mcl", "master's common lounge", "master's lounge", "third floor lounge"];
+// const diningHall = ["dh", "cookhouse", "dining hall", "canteen", "eating"];
+// // const boxOffice = ["L1", "box office"];
+// var Rooms = masterLounge.concat(diningHall).sort();
 
-function autocomplete(inp, arr) {
-    /*the autocomplete function takes two arguments,
-    the text field element and an array of possible autocompleted values:*/
-    var currentFocus;
-    /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input", function(e) {
-        var a, b, i, val = this.value;
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) { return false;}
-        currentFocus = -1;
-        /*create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-        /*append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-        /*for each item in the array...*/
-        for (i = 0; i < arr.length; i++) {
-          /*check if the item starts with the same letters as the text field value:*/
-          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-            /*create a DIV element for each matching element:*/
-            b = document.createElement("DIV");
-            /*make the matching letters bold:*/
-            b.innerHTML += roomDict[arr[i]];
-            /*insert a input field that will hold the current array item's value:*/
-            b.innerHTML += "<input type='hidden' value='" + roomDict[arr[i]] + "'>";
-            b.id = roomDict[arr[i]];
-            /*execute a function when someone clicks on the item value (DIV element):*/
-            b.addEventListener("click", function(e) {
-                /*insert the value for the autocomplete text field:*/
-                inp.value = this.getElementsByTagName("input")[0].value;
-                /*close the list of autocompleted values,
-                (or any other open lists of autocompleted values:*/
-                closeAllLists();
-            });
-            if (document.getElementById(roomDict[arr[i]]) == null) {
-                a.appendChild(b);
-            }
-          }
-        }
-    });
-    /*execute a function presses a key on the keyboard:*/
-    inp.addEventListener("keydown", function(e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-          /*If the arrow DOWN key is pressed,
-          increase the currentFocus variable:*/
-          currentFocus++;
-          /*and and make the current item more visible:*/
-          addActive(x);
-        } else if (e.keyCode == 38) { //up
-          /*If the arrow UP key is pressed,
-          decrease the currentFocus variable:*/
-          currentFocus--;
-          /*and and make the current item more visible:*/
-          addActive(x);
-        } else if (e.keyCode == 13) {
-          /*If the ENTER key is pressed, prevent the form from being submitted,*/
-          e.preventDefault();
-          if (currentFocus > -1) {
-            /*and simulate a click on the "active" item:*/
-            if (x) x[currentFocus].click();
-          }
-        }
-    });
-    function addActive(x) {
-      /*a function to classify an item as "active":*/
-      if (!x) return false;
-      /*start by removing the "active" class on all items:*/
-      removeActive(x);
-      if (currentFocus >= x.length) currentFocus = 0;
-      if (currentFocus < 0) currentFocus = (x.length - 1);
-      /*add class "autocomplete-active":*/
-      x[currentFocus].classList.add("autocomplete-active");
-    }
-    function removeActive(x) {
-      /*a function to remove the "active" class from all autocomplete items:*/
-      for (var i = 0; i < x.length; i++) {
-        x[i].classList.remove("autocomplete-active");
-      }
-    }
-    function closeAllLists(elmnt) {
-      /*close all autocomplete lists in the document,
-      except the one passed as an argument:*/
-      var x = document.getElementsByClassName("autocomplete-items");
-      for (var i = 0; i < x.length; i++) {
-        if (elmnt != x[i] && elmnt != inp) {
-          x[i].parentNode.removeChild(x[i]);
-        }
-      }
-    }
-    /*execute a function when someone clicks in the document:*/
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
-    document.getElementById("search").addEventListener("click", moveRooms(inp.value));
-  }
+// function autocomplete(inp, arr) {
+//     /*the autocomplete function takes two arguments,
+//     the text field element and an array of possible autocompleted values:*/
+//     var currentFocus;
+//     /*execute a function when someone writes in the text field:*/
+//     inp.addEventListener("input", function(e) {
+//         var a, b, i, val = this.value;
+//         /*close any already open lists of autocompleted values*/
+//         closeAllLists();
+//         if (!val) { return false;}
+//         currentFocus = -1;
+//         /*create a DIV element that will contain the items (values):*/
+//         a = document.createElement("DIV");
+//         a.setAttribute("id", this.id + "autocomplete-list");
+//         a.setAttribute("class", "autocomplete-items");
+//         /*append the DIV element as a child of the autocomplete container:*/
+//         this.parentNode.appendChild(a);
+//         /*for each item in the array...*/
+//         for (i = 0; i < arr.length; i++) {
+//           /*check if the item starts with the same letters as the text field value:*/
+//           if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+//             /*create a DIV element for each matching element:*/
+//             b = document.createElement("DIV");
+//             /*make the matching letters bold:*/
+//             b.innerHTML += roomDict[arr[i]];
+//             /*insert a input field that will hold the current array item's value:*/
+//             b.innerHTML += "<input type='hidden' value='" + roomDict[arr[i]] + "'>";
+//             b.id = roomDict[arr[i]];
+//             /*execute a function when someone clicks on the item value (DIV element):*/
+//             b.addEventListener("click", function(e) {
+//                 /*insert the value for the autocomplete text field:*/
+//                 inp.value = this.getElementsByTagName("input")[0].value;
+//                 /*close the list of autocompleted values,
+//                 (or any other open lists of autocompleted values:*/
+//                 closeAllLists();
+//             });
+//             if (document.getElementById(roomDict[arr[i]]) == null) {
+//                 a.appendChild(b);
+//             }
+//           }
+//         }
+//     });
+//     /*execute a function presses a key on the keyboard:*/
+//     inp.addEventListener("keydown", function(e) {
+//         var x = document.getElementById(this.id + "autocomplete-list");
+//         if (x) x = x.getElementsByTagName("div");
+//         if (e.keyCode == 40) {
+//           /*If the arrow DOWN key is pressed,
+//           increase the currentFocus variable:*/
+//           currentFocus++;
+//           /*and and make the current item more visible:*/
+//           addActive(x);
+//         } else if (e.keyCode == 38) { //up
+//           /*If the arrow UP key is pressed,
+//           decrease the currentFocus variable:*/
+//           currentFocus--;
+//           /*and and make the current item more visible:*/
+//           addActive(x);
+//         } else if (e.keyCode == 13) {
+//           /*If the ENTER key is pressed, prevent the form from being submitted,*/
+//           e.preventDefault();
+//           if (currentFocus > -1) {
+//             /*and simulate a click on the "active" item:*/
+//             if (x) x[currentFocus].click();
+//           }
+//         }
+//     });
+//     function addActive(x) {
+//       /*a function to classify an item as "active":*/
+//       if (!x) return false;
+//       /*start by removing the "active" class on all items:*/
+//       removeActive(x);
+//       if (currentFocus >= x.length) currentFocus = 0;
+//       if (currentFocus < 0) currentFocus = (x.length - 1);
+//       /*add class "autocomplete-active":*/
+//       x[currentFocus].classList.add("autocomplete-active");
+//     }
+//     function removeActive(x) {
+//       /*a function to remove the "active" class from all autocomplete items:*/
+//       for (var i = 0; i < x.length; i++) {
+//         x[i].classList.remove("autocomplete-active");
+//       }
+//     }
+//     function closeAllLists(elmnt) {
+//       /*close all autocomplete lists in the document,
+//       except the one passed as an argument:*/
+//       var x = document.getElementsByClassName("autocomplete-items");
+//       for (var i = 0; i < x.length; i++) {
+//         if (elmnt != x[i] && elmnt != inp) {
+//           x[i].parentNode.removeChild(x[i]);
+//         }
+//       }
+//     }
+//     /*execute a function when someone clicks in the document:*/
+//     document.addEventListener("click", function (e) {
+//         closeAllLists(e.target);
+//     });
+//     document.getElementById("search").addEventListener("click", moveRooms(inp.value));
+//   }
   
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("tour-search-text"), Rooms);
+// /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+// autocomplete(document.getElementById("tour-search-text"), Rooms);
 
