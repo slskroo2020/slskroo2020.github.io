@@ -11,6 +11,6 @@
     </g>
     <a href="javascript:top.moveRooms('abbey')"><rect x="1193.01" y="365.644" width="62.084" height="350.847" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     <g transform="matrix(-0.0657349,-1.6671,-1.48649,0.0586133,1377.1,3228.69)">
-        <a href="javascript:alert('This is just another seminar room')"><path d="M1801.58,562.768L1190.05,562.768L1301.37,467.376L1758.97,467.376L1801.58,562.768Z" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+        <a href="javascript:top.moveRooms('readingroom')"><path d="M1801.58,562.768L1190.05,562.768L1301.37,467.376L1758.97,467.376L1801.58,562.768Z" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     </g>
 </svg>

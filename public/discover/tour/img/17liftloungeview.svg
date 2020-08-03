@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 6000 4000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <a href="javascript:top.moveRooms('17liftstairsview')"><rect x="3012.91" y="3365.01" width="594.786" height="607.907" style="fill:white;fill-opacity:0;"/></a>
-    <g transform="matrix(0.929578,0,0,0.913044,218.398,220.155)">
-        <a href="javascript:top.moveRooms('17leftcorridor')"><rect x="2703.8" y="2370.84" width="397.457" height="450.638" style="fill:white;fill-opacity:0;"/></a>
-    </g>
-    <g transform="matrix(0.920905,0,0,0.998229,98.4322,21.4075)">
-        <rect id="liftbuttons" x="1002.01" y="2247.68" width="162.342" height="517.814" style="fill:white;fill-opacity:0;"/>
-    </g>
-    <rect id="loungedoor" x="4091.4" y="953.755" width="202.927" height="1906.81" style="fill:white;fill-opacity:0;"/>
-    <g transform="matrix(0.0697546,-2.13352,0.999466,0.0326772,4057.29,12259.1)">
-        <path id="loungedisplay" d="M5752.15,1327.96L4091.62,1327.96L4506.75,63.763L5337.02,63.763L5752.15,1327.96Z" style="fill:white;fill-opacity:0;"/>
-    </g>
+        <a href="javascript:top.moveRooms('17liftstairsview')"><rect x="3012.91" y="3365.01" width="594.786" height="607.907" style="fill:white;fill-opacity:0;"/></a>
+        <g transform="matrix(0.929578,0,0,0.913044,218.398,220.155)">
+            <a href="javascript:top.moveRooms('17leftcorridor')"><rect x="2703.8" y="2370.84" width="397.457" height="450.638" style="fill:white;fill-opacity:0;"/></a>
+        </g>
+        <!-- <g transform="matrix(0.920905,0,0,0.998229,98.4322,21.4075)">
+            <a href="javascript:top.moveRooms('lift')"><rect x="1002.01" y="2247.68" width="162.342" height="517.814" style="fill:white;fill-opacity:0;"/></a>
+        </g> -->
+        <a href="javascript:top.moveRooms('17lounge')"><rect x="4091.4" y="953.755" width="202.927" height="1906.81" style="fill:white;fill-opacity:0;"/></a>
 </svg>
