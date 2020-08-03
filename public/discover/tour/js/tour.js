@@ -24,11 +24,11 @@ overlayDiv.appendChild(svgMap);
 let myImage = new Image();
 
 const roomNames = {
-    "17liftstairsview": "Lifts",
-    "17liftloungeview": "Lifts",
-    "17leftcorridor": "Cinnamon-facing corridor",
+    "17liftstairsview": "L17 Lifts",
+    "17liftloungeview": "L17 Lifts",
+    "17leftcorridor": "USP-facing corridor",
     "17pantry": "Pantry",
-    "17laundrycorridor": "Forest-facing corridor",
+    "17laundrycorridor": "UTR-facing corridor",
     "17laundryroom": "Laundry Room",
 
     "dininghall": "Dining Hall",
@@ -41,9 +41,9 @@ const roomNames = {
     "mphfromdropoffpoint": "Multipurpose Hall",
     "mphoutside": "Walkway to MPH",
     "dropoffpoint": "Drop Off Point",
-    "bridgetolearnlobe": "Walkway between Main Building and Learn Lobe",
+    "bridgetolearnlobe": "Walkway to Learn Lobe",
 
-    "b1outsidellmaindoors": "Walkway between B1 Lifts and Learn Lobe",
+    "b1outsidellmaindoors": "Walkway to Learn Lobe",
 
     "abbey": "Abbey",
     "b1fullcorridor": "Learn Lobe B1",
@@ -56,43 +56,43 @@ const roomNames = {
     "l1rightcorridor": "Learn Lobe L1",
     "oasis": "Oasis",
     "readingroom": "Reading Room",
-    "seminarroom": "Seminar Room",
+    "seminarroom": "Seminar Room 5",
 }
 
 const roomDescriptions = {
-    "17liftstairsview": "Through the doors on the left are the stairs! \n\nAlso, welcome to level 17 :) We used this floor as a demo because it is one of only two floors with both a laundry room and pantry -- the location of these two rooms are the same no matter which floor it is! \n\nPantry floors: 5, 9, 13, 17, 21 \nLaundry floors: 9, 17",
-    "17liftloungeview": "On the right is the level lounge! Take note that you can only enter lounges of your own zone / house using your matric card",
+    "17liftstairsview": "Welcome to level 17 :) We are using this floor as a demo because it is one of only two floors with both a laundry room and pantry -- the location of these two rooms are the same no matter which floor it is! \n\nPantry floors: 5, 9, 13, 17, 21 \nLaundry floors: 9, 17",
+    "17liftloungeview": "On the right is the level lounge for all your free-and-easy chilling and studying! Every lounge has its own unique feel and decor :) \n\nTake note that you can only enter lounges of your own zone / house using your matric card",
     "17leftcorridor": "We usually chalk each other's doors so everyone has a fun, personalised door instead of a plain one :') Also, the pantry is up ahead!",
-    "17pantry": "There's a pantry every 4 floors, with amenities like a fridge, water cooler (which dispenses both hot and ice water), microwave, electric stove and sink to store ice cream, wash your tupperware or do your cooking! Remember to label your food before putting it into the fridge!",
-    "17laundrycorridor": "The garbage disposal room and laundry room are along this corridor. The garbage disposal room has different chutes for recyclables and general waste, as well as some cleaning supplies like a mop and bucket. Click the arrow ahead to see the laundry room!",
-    "17laundryroom": "Located on 2 floors, Level 9 and Level 17, the laundry rooms come equipped with both washing machines and dryers. They cost $1 each, can be paid by ez-link card or a $1 coin, and would provide you with a fresh set of clothes in no time at all! (Well, specifically, 30 minutes for the washing machines and 40 minutes for the dryers)",
+    "17pantry": "There's a pantry every 4 floors, with amenities like a fridge, water cooler (which dispenses both hot and ice water), microwave, electric stove and sink. Store your ice cream, wash your tupperware or do your cooking here! Remember to label your food before putting it into the fridge!",
+    "17laundrycorridor": "The refuse room and laundry room are along this corridor. The refuse room has different chutes for recyclables and general waste, as well as some cleaning supplies. Click the arrow ahead to see the laundry room! \n\n(Note: UTR stands for U-Town Residences)",
+    "17laundryroom": "Located on 2 floors, Level 9 and Level 17, the laundry rooms come equipped with both washing machines and dryers. They cost $1 each, can be paid by ez-link card or a $1 coin, and would provide you with a fresh set of clothes in no time at all! (Well, specifically, 30 minutes for the washing machines and 40 minutes for the dryers!)",
 
     "dininghall": "Colloquially known as the DH, here's where we get our food (duh). The DH serves breakfast (7 - 10.30am) and dinner (5.30 - 9.30pm) on weekdays, breakfast only on Saturdays and dinner only on Sundays! Just tap your matric card at the station on the right and collect the meal ticket. You can tap up to 3 times a meal, and save unused tickets for up to 13 days! \n\nWe share the dining hall with USP (Cinnamon College), and for this semester we have to keep strictly to our half and within the demarcated zones. Remember to bring your reusable containers and utensils to take away meals where possible! :)", 
     "lobbydhview": "Head through those double doors to our dining hall!",
     "lobbymain": "This is the main lobby, the oft-used meeting spot for mealtimes or heading out of Tembusu together!",
-    "lobbypostboxview": "Yes - you actually have an individual postbox here (except for suites, which share one)! Some people even choose to paste a post-it on their letterbox with their mobile number for delivery people to contact",
+    "lobbypostboxview": "Yes - you actually have an individual postbox here (except for suites, which share one)! There's also a vending machine and water cooler beside the postboxes :)",
 
     "outsidemaindoors": "Having exited the college through the main doors, you can head left towards the multipurpose hall (MPH), right towards the learn lobe, or down those stairs towards the UTown Green, where you can find FairPrice, Octobox, the food courts, UTown bus stop and more!",
     "mph": "This is where sports Interest Groups (IGs) hold their activities! This is also the venue for Tembusu Forums, hosted by our Rector, Dr Tommy Koh, which always feature an interesting line-up of speakers regarding pertinent issues in the world today.",
     "mphfromdropoffpoint": "This is where sports Interest Groups (IGs) hold their activities! This is also the venue for Tembusu Forums, hosted by our Rector, Dr Tommy Koh, which always feature an interesting line-up of speakers regarding pertinent issues in the world today.",
-    "mphoutside": "Go straight ahead to the Multipurpose Hall or head left towards the drop-off point.",
-    "dropoffpoint": "Here's where you collect supper deliveries, take Grabs, drive in, get your parents to fetch you etc.",
-    "bridgetolearnlobe": "The door at the end leads into the Learn Lobe, where most of the, well, learning happens. There are multiple Seminar Rooms (SRs) in the building, and the more exciting themed rooms - the Box Office, Oasis, Blank Canvas, Reading Room, Abbey, and Launchpad! Click in to explore more :) \n\nContinuing down this walkway is the Education Resource Centre (ERC), where the Mac Commons, PC Commons, and some NUS-wide seminar rooms are located. It's also connected to the Stephen Riady Centre (SRC) where you can go to the gym and food courts!",
+    "mphoutside": "Go straight ahead to the Multipurpose Hall! If you turn left here, you can head to the drop-off point.",
+    "dropoffpoint": "Here's where you collect supper deliveries, take Grabs, drive in, get your parents to fetch you etc.!",
+    "bridgetolearnlobe": "The door at the end leads into the Learn Lobe, where the... learning happens :) There are multiple Seminar Rooms in the building, and more excitingly, the themed rooms - Box Office, Oasis, Blank Canvas, Reading Room, Abbey, and Launchpad! Click in to explore more :) \n\nContinuing down this walkway is the Education Resource Centre (ERC), where the Mac & PC Commons and some NUS-wide seminar rooms are located. It's also connected to the Stephen Riady Centre (SRC) which has the gym and food courts!",
 
     "b1outsidellmaindoors": "This sheltered walkway connects the B1 lifts area with the Learn Lobe building. On the left you can see part of the outdoors amphitheatre, and if you head slightly to the right you'll reach the Tembusu College Office and OHS Office area!",
 
     "abbey": "If you love music, you’re at the right place! The Abbey is Tembusu’s very own jamming studio. Equipped with state-of-the-art sound systems, amplifiers, and all manners of instruments, the stage is set for you and like-minded musicians to jam and have fun! You can book a timeslot after getting the Abbey license. There are often small performances held here during some of the themed weeks as well :)",
-    "b1fullcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few seminar rooms (SRs) are located! There's a side door behind and the main door down the corridor on the right.",
-    "b1rightcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few seminar rooms (SRs) are located!",
-    "b1incorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few seminar rooms (SRs) are located! The main door is behind, and there's a side door down the corridor on the left.",
+    "b1fullcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! There's a side door behind and the main door down the corridor on the right.",
+    "b1rightcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located!",
+    "b1incorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! The main door is behind, and there's a side door down the corridor on the left.",
     "blankcanvas": "Home to acrylic paints, 3D printers, a soldering station and more, the blank canvas is a place for creativity and crafting! If you like getting your hands dirty, this place is for you.",
-    "boxoffice": "If you're interested in coffee, film or just looking for a place to chill, you'll definitely want to head over to The Box Office! Whether you want to catch up and bond over making some latte art, or watching a movie (or two!) — there's no better place to do it than in Tembusu's own home cinema.",
-    "l1fullcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few seminar rooms (SRs) are located! The main door into the Learn Lobe is down the corridor on the right.",
-    "l1incorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few seminar rooms (SRs) are located! The main door into the Learn Lobe is behind.",
-    "l1rightcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few seminar rooms (SRs) are located!",
-    "oasis": "Take a break and wind down from your daily stresses in this quiet, comfortable, and safe space, set up for your mental wellness and relaxation.",
-    "readingroom": "The reading room’s collection is carefully curated with the input of the entire fellowship; there are a myriad of books reflecting the movement of thought from the ancients to the contemporary. Our catalogue can be found at http://www.librarything.com/catalog.php?view=Tembusu&shelf=shelf",
-    "seminarroom": "These seminar rooms (SRs) are used for Junior and Senior Seminars, some Interest Groups (IGs), and even just your own studying! You can choose to book a room, or just head down to see if there's space for you (remember to abide by the zoning rules)!",
+    "boxoffice": "If you're interested in coffee, film or just looking for a place to chill, you'll definitely want to head over to The Box Office! Whether you want to catch up and bond over making some latte art or watching a movie (or two!) — there's no better place to do it than in Tembusu's own home cinema.",
+    "l1fullcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is down the corridor on the right.",
+    "l1incorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is behind.",
+    "l1rightcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located!",
+    "oasis": "Take a break and wind down from your daily stresses in this quiet, comfortable, and safe space, set up for your mental wellness and relaxation :')",
+    "readingroom": "The reading room’s collection is carefully curated with the input of the entire fellowship; there are a myriad of books reflecting the movement of thought from the ancients to the contemporary! Our catalogue can be found at http://www.librarything.com/catalog.php?view=Tembusu&shelf=shelf",
+    "seminarroom": "These seminar rooms (SRs) are used for Junior and Senior Seminars, some Interest Groups (IGs), and even just your own studying! You can choose to book a room, or just head down to see if there's space for you (remember to abide by the zoning rules)",
 }
 
 async function preloadAllImgs() {
@@ -192,7 +192,7 @@ function switchImgs(room){
 
 function fileNotFound() {
     moveRooms(previousRoom);
-    alert("Sorry, that room hasn't been implemented yet!");
+    alert("Sorry, that place hasn't been implemented yet!");
 }
 
 // function createImgMap(room) {
