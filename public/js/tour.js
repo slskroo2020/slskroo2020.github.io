@@ -270,7 +270,6 @@ function moveRooms(nextRoom) {
     checkImgs(nextRoom);
 }
 
-preloadAllImgs().then(moveRooms("outsidemaindoors"));
 
 // $("#tour-img").on("error", function(){fileNotFound()});
 
@@ -280,9 +279,28 @@ preloadAllImgs().then(moveRooms("outsidemaindoors"));
 // $("#LLButton").click(function(){moveRooms('17liftstairsview')});
 // $("#abbeyButton").click(function(){moveRooms('17liftstairsview')});
 
+// preloadAllImgs().then(moveRooms("outsidemaindoors"));
+
 $(window).on('load', function() {
     $('#loading-overlay').fadeOut(500);
+    preloadAllImgs();
+    tourDiv.style = "cursor:pointer"; 
+    $('#tour-div').click(clickStart); 
+    // $('#tour-div').style = "cursor: pointer";
+    function clickStart(){
+        console.log('boop');
+        $('#tour-img').fadeIn();
+        moveRooms("outsidemaindoors");
+        // removeEventListener(clickStart);
+    };
+    // document.getElementById('tour-div').addEventListener("click", clickStart);
+    // $('#tour-img').delay(5000).fadeOut(500, function(){
+        
+    // });
 });
+
+
+
 
 // ignore everything after this, it's the not fully functional search stuff currently
 
