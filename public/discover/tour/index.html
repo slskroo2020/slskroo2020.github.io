@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../../css/animate.css">
     <link rel="stylesheet" href="../../css/slicknav.css">
 
+
     <link rel="stylesheet" href="../../css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
@@ -100,7 +101,7 @@
                                                 <ul class="submenu">
                                                     <li><a href="..">Discover Tembusu</a></li>
                                                     <li><a href="../tour" class="active">Virtual Tour</a></li>
-                                                    <li><a href="../livestream">SLS Livestream</a></li>
+                                                    <li><a href="../livestream">E-Student Life Showcase</a></li>
                                                     <!-- <li><a href="#/">EWG Modbook</a></li> -->
                                                 </ul>
                                             </li
@@ -140,75 +141,70 @@
     <!-- bradcam_area end -->
     
     <!-- tour_area start -->
-     <div class="tour_area black_bg extra_padd">
+     <div class="tour_area black_bg">
         <div class="container back-container">
             <a href=".." class="back-button white"><i class="fa fa-long-arrow-left"></i> Back to Discover Tembusu</a>
         </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="section_title text-center mb-80"></div>
+                <div class="section_title text-center">
                     <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >Virtual Tour</h3>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+            <div id="nav-div" class="row justify-content-center mb-1">
+                <div class="col-xl-8 wow fadeInLeft text-center" data-wow-duration="2s" data-wow-delay=".4s">
+                    <!-- <div class="search-div">
+                        <input id="searchbar" autocomplete="off" tabindex="1" type="text" class="search-bar rounded mb-2" placeholder="Search for a place!">
+                        <button id="search" class="genric-btn tertiary rounded" onclick="search()">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div> -->
+                    <div class="search-div">
+                        <div class="nice-select" tabindex="0">
+                            <span class="current">Select a place</span>
+                            <ul class="list">
+                                <ul onmousedown="moveRooms('abbey')" class="option">Abbey</ul>
+                                <ul onmousedown="moveRooms('blankcanvas')" class="option">Blank Canvas</ul>
+                                <ul onmousedown="moveRooms('boxoffice')" class="option">Box Office</ul>
+                                <ul onmousedown="moveRooms('dininghall')" class="option">Dining Hall</ul>
+                                <ul onmousedown="moveRooms('17laundryroom')" class="option">Laundry</ul>
+                                <ul onmousedown="moveRooms('mph')" class="option">MPH</ul>
+                                <ul onmousedown="moveRooms('oasis')" class="option">Oasis</ul>
+                                <ul onmousedown="moveRooms('17pantry')" class="option">Pantry</ul>
+                                <ul onmousedown="moveRooms('readingroom')" class="option">Reading Room</ul>
+                                <ul onmousedown="moveRooms('seminarroom')" class="option">Seminar Room</ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 wow fadeInLeft text-right pr-1" data-wow-duration="2s" data-wow-delay=".5s">
+                    <button class="tour-button genric-btn tertiary rounded mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
+                    <button class="tour-button genric-btn tertiary rounded mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>
+                </div>
+                <div class="col-6 wow fadeInLeft text-left pl-1" data-wow-duration="2s" data-wow-delay=".5s">
+                    <button class="tour-button genric-btn secondary rounded mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button>
+                    <button class="tour-button genric-btn secondary rounded mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
+                </div>
+            </div>
+            <div id="tour-container" class="row justify-content-center">
+                <div class="col-xl-8 text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
                     <div class="tour-wrapper" id="tour-div">
                         <img class="tour-img img-fluid" id="tour-img" src="./img/#" onerror="fileNotFound()">
-                        <!-- <iframe src="https://xd.adobe.com/embed/dae0008e-401c-41e7-ac11-a608d68abf85-8fb3/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe> -->
                         <div class="tour-overlay" id="tour-overlay-div"></div>
                         <div id="loading-overlay">
                             <p>Loading...</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center wow fadeInDown mb-3" data-wow-duration="2s" data-wow-delay=".3s">
-                    <p id="tour-room-name">THE ABBEY</p>
+                <div class="col-xl-4 text-center wow fadeInDown mb-3" data-wow-duration="2s" data-wow-delay=".3s">
+                    <div id="tour-room-name-div">
+                        <span id="tour-room-name-span">
+                            <p id="tour-room-name">THE ABBEY</p>
+                        </span>
+                    </div>
+                    <hr class="divider lightgrey my-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
                     <p id="tour-room-description">Some placeholder description.</p>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-2 wow fadeInDown text-center d-lg-none" data-wow-duration="2s" data-wow-delay=".5s">
-                        <!-- for mobile -->
-                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
-                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>
-                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button>
-                        <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
-                        <form autocomplete="off" class="tour-search">
-                            <div class="autocomplete">
-                                <input type="text" id="tour-search-text" class="mb-2" placeholder=" Search for a place!">
-                                <button id="search" type="submit" onclick="search()">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                        <!-- <div class="row justify-content-center">
-                            <div class="default-select" id="default-select">
-                            <select onchange="if (this.selectedIndex) {moveRooms(this.selectedIndex.value);}">
-                                    <option value="17liftstairsview">Main Building L17</option>
-                                    <option value="outsidemaindoors">Main Building L1</option>
-                                    <option value="l1fullcorridor">Learn Lobe L1</option>
-                                    <option value="abbey">Learn Lobe B1</option>
-                                </select>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 wow fadeInLeft d-none d-lg-block text-center" data-wow-duration="2s" data-wow-delay=".5s">
-                    <!-- <h4>Navigate</h4> -->
-                    <!-- <input type="text" id="tour-search-text" class="mb-2" placeholder="Search for a place!" size="15"><button type="submit" onclick="search()"><i class="fa fa-search"></i></button><br> -->
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('l1fullcorridor')">Learn Lobe L1</button>
-                    <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('b1fullcorridor')">Learn Lobe B1</button>
-                    <form autocomplete="off" class="tour-search">
-                        <input class="autocomplete" type="text" id="tour-search-text" class="mb-2" placeholder=" Search for a place!">
-                        <button id="search" type="submit" onclick="search()">
-                            <i class="fa fa-search"></i>
-                        </button> 
-                    </form>
-                </div>
-
             </div>
         </div>
     </div>
@@ -222,7 +218,8 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                             
-Copyright &copy; <a href="https://tembusu.nus.edu.sg/" target="_blank" rel="noopener noreferrer">Tembusu College</a> <script>document.write(new Date().getFullYear());</script> All rights reserved                        </p>
+Copyright &copy; <a href="https://tembusu.nus.edu.sg/" target="_blank" rel="noopener noreferrer">Tembusu College</a> <script>document.write(new Date().getFullYear());</script> All rights reserved | Made by Tan Yi Jia & Shi Hui Ling
+                        </p>
                     </div>
                 </div>
             </div>
@@ -245,6 +242,7 @@ Copyright &copy; <a href="https://tembusu.nus.edu.sg/" target="_blank" rel="noop
     <script src="../../js/scrollIt.js"></script>
     <script src="../../js/jquery.scrollUp.min.js"></script>
     <script src="../../js/wow.min.js"></script>
+    <script src="../../js/tilt.jquery.js"></script>
     <script src="../../js/nice-select.min.js"></script>
     <script src="../../js/jquery.slicknav.min.js"></script>
     <script src="../../js/jquery.magnific-popup.min.js"></script>
@@ -253,17 +251,12 @@ Copyright &copy; <a href="https://tembusu.nus.edu.sg/" target="_blank" rel="noop
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="../../js/rellax.min.js"></script>
     <script src="../../js/jquery.nicescroll.js"></script>
+
     
-
-    <!--contact js-->
-    <script src="../../js/contact.js"></script>
-    <script src="../../js/jquery.ajaxchimp.min.js"></script>
-    <script src="../../js/jquery.form.js"></script>
-    <script src="../../js/jquery.validate.min.js"></script>
-    <script src="../../js/mail-script.js"></script>
-
     <script src="../../js/main.js"></script>
-    <script src="../../js/tour.js"></script>>
-   
+    <script src="js/roomSearch.js"></script>
+    <script src="js/places.json"></script>
+    <script src="js/tour.js"></script>>
+ 
 </body>
 </html>

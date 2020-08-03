@@ -9,8 +9,6 @@
 
         var day = now.getUTCDate();
         var month = now.getUTCMonth() + 1;
-        
-        console.log(`Day: ${day}, Month" ${month}`);
 
         var stage = 1;
 

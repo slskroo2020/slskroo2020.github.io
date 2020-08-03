@@ -180,11 +180,11 @@ function switchImgs(room){
     interval = setInterval(function(){
         if (isFirstImg) {
             mainImage.src = filepath2;
-            console.log("switch to " + filepath2);
+            // console.log("switch to " + filepath2);
             isFirstImg = false;
         } else {
             mainImage.src = filepath1;
-            console.log("switch to " + filepath1);
+            // console.log("switch to " + filepath1);
             isFirstImg = true;
         }
     }, 1000); 

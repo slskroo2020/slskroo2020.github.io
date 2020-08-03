@@ -1,7 +1,6 @@
 const Telegraf = require('telegraf')
 const {MenuTemplate, MenuMiddleware} = require('telegraf-inline-menu')
 const axios = require('axios')
-const keys = require('./keys')
 
 require('dotenv').config()
 const bot = new Telegraf(process.env.BOT_TOKEN)
@@ -25,25 +24,25 @@ menuTemplate.url('Instructions', 'https://docs.google.com/presentation/d/1PvEgIj
 
 menuTemplate.url('See the canvas made by the seniors!', 'https://tww2020.site/headquarters/tplaceseniors')
 
-menuTemplate.interact('Whitelist this Chat', 'whitelist', {
-    do: ctx => {
-        const chatId = ctx.update.callback_query.message.chat.id
-        const url = `${appEntry}/whitelist`
-        axios.post(url, {chatId: chatId})
-            .then(res => {
-                if (res.status === 200) {
-                    ctx.reply('This chat group has been successfully whitelisted!')
-                } else {
-                    ctx.reply('Uh oh looks like the whitelist period is up. Contact @Khairoulll for more info')
-                }
-            })
-            .catch(err => {
-                console.log(err)
-                ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
-            })
-        return false
-    }
-})
+// menuTemplate.interact('Whitelist this Chat', 'whitelist', {
+//     do: ctx => {
+//         const chatId = ctx.update.callback_query.message.chat.id
+//         const url = `${appEntry}/whitelist`
+//         axios.post(url, {chatId: chatId})
+//             .then(res => {
+//                 if (res.status === 200) {
+//                     ctx.reply('This chat group has been successfully whitelisted!')
+//                 } else {
+//                     ctx.reply('Uh oh looks like the whitelist period is up. Contact @Khairoulll for more info')
+//                 }
+//             })
+//             .catch(err => {
+//                 console.log(err)
+//                 ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
+//             })
+//         return false
+//     }
+// })
 
 menuTemplate.interact('F', 'respect', {
     do: ctx => {
@@ -70,7 +69,7 @@ bot.command('off', ctx => {
     const url = `${appEntry}/toggle/off`
     axios.post(url, {userId: userId})
         .then(res => {
-            if (res.status === 200) {
+            if (res.status == 200) {
                 ctx.reply('Notification turned off successfully!')
             } else {
                 ctx.reply('It seems you are not registered yet! Register on the bot using the Start Drawing button!')
@@ -78,7 +77,7 @@ bot.command('off', ctx => {
         })
         .catch(err => {
             console.log(err)
-            ctx.reply(`Unicorns! Looks like an error has occurred. Contact @Khairoulll for more info`)
+            ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
         })
 })
 
@@ -87,7 +86,7 @@ bot.command('on', ctx => {
     const url = `${appEntry}/toggle/on`
     axios.post(url, {userId: userId})
         .then(res => {
-            if (res.status === 200) {
+            if (res.status == 200) {
                 ctx.reply('Notification turned on successfully!')
             } else {
                 ctx.reply('It seems you are not registered yet! Register on the bot using the Start Drawing button!')
@@ -95,9 +94,31 @@ bot.command('on', ctx => {
         })
         .catch(err => {
             console.log(err)
-            ctx.reply(`Unicorns! Looks like an error has occurred. Contact @Khairoulll for more info`)
+            ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
         })
 })
+// bot.command('whitelist', (ctx) => {
+//     const chatId = ctx.update.message.chat.id
+//     const url = `${appEntry}/whitelist`
+//     axios.post(url, {chatId: chatId})
+//         .then(res => {
+//             if (res.status === 200) {
+//                 ctx.reply('This chat group has been successfully whitelisted!')
+//             } else {
+//                 ctx.reply('Uh oh looks like the whitelist period is up. Contact @Khairoulll for more info')
+//             }
+//         })
+//         .catch(err => {
+//             ctx.reply(`Unicorns! Looks like an error has occured. Contact @Khairoulll for more info`)
+//         })
+// })
+
+// bot.command('f', (ctx) => {
+//     ctx.reply('Your respect has been forwarded to the creators')
+//     const message = `${ctx.update.message.from.first_name} has paid us compliments`
+//     ctx.telegram.sendMessage(-484684580, message)
+// })
+
 
 bot.on('callback_query', ctx => {
     const query = ctx.callbackQuery;
@@ -106,11 +127,7 @@ bot.on('callback_query', ctx => {
     } else {
         const chatId = query.message.chat.id
         const userId = query.from.id
-
-        // Perform the prime multiplication
-        const modifiedUserId = userId * process.env.LARGE_PRIME;
-
-        let gameurl = `${appEntry}/start/${chatId}/${modifiedUserId}`;
+        let gameurl = `${appEntry}/start/${chatId}/${userId}`;
         ctx.answerGameQuery(gameurl);
     }
 });

@@ -4403,6 +4403,10 @@ hr.light {
   border-color: #fff;
 }
 
+hr.lightgrey {
+  border-color: #AAB1B7;
+}
+
 hr.grey {
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -4623,7 +4627,7 @@ hr.dashed {
 
 #handbook {
   padding-top: 100px;
-  margin-top: -20px !important;
+  margin-top: -100px !important;
 }
 
 #handbook_thumb {
@@ -4662,7 +4666,7 @@ hr.dashed {
 
 .programmes_area h3 {
   color: white;
-  font-size: 50px;
+  font-size: 35px;
   letter-spacing: -7px;
   line-height: 0.8em;
 }
@@ -5674,8 +5678,8 @@ hr.dashed {
   padding-bottom: 40px;
   position: relative;
   margin-top: -2px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .tour_area h3 {
@@ -5689,12 +5693,66 @@ hr.dashed {
   font-size: 30px;
 }
 
+.search-bar {
+  width: 50%;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  background: #f9f9ff;
+  padding: 0 20px;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-div {
+  display: inline-block;
+}
+
+.search-div .nice-select {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.search-div .nice-select .list {
+  z-index: 20;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#tour-room-name-div {
+  height: 70px;
+  line-height: 70px;
+}
+
+#tour-room-name-span {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#tour-room-description {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#nav-div button{
+  line-height: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 @media (min-width: 768px) {
   .tour_area {
     padding-top: 50px;
     padding-bottom: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 150px;
+    padding-right: 100px;
+  }
+
+  #tour-room-name-div {
+    padding-top: 20px;
   }
 
   .tour_area h3 {
@@ -6074,7 +6132,7 @@ hr.dashed {
 }
 
 #tour-room-name {
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: bolder;
   padding-bottom: 5px;
   /* text-decoration: underline; */
