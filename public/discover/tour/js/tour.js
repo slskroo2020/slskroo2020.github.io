@@ -23,6 +23,13 @@ overlayDiv.appendChild(svgMap);
 
 let myImage = new Image();
 
+var muted = true;
+
+var audio = document.getElementById("footstepsAudio");
+audio.volume = 1;
+var clickAudio = document.getElementById("clickAudio");
+clickAudio.volume = 0.7;
+
 const roomNames = {
     "17liftstairsview": "L17 Lifts",
     "17liftloungeview": "L17 Lifts",
@@ -158,6 +165,10 @@ function checkImgs(room) {
                     svgMap.data = svgData;
                     window.clearTimeout(loadTime);
                     $('#loading-overlay').fadeOut(100);
+                    if (muted == false) {
+                        audio.pause();
+                        audio.currentTime = 0;
+                    }
                 }
             }
         }
@@ -260,7 +271,22 @@ function search() {
     moveRooms(nextRoom);
 }
 
+$('.mutebtn').on('click', function(ev) {
+    $('.muteicon').toggleClass('fa-volume-mute');
+    $('.muteicon').toggleClass('fa-volume-up');
+    muted = true;
+    ev.preventDefault();
+});
+
 function moveRooms(nextRoom) {
+    console.log('moved');
+    if (muted == false) {
+        audio.currentTime = 0;
+        clickAudio.currentTime = 0;
+        audio.play();
+        clickAudio.play();
+    }
+    
     nextRoom = nextRoom.toLowerCase();
     nextRoom.replace(/\s/g, '');
 
@@ -271,6 +297,7 @@ function moveRooms(nextRoom) {
 }
 
 preloadAllImgs().then(moveRooms("outsidemaindoors"));
+window.setTimeout(function(){muted = false;}, 100);
 
 // $("#tour-img").on("error", function(){fileNotFound()});
 
