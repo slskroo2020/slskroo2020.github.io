@@ -5700,7 +5700,7 @@ hr.dashed {
 
 #loading-overlay {
   background-color: black;
-  padding-top: 30%;
+  /* padding-top: 30%; */
   height: 100%;
   width: 100%;
   z-index: 11;
