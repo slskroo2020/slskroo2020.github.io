@@ -15,7 +15,7 @@
         <a href="javascript:top.moveRooms('readingroom')"><path d="M1801.58,562.768L1190.05,562.768L1277.68,467.376L1770.93,467.376L1801.58,562.768Z" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(-0.0163456,-1.28629,-0.59427,0.00755171,1041.77,2620.48)">
-        <a href="javascript:alert('This is just another seminar room')"><path d="M1801.58,562.768L1190.05,562.768L1263.32,467.376L1770.93,467.376L1801.58,562.768Z" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+        <a href="javascript:alert('This is Seminar Room 3. To see what the inside of an SR looks like, go to L1!')"><path d="M1801.58,562.768L1190.05,562.768L1263.32,467.376L1770.93,467.376L1801.58,562.768Z" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
     </g>
     <g transform="matrix(0.927191,0.0312872,-0.0328654,0.973961,18.8309,91.2348)">
         <a href="javascript:top.moveRooms('readingroom')"><rect x="868.042" y="780.656" width="137.442" height="123.738" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
