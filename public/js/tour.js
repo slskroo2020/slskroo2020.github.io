@@ -30,6 +30,7 @@ const roomNames = {
     "17pantry": "Pantry",
     "17laundrycorridor": "UTR-facing corridor",
     "17laundryroom": "Laundry Room",
+    "17lounge": "Level Lounge",
 
     "dininghall": "Dining Hall",
     "lobbydhview": "Lobby",
@@ -50,6 +51,7 @@ const roomNames = {
     "b1rightcorridor": "Learn Lobe B1",
     "b1incorridor": "Learn Lobe B1",
     "blankcanvas": "Blank Canvas",
+    "launchpad": "Launchpad",
     "boxoffice": "Box Office",
     "l1fullcorridor": "Learn Lobe L1",
     "l1incorridor": "Learn Lobe L1",
@@ -66,6 +68,7 @@ const roomDescriptions = {
     "17pantry": "There's a pantry every 4 floors, with amenities like a fridge, water cooler (which dispenses both hot and ice water), microwave, electric stove and sink. Store your ice cream, wash your tupperware or do your cooking here! Remember to label your food before putting it into the fridge!",
     "17laundrycorridor": "The refuse room and laundry room are along this corridor. The refuse room has different chutes for recyclables and general waste, as well as some cleaning supplies. Click the arrow ahead to see the laundry room! \n\n(Note: UTR stands for U-Town Residences)",
     "17laundryroom": "Located on 2 floors, Level 9 and Level 17, the laundry rooms come equipped with both washing machines and dryers. They cost $1 each, can be paid by ez-link card or a $1 coin, and would provide you with a fresh set of clothes in no time at all! (Well, specifically, 30 minutes for the washing machines and 40 minutes for the dryers!)",
+    "17lounge": "Take care of and decorate your own lounge with your floormates to make it a space you love :')",
 
     "dininghall": "Colloquially known as the DH, here's where we get our food (duh). The DH serves breakfast (7 - 10.30am) and dinner (5.30 - 9.30pm) on weekdays, breakfast only on Saturdays and dinner only on Sundays! Just tap your matric card at the station on the right and collect the meal ticket. You can tap up to 3 times a meal, and save unused tickets for up to 13 days! \n\nWe share the dining hall with USP (Cinnamon College), and for this semester we have to keep strictly to our half and within the demarcated zones. Remember to bring your reusable containers and utensils to take away meals where possible! :)", 
     "lobbydhview": "Head through those double doors to our dining hall!",
@@ -86,6 +89,7 @@ const roomDescriptions = {
     "b1rightcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located!",
     "b1incorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! The main door is behind, and there's a side door down the corridor on the left.",
     "blankcanvas": "Home to acrylic paints, 3D printers, a soldering station and more, the blank canvas is a place for creativity and crafting! If you like getting your hands dirty, this place is for you.",
+    "launchpad": "An exciting space for ideation, expression, education and everything in between. The sky is the limit!",
     "boxoffice": "If you're interested in coffee, film or just looking for a place to chill, you'll definitely want to head over to The Box Office! Whether you want to catch up and bond over making some latte art or watching a movie (or two!) — there's no better place to do it than in Tembusu's own home cinema.",
     "l1fullcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is down the corridor on the right.",
     "l1incorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is behind.",
@@ -270,6 +274,18 @@ function moveRooms(nextRoom) {
     checkImgs(nextRoom);
 }
 
+const liftButtons = document.getElementById('lift-buttons');
+
+function lift() {
+    console.log('lift');
+    liftButtons.style.display = "block";
+    tourDiv.addEventListener("click", liftClick);
+    function liftClick(){
+        liftButtons.style.display = "none";
+        tourDiv.removeEventListener("click", liftClick);
+    };
+}
+
 
 // $("#tour-img").on("error", function(){fileNotFound()});
 
@@ -285,15 +301,22 @@ $(window).on('load', function() {
     $('#loading-overlay').fadeOut(500);
     preloadAllImgs();
     tourDiv.style = "cursor:pointer"; 
-    $('#tour-div').click(clickStart); 
-    // $('#tour-div').style = "cursor: pointer";
+    // $('#tour-div').click(clickStart); 
     function clickStart(){
-        console.log('boop');
+        console.log('tour div got clicked');
+        tourDiv.style = "cursor:auto";
         $('#tour-img').fadeIn();
         moveRooms("outsidemaindoors");
-        // removeEventListener(clickStart);
+        tourDiv.removeEventListener("click", clickStart);
     };
-    // document.getElementById('tour-div').addEventListener("click", clickStart);
+    // tourDiv.onclick = clickStart;
+    tourDiv.addEventListener("click", clickStart);
+    const tourNav = document.getElementById('tour-nav');
+    tourNav.addEventListener("click", function(){
+        tourDiv.removeEventListener("click", clickStart);
+        tourDiv.style = "cursor:auto";
+        console.log("removed clickStart");
+    })
     // $('#tour-img').delay(5000).fadeOut(500, function(){
         
     // });

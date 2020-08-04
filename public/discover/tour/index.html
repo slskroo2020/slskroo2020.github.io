@@ -160,6 +160,11 @@
                             <!-- see if this works -->
                             <img class="tour-img" src="./img/loadingblack.jpg">
                         </div>
+                        <div id="lift-buttons">
+                            <button class="lift-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">L17</button>
+                            <br><button class="lift-button genric-btn secondary mb-1" onclick="moveRooms('lobbymain')">L1</button>
+                            <br><button class="lift-button genric-btn secondary mb-1" onclick="alert('b1liftlobby')">B1</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center wow fadeInDown mb-3" data-wow-duration="2s" data-wow-delay=".3s">
@@ -169,7 +174,7 @@
                     </p>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-2 wow fadeInDown text-center d-lg-none" data-wow-duration="2s" data-wow-delay=".5s">
+                    <div class="col-lg-2 wow fadeInDown text-center d-lg-none" id="tour-nav" data-wow-duration="2s" data-wow-delay=".5s">
                         <!-- for mobile -->
                         <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('17liftstairsview')">Main Building L17</button>
                         <button class="tour-button genric-btn secondary mb-1" onclick="moveRooms('outsidemaindoors')">Main Building L1</button>

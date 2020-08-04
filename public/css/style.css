@@ -5709,6 +5709,23 @@ hr.dashed {
   left: 0;
 }
 
+#lift-buttons {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 27%;
+  top: 0;
+  left: 0;
+  z-index: 12;
+}
+
+#lift-button {
+  background-color: white !important; /*this isn't working*/
+  margin: 0px; 
+  padding: 0px;
+}
+
 
 /* Livestream Area */
 .livestream_area {
