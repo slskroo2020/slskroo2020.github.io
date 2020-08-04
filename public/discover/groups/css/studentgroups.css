@@ -1,0 +1,63 @@
+.sg_area {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    position: relative;
+    margin-top: -2px;
+    min-height: 100vh;
+  }
+  
+  .sg_area h3 {
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .sg_area {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+  
+    .sg_area h3 {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .ig_area h3 {
+      font-size: 70px;
+    }
+  }
+
+.sg_area h3 {
+    color: white;
+    letter-spacing: -7px;
+    font-size: 40px;
+}
+
+.sg_area h4 {
+    font-size: 30px;
+    margin: 20px 0px;
+    color: white;
+}
+
+.sg_area h4 > a{
+  color: white;
+}
+
+.sg_area p {
+    color: #AAB1B7;
+}
+
+.sg_area ul {
+    color: #AAB1B7;
+}
+
+.sg_area a {
+    color: #AAB1B7;
+}
+
+.sg_area a:hover {
+    color: #C85930;
+    /* text-decoration: underline; */
+}

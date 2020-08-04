@@ -9,8 +9,6 @@
 
         var day = now.getUTCDate();
         var month = now.getUTCMonth() + 1;
-        
-        console.log(`Day: ${day}, Month" ${month}`);
 
         var stage = 1;
 
@@ -21,14 +19,15 @@
         } else if (month > 8) stage = 3;
 
         $('#tembingoImg').attr({src:`img/tembingo_d${stage}.jpg`});
-
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            $('#tembingoLink').attr({href:`img/tembingo_d${stage}_full.jpg`});
-            console.log("desktop loaded");
-        } else {
-            $('#tembingoLink').attr({href:`img/tembingo_d${stage}_mobile.jpg`});
-            console.log("mobile loaded");
+        
+        function resize() {
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                $('#tembingoLink').attr({href:`img/tembingo_d${stage}_full.jpg`});
+            } else {
+                $('#tembingoLink').attr({href:`img/tembingo_d${stage}_mobile.jpg`});
+            }
         }
-        console.log("Stage "+stage)
+        resize();
+        $(window).resize(resize);
     });
 })(jQuery);
