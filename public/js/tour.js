@@ -44,7 +44,9 @@ const roomNames = {
     "dropoffpoint": "Drop Off Point",
     "bridgetolearnlobe": "Walkway to Learn Lobe",
 
-    "b1outsidellmaindoors": "Walkway to Learn Lobe",
+    "b1outsidellmaindoors": "B1 Outside Learn Lobe",
+    "b1learnlobefromlift": "B1 Outside Learn Lobe",
+    "b1liftlobby": "B1 Lift Lobby",
 
     "abbey": "Abbey",
     "b1fullcorridor": "Learn Lobe B1",
@@ -82,8 +84,10 @@ const roomDescriptions = {
     "dropoffpoint": "Here's where you collect supper deliveries, take Grabs, drive in, get your parents to fetch you etc.!",
     "bridgetolearnlobe": "The door at the end leads into the Learn Lobe, where the... learning happens :) There are multiple Seminar Rooms in the building, and more excitingly, the themed rooms - Box Office, Oasis, Blank Canvas, Reading Room, Abbey, and Launchpad! Click in to explore more :) \n\nContinuing down this walkway is the Education Resource Centre (ERC), where the Mac & PC Commons and some NUS-wide seminar rooms are located. It's also connected to the Stephen Riady Centre (SRC) which has the gym and food courts!",
 
-    "b1outsidellmaindoors": "This sheltered walkway connects the B1 lifts area with the Learn Lobe building. On the left you can see part of the outdoors amphitheatre, and if you head slightly to the right you'll reach the Tembusu College Office and OHS Office area!",
-
+    "b1outsidellmaindoors": "After exiting from the Learn Lobe's main door on B1, this sheltered walkway connects the lifts area with the Learn Lobe building. On the left you can see part of the outdoors amphitheatre, and if you head slightly to the right you'll reach the Tembusu College Office and OHS Office area!",
+    "b1learnlobefromlift": "Walking from the B1 lifts, you reach this area in front of the outdoors amphitheatre. Here, some Interest Groups meet and the finale night for arts week last semester was held! There are three doors ahead that lead into the Learn Lobe - from left to right, they are the Launchpad, Blank Canvas, and main doors.",
+    "b1liftlobby": "Small tip: B1 is the only floor you can click in the lift without tapping your matric card!",
+    
     "abbey": "If you love music, you’re at the right place! The Abbey is Tembusu’s very own jamming studio. Equipped with state-of-the-art sound systems, amplifiers, and all manners of instruments, the stage is set for you and like-minded musicians to jam and have fun! You can book a timeslot after getting the Abbey license. There are often small performances held here during some of the themed weeks as well :)",
     "b1fullcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! There's a side door behind and the main door down the corridor on the right.",
     "b1rightcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located!",
@@ -306,7 +310,7 @@ $(window).on('load', function() {
         console.log('tour div got clicked');
         tourDiv.style = "cursor:auto";
         $('#tour-img').fadeIn();
-        moveRooms("outsidemaindoors");
+        moveRooms("b1learnlobefromlift");
         tourDiv.removeEventListener("click", clickStart);
     };
     // tourDiv.onclick = clickStart;
