@@ -112,6 +112,10 @@ socketio.listen(server).on('connection', function (socket) {
         }
         socket.emit('retIGPage', {'ig': det, 'img': img});
     });
+
+    socket.on('reqGroups', function() {
+        socket.emit('retGroups', igDetails);
+    });
     
     socket.on('disconnect', function(){
         console.log(`Socket: ${socket} disconnected.`);

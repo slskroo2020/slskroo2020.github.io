@@ -16,8 +16,8 @@
     // Resizing Canvas
     function scaleCanvas() {
         if (window.matchMedia("(min-width: 768px)").matches) {
-            $('#canvas').attr('width', '490');
-            $('#canvas').attr('height', '490');
+            $('#canvas').attr('width', '500');
+            $('#canvas').attr('height', '500');
         } else {
             $('#canvas').attr('width', window.innerWidth*0.8);
             $('#canvas').attr('height', window.innerWidth*0.8);
