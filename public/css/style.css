@@ -4934,7 +4934,7 @@ hr.dashed {
 }
 
 .bg-text::after {
-  color: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.03);
   content: attr(data-bg-text);
   display: block;
   font-family: "EOTG Regular", sans-serif;
@@ -4970,7 +4970,7 @@ hr.dashed {
   display: block;
   font-family: "EOTG Regular", sans-serif;
   font-size: 400px;
-  line-height: 0.7;
+  line-height: 1;
   position: absolute;
   top: 0.2em;
   left: -10vw;
@@ -5354,6 +5354,7 @@ hr.dashed {
 .ig-navbar {
   text-align: center;
   color: white;
+  margin: 30px 0px;
 }
 
 .ig-navbar ul li {
@@ -5380,7 +5381,7 @@ hr.dashed {
   text-transform: capitalize;
   font-weight: normal;
   display: inline-block;
-  padding: 30px 0 30px  0;
+  padding: 0px 0 5px  0;
   font-family: 'Exo 2', sans-serif;
   position: relative;
   text-transform: uppercase;
