@@ -310,7 +310,7 @@ $(window).on('load', function() {
         console.log('tour div got clicked');
         tourDiv.style = "cursor:auto";
         $('#tour-img').fadeIn();
-        moveRooms("b1learnlobefromlift");
+        moveRooms("outsidemaindoors");
         tourDiv.removeEventListener("click", clickStart);
     };
     // tourDiv.onclick = clickStart;

@@ -9,4 +9,8 @@
         <a href="javascript:top.moveRooms('lobbyprintingstation')"><rect x="454.476" y="775.286" width="144.139" height="143.349" style="fill:white;fill-opacity:0;"/></a>
     </g>
     <a href="javascript:top.moveRooms('dininghall')"><rect x="147.321" y="385.519" width="478.77" height="348.196" style="fill:white;fill-opacity:0;"/></a>
+    <!-- <g transform="matrix(-0.0101918,0.678701,-1.00881,-0.0151489,1309.58,592.332)">
+        <a href="javascript:top.lift()"><rect x="795.9" y="1092.18" width="203.234" height="174.732" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
+    </g> -->
+    <a href="javascript:top.lift()"><rect x="30" y="1111.2" width="115" height="145" style="fill:rgb(235,235,235);fill-opacity:0;"/></a>
 </svg>
