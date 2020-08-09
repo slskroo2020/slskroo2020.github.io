@@ -5,8 +5,8 @@
         <g transform="matrix(0.929578,0,0,0.913044,218.398,220.155)">
             <a href="javascript:top.moveRooms('17leftcorridor')"><rect x="2703.8" y="2370.84" width="397.457" height="450.638" style="fill:white;fill-opacity:0;"/></a>
         </g>
-        <g transform="matrix(0.920905,0,0,0.998229,98.4322,21.4075)">
-            <a href="javascript:top.lift()"><rect x="1002.01" y="2247.68" width="162.342" height="517.814" style="fill:white;fill-opacity:0;"/></a>
-        </g>
+        <!-- <g transform="matrix(0.920905,0,0,0.998229,98.4322,21.4075)">
+            <a href="javascript:top.moveRooms('lift')"><rect x="1002.01" y="2247.68" width="162.342" height="517.814" style="fill:white;fill-opacity:0;"/></a>
+        </g> -->
         <a href="javascript:top.moveRooms('17lounge')"><rect x="4091.4" y="953.755" width="202.927" height="1906.81" style="fill:white;fill-opacity:0;"/></a>
 </svg>
