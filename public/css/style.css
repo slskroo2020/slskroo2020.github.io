@@ -4403,6 +4403,10 @@ hr.light {
   border-color: #fff;
 }
 
+hr.lightgrey {
+  border-color: #AAB1B7;
+}
+
 hr.grey {
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -4623,7 +4627,7 @@ hr.dashed {
 
 #handbook {
   padding-top: 100px;
-  margin-top: -20px !important;
+  margin-top: -100px !important;
 }
 
 #handbook_thumb {
@@ -4639,6 +4643,16 @@ hr.dashed {
   margin-top: -50px;
 }
 
+#resources {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#resources h4 {
+  color: white;
+  font-size: 20px;
+}
+
 .programmes_area {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -4652,7 +4666,7 @@ hr.dashed {
 
 .programmes_area h3 {
   color: white;
-  font-size: 50px;
+  font-size: 35px;
   letter-spacing: -7px;
   line-height: 0.8em;
 }
@@ -4920,7 +4934,7 @@ hr.dashed {
 }
 
 .bg-text::after {
-  color: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.03);
   content: attr(data-bg-text);
   display: block;
   font-family: "EOTG Regular", sans-serif;
@@ -4956,7 +4970,7 @@ hr.dashed {
   display: block;
   font-family: "EOTG Regular", sans-serif;
   font-size: 400px;
-  line-height: 0.7;
+  line-height: 1;
   position: absolute;
   top: 0.2em;
   left: -10vw;
@@ -5340,6 +5354,7 @@ hr.dashed {
 .ig-navbar {
   text-align: center;
   color: white;
+  margin: 30px 0px;
 }
 
 .ig-navbar ul li {
@@ -5366,7 +5381,7 @@ hr.dashed {
   text-transform: capitalize;
   font-weight: normal;
   display: inline-block;
-  padding: 30px 0 30px  0;
+  padding: 0px 0 5px  0;
   font-family: 'Exo 2', sans-serif;
   position: relative;
   text-transform: uppercase;
@@ -5664,8 +5679,8 @@ hr.dashed {
   padding-bottom: 40px;
   position: relative;
   margin-top: -2px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .tour_area h3 {
@@ -5679,12 +5694,66 @@ hr.dashed {
   font-size: 30px;
 }
 
+.search-bar {
+  width: 50%;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  background: #f9f9ff;
+  padding: 0 20px;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-div {
+  display: inline-block;
+}
+
+.search-div .nice-select {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.search-div .nice-select .list {
+  z-index: 20;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#tour-room-name-div {
+  height: 70px;
+  line-height: 70px;
+}
+
+#tour-room-name-span {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#tour-room-description {
+  height: 300px;
+  overflow-y: auto;
+  margin: 10px 0px;
+}
+
+#nav-div button{
+  line-height: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 @media (min-width: 768px) {
   .tour_area {
     padding-top: 50px;
     padding-bottom: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 150px;
+    padding-right: 100px;
+  }
+
+  #tour-room-name-div {
+    padding-top: 20px;
   }
 
   .tour_area h3 {
@@ -5707,23 +5776,6 @@ hr.dashed {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-#lift-buttons {
-  display: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  padding-top: 27%;
-  top: 0;
-  left: 0;
-  z-index: 12;
-}
-
-#lift-button {
-  background-color: white !important; /*this isn't working*/
-  margin: 0px; 
-  padding: 0px;
 }
 
 
@@ -6081,7 +6133,7 @@ hr.dashed {
 }
 
 #tour-room-name {
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: bolder;
   padding-bottom: 5px;
   /* text-decoration: underline; */
@@ -6224,9 +6276,40 @@ hr.dashed {
 }
 
 /* Fellows */
+.fellows_area {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -2px;
+  min-height: 100vh;
+}
+
+.fellows_area h3 {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .fellows_area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .fellows_area h3 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fellows_area h3 {
+    font-size: 70px;
+  }
+}
+
 .fellows-container {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .fellows-container .fellows-item {
@@ -6251,23 +6334,34 @@ hr.dashed {
 }
 
 .fellows-container .fellows-item .ig-thumb {
-  margin: 0px;
+  display: inline-block;
+  margin-top: 10px;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 300px;
+  border-radius: 100%;
+  height: 220px;
+  width: 220px;
+}
+
+@media (min-width: 480px) {
+  .fellows-container {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
 }
 
 @media (min-width:768px) {
   .fellows-container {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .fellows-container .fellows-item {
     margin: 0.7em;
   }
   .fellows-container .fellows-item .ig-thumb {
-    height: 150px;
+    height: 160px;
+    width: 160px;
   }
   .fellows-container .fellows-item h4 {
     font-size: 15px;
@@ -6282,8 +6376,8 @@ hr.dashed {
 
 @media (min-width:992px) {
   .fellows-container {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .fellows-container .fellows-item {
     margin: 1em;
@@ -6291,6 +6385,7 @@ hr.dashed {
   }
   .fellows-container .fellows-item .ig-thumb {
     height: 200px;
+    width: 200px;
   }
   .fellows-container .fellows-item h4 {
     font-size: 17px;
