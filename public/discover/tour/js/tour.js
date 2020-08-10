@@ -4,9 +4,6 @@
 //     "abbey": [2782.3, 3283.14, 524.566, 622.262]
 // };
 
-
-console.log("version 5");
-
 let mainImage = document.getElementById("tour-img");
 let tourDiv = document.getElementById("tour-div");
 let overlayDiv = document.getElementById("tour-overlay-div");
@@ -29,6 +26,8 @@ var audio = document.getElementById("footstepsAudio");
 audio.volume = 1;
 var clickAudio = document.getElementById("clickAudio");
 clickAudio.volume = 0.7;
+var liftAudio = document.getElementById("liftAudio");
+liftAudio.volume = 0.8;
 
 const roomNames = {
     "17liftstairsview": "L17 Lifts",
@@ -37,6 +36,7 @@ const roomNames = {
     "17pantry": "Pantry",
     "17laundrycorridor": "UTR-facing corridor",
     "17laundryroom": "Laundry Room",
+    "17lounge": "Level Lounge",
 
     "dininghall": "Dining Hall",
     "lobbydhview": "Lobby",
@@ -50,13 +50,16 @@ const roomNames = {
     "dropoffpoint": "Drop Off Point",
     "bridgetolearnlobe": "Walkway to Learn Lobe",
 
-    "b1outsidellmaindoors": "Walkway to Learn Lobe",
+    "b1outsidellmaindoors": "B1 Outside Learn Lobe",
+    "b1learnlobefromlift": "B1 Outside Learn Lobe",
+    "b1liftlobby": "B1 Lift Lobby",
 
     "abbey": "Abbey",
     "b1fullcorridor": "Learn Lobe B1",
     "b1rightcorridor": "Learn Lobe B1",
     "b1incorridor": "Learn Lobe B1",
     "blankcanvas": "Blank Canvas",
+    "launchpad": "Launchpad",
     "boxoffice": "Box Office",
     "l1fullcorridor": "Learn Lobe L1",
     "l1incorridor": "Learn Lobe L1",
@@ -73,6 +76,7 @@ const roomDescriptions = {
     "17pantry": "There's a pantry every 4 floors, with amenities like a fridge, water cooler (which dispenses both hot and ice water), microwave, electric stove and sink. Store your ice cream, wash your tupperware or do your cooking here! Remember to label your food before putting it into the fridge!",
     "17laundrycorridor": "The refuse room and laundry room are along this corridor. The refuse room has different chutes for recyclables and general waste, as well as some cleaning supplies. Click the arrow ahead to see the laundry room! \n\n(Note: UTR stands for U-Town Residences)",
     "17laundryroom": "Located on 2 floors, Level 9 and Level 17, the laundry rooms come equipped with both washing machines and dryers. They cost $1 each, can be paid by ez-link card or a $1 coin, and would provide you with a fresh set of clothes in no time at all! (Well, specifically, 30 minutes for the washing machines and 40 minutes for the dryers!)",
+    "17lounge": "Take care of and decorate your own lounge with your floormates to make it a space you love :')",
 
     "dininghall": "Colloquially known as the DH, here's where we get our food (duh). The DH serves breakfast (7 - 10.30am) and dinner (5.30 - 9.30pm) on weekdays, breakfast only on Saturdays and dinner only on Sundays! Just tap your matric card at the station on the right and collect the meal ticket. You can tap up to 3 times a meal, and save unused tickets for up to 13 days! \n\nWe share the dining hall with USP (Cinnamon College), and for this semester we have to keep strictly to our half and within the demarcated zones. Remember to bring your reusable containers and utensils to take away meals where possible! :)", 
     "lobbydhview": "Head through those double doors to our dining hall!",
@@ -86,13 +90,16 @@ const roomDescriptions = {
     "dropoffpoint": "Here's where you collect supper deliveries, take Grabs, drive in, get your parents to fetch you etc.!",
     "bridgetolearnlobe": "The door at the end leads into the Learn Lobe, where the... learning happens :) There are multiple Seminar Rooms in the building, and more excitingly, the themed rooms - Box Office, Oasis, Blank Canvas, Reading Room, Abbey, and Launchpad! Click in to explore more :) \n\nContinuing down this walkway is the Education Resource Centre (ERC), where the Mac & PC Commons and some NUS-wide seminar rooms are located. It's also connected to the Stephen Riady Centre (SRC) which has the gym and food courts!",
 
-    "b1outsidellmaindoors": "This sheltered walkway connects the B1 lifts area with the Learn Lobe building. On the left you can see part of the outdoors amphitheatre, and if you head slightly to the right you'll reach the Tembusu College Office and OHS Office area!",
-
+    "b1outsidellmaindoors": "After exiting from the Learn Lobe's main door on B1, this sheltered walkway connects the lifts area with the Learn Lobe building. On the left you can see part of the outdoors amphitheatre, and if you head slightly to the right you'll reach the Tembusu College Office and OHS Office area!",
+    "b1learnlobefromlift": "Walking from the B1 lifts, you reach this area in front of the outdoors amphitheatre. Here, some Interest Groups meet and the finale night for arts week last semester was held! There are three doors ahead that lead into the Learn Lobe - from left to right, they are the Launchpad, Blank Canvas, and main doors.",
+    "b1liftlobby": "Small tip: B1 is the only floor you can click in the lift without tapping your matric card!",
+    
     "abbey": "If you love music, you’re at the right place! The Abbey is Tembusu’s very own jamming studio. Equipped with state-of-the-art sound systems, amplifiers, and all manners of instruments, the stage is set for you and like-minded musicians to jam and have fun! You can book a timeslot after getting the Abbey license. There are often small performances held here during some of the themed weeks as well :)",
     "b1fullcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! There's a side door behind and the main door down the corridor on the right.",
     "b1rightcorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located!",
     "b1incorridor": "This is level B1 of the Learn Lobe, where the Abbey, Blank Canvas, Reading Room, Launchpad and a few SRs are located! The main door is behind, and there's a side door down the corridor on the left.",
     "blankcanvas": "Home to acrylic paints, 3D printers, a soldering station and more, the blank canvas is a place for creativity and crafting! If you like getting your hands dirty, this place is for you.",
+    "launchpad": "An exciting space for ideation, expression, education and everything in between. The sky is the limit!",
     "boxoffice": "If you're interested in coffee, film or just looking for a place to chill, you'll definitely want to head over to The Box Office! Whether you want to catch up and bond over making some latte art or watching a movie (or two!) — there's no better place to do it than in Tembusu's own home cinema.",
     "l1fullcorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is down the corridor on the right.",
     "l1incorridor": "This is level 1 of the Learn Lobe, where the Box Office, Oasis, College Students' Committee (CSC) room and a few SRs are located! The main door into the Learn Lobe is behind.",
@@ -107,9 +114,7 @@ async function preloadAllImgs() {
     const allRooms = Object.keys(roomNames);
     for (let i = 0; i < allRooms.length; i++) {
         img.src = `./img/${allRooms[i]}.jpg`;
-        console.log(allRooms[i]);
     }
-    console.log("loading done");
 }
 
 // function preloadImgs(area) {
@@ -176,7 +181,6 @@ function checkImgs(room) {
     myImage.onerror = fileNotFound; 
 }
 function switchImgs(room){
-    console.log("images all loaded");
     
     const bg = `./img/${room}.jpg`; 
     let filepath1 = `./img/${room}1.svg`;
@@ -279,7 +283,6 @@ $('.mutebtn').on('click', function(ev) {
 });
 
 function moveRooms(nextRoom) {
-    console.log('moved');
     if (muted == false) {
         audio.currentTime = 0;
         clickAudio.currentTime = 0;
@@ -290,11 +293,32 @@ function moveRooms(nextRoom) {
     nextRoom = nextRoom.toLowerCase();
     nextRoom.replace(/\s/g, '');
 
-    console.log(nextRoom);
-
     clearInterval(interval);
     checkImgs(nextRoom);
 }
+
+const liftButtons = document.getElementById('lift-buttons');
+
+function lift() {
+    if (muted == false) {
+        clickAudio.currentTime = 0;
+        clickAudio.play();
+    }
+    liftButtons.style.display = "block";
+    tourDiv.addEventListener("click", liftClick);
+}
+
+function liftClick(){
+    liftButtons.style.display = "none";
+    tourDiv.removeEventListener("click", liftClick);
+};
+
+$('.lift-button').click(function(){
+    if (muted == false) {
+        liftAudio.currentTime = 0;
+        liftAudio.play();
+    }
+})
 
 window.setTimeout(function(){muted = false;}, 100);
 
@@ -309,22 +333,18 @@ window.setTimeout(function(){muted = false;}, 100);
 // preloadAllImgs().then(moveRooms("outsidemaindoors"));
 
 $(window).on('load', function() {
+    // $('#nav-div').fadeOut();
     $('#loading-overlay').fadeOut(500);
     preloadAllImgs();
     tourDiv.style = "cursor:pointer"; 
-    $('#tour-div').click(clickStart); 
-    // $('#tour-div').style = "cursor: pointer";
-    function clickStart(){
-        console.log('boop');
-        $('#tour-img').fadeIn();
-        moveRooms("outsidemaindoors");
-        // removeEventListener(clickStart);
-    };
-    // document.getElementById('tour-div').addEventListener("click", clickStart);
-    // $('#tour-img').delay(5000).fadeOut(500, function(){
-        
-    // });
+    $('#tour-div').one("click", start); 
 });
+
+function start(){
+    $('#nav-div').removeClass("invisible");
+    $('#tour-img').fadeIn();
+    moveRooms("outsidemaindoors");
+};
 
 
 
