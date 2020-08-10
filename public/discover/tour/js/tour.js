@@ -207,7 +207,7 @@ function switchImgs(room){
 
 function fileNotFound() {
     moveRooms(previousRoom);
-    alert("Sorry, that place hasn't been implemented yet!");
+    alert("Sorry, this place isn't implemented!");
 }
 
 // function createImgMap(room) {
