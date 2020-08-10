@@ -2,6 +2,11 @@
 
 require('dotenv').config();
 
+console.log(process.env.MYSQLHOST);
+console.log(process.env.MYSQLUSER);
+console.log(process.env.MYSQLPASS);
+console.log(process.env.MYSQLDB);
+
 const express = require('express')
 , app = express()
 , server = require('http').createServer(app)
