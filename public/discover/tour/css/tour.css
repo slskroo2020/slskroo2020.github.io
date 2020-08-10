@@ -1,0 +1,23 @@
+#lift-buttons {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-top: 27%;
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+
+.genric-btn.lift {
+color: #C85930;
+background: #ffffff;
+border: 2px solid transparent;
+}
+
+.genric-btn.lift:hover {
+color: #fff;
+background: #C85930;
+border: 2px solid #C85930;
+/* background: #fff; */
+}
