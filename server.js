@@ -2,11 +2,6 @@
 
 require('dotenv').config();
 
-console.log(process.env.MYSQLHOST);
-console.log(process.env.MYSQLUSER);
-console.log(process.env.MYSQLPASS);
-console.log(process.env.MYSQLDB);
-
 const express = require('express')
 , app = express()
 , server = require('http').createServer(app)
@@ -19,8 +14,8 @@ const express = require('express')
 	user : process.env.MYSQLUSER,
 	password : process.env.MYSQLPASS,
 	database : process.env.MYSQLDB,
-    charset : 'utf8mb4',
-    // port : process.env.MYSQLPORT
+    charset : 'utf8mb4_unicode_ci',
+    port : process.env.MYSQLPORT
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
