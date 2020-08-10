@@ -19,8 +19,8 @@ const express = require('express')
 	user : process.env.MYSQLUSER,
 	password : process.env.MYSQLPASS,
 	database : process.env.MYSQLDB,
-    charset : 'utf8mb4_unicode_ci',
-    port : process.env.MYSQLPORT
+    charset : 'utf8mb4',
+    // port : process.env.MYSQLPORT
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
