@@ -2,10 +2,10 @@
 FROM node:12
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /slskroo2020.github.io
 
 # Copy the application files into the working directory
-COPY . /app
+COPY . .
 
 # Install the application dependencies
 RUN npm install
