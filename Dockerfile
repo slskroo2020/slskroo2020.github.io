@@ -5,7 +5,7 @@ FROM node:12
 WORKDIR /slskroo2020.github.io
 
 # Copy the application files into the working directory
-COPY . .
+COPY . /slskroo2020.github.io
 
 # Install the application dependencies
 RUN npm install
