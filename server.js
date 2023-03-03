@@ -46,15 +46,15 @@ pool.getConnection(function(err, connection){
             connection.release();
         } else {
             igDetails = result1;
-            console.log(`Step 1 Success`);
+            console.log(`Retrieved IG Details.`);
             connection.query(`SELECT * FROM reviews`, function (err, result2) {
                 if (err) throw err;
                 igReviews = result2;
-                console.log(`Step 2 Success`);
+                console.log(`Retrieved Reviews.`);
             connection.query(`SELECT * FROM images_videos`, function (err, result3) {
                 if (err) throw err;
                 igImages = result3;
-                console.log(`Step 3 Success`);
+                console.log(`Retrieved Images and Videos. Build Complete!`);
                 // connection.query(`SELECT * FROM social_media WHERE name='${targetIG}'`, function (err, result3) {
                 //     if (err) throw err;
                 //     socialMedia = result3;
